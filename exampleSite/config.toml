@@ -1,0 +1,147 @@
+######################## default configuration ####################
+baseURL = "https://bigspring.netlify.app/"
+title = "BigSpring Hugo"
+theme = "bigspring"
+languageName = "En"
+languageCode = "en-us"
+# post pagination
+paginate = "3"
+# post excerpt
+summaryLength = "15"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# google analytics
+googleAnalytics = "" # example : UA-123-45
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+
+
+############################## navigation ###############################
+
+# main menu
+[[menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 1
+
+[[menu.main]]
+name = "Pricing"
+URL = "pricing"
+weight = 2
+
+[[menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 3
+
+[[menu.main]]
+name = "FAQ"
+URL = "faq"
+weight = 4
+
+# company 
+[[menu.company]]
+name = "About Us"
+URL = "#"
+
+[[menu.company]]
+name = "Quick Start"
+URL = "#"
+
+[[menu.company]]
+name = "Pricing"
+URL = "pricing"
+
+
+# Product 
+[[menu.product]]
+name = "Pricing"
+URL = "pricing"
+
+[[menu.product]]
+name = "Platform"
+URL = "#"
+
+[[menu.product]]
+name = "Features"
+URL = "#"
+
+# Support 
+[[menu.support]]
+name = "Privacy Policy"
+URL = "privacy-policy"
+
+[[menu.support]]
+name = "Terms & Conditions"
+URL = "terms-conditions"
+
+[[menu.support]]
+name = "FAQ"
+URL = "faq"
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+logo_width = "200px"
+# Meta data
+description = "This is meta description"
+author = "Themefisher"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+
+########### footer content ##########
+footer_content = "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
+# copyright
+copyright = "Design By [Themefisher](https://themefisher.com/) Develop By [Gethugothemes](https://gethugothemes.com/)"
+
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation buttons
+[params.navigation_button]
+enable = true
+label = "Get Started"
+link = "contact"
+
+  
+############################# social site ########################
+[[params.social]]
+title = "facebook"
+icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+title = "twitter"
+icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+title = "skype"
+icon = "ti-skype" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+title = "linkedin"
+icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
+link = "#"

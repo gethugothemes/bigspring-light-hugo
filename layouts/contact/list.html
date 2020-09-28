@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+<section class="section bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <form action="{{ site.Params.contact_form_action | safeURL }}" method="POST">
+          <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Your Name">
+          <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="Your Email">
+          <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Subject">
+          <textarea name="message" id="message" class="form-control mb-3" placeholder="Your Message"></textarea>
+          <button type="submit" value="send" class="btn btn-primary">Send Now</button>
+        </form>
+      </div>
+      
+      <div class="col-lg-5 content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- call to action -->
+
+<!-- /call to action -->
+
+{{ end }}
