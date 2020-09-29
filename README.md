@@ -14,13 +14,13 @@ In this tutorial we will show you to make your website live without buying any h
 
 ### Step 1 : Fork or Clone repository
 
-First we will fork this [bigspring](https://github.com/themefisher/bigspring) template.
+First we will fork this [bigspring](https://github.com/themefisher/bigspring-hugo-startup-theme) template.
 
 ### Step 2 : Add your repository in Forestry
 
 Go to your [forestry](https://bit.ly/forestry-account)  account and click on `import your site now`. declare your config.toml file [`exampleSite`] and fill up basic settings .
 
-**Or just click this button for one click installation** [![import to forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=themefisher/bigspring&engine=hugo&version=0.60.1&config=exampleSite)
+**Or just click this button for one click installation** [![import to forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=themefisher/bigspring-hugo-startup-theme&engine=hugo&version=0.60.1&config=exampleSite)
 
 Now mark everything as done, then go to configuration to change the base url . You can put any url but this have to similar as netlify . So for now put a name which you are going to put in netlify as netlify subdomain.
 
@@ -28,7 +28,7 @@ Now mark everything as done, then go to configuration to change the base url . Y
 
 Here comes the last step . Go to your [netlify](https://bit.ly/netlify-account) account and click add new site . Choose your git repository to import your website in netlify .  And now you can see the forked `bigspring` theme. select it and follow the steps. Then go to `site settings` for change the site name and put your subdoamin name here what you puted on forestry as base url. save it and go to `deploy` from top menu, Wait a while and click on `site preview` or just simply go to the subdomain you puted as base url. **BOOM! Your site is live.** Now you can go to forestry and add, remove or customize every setting and content.
 
-> If you face any issue regarding the installation feel free to onen [open a new issue](https://github.com/themefisher/bigspring/issues)
+> If you face any issue regarding the installation feel free to onen [open a new issue](https://github.com/themefisher/bigspring-hugo-startup-theme/issues)
 
 
 ## Table of Contents
@@ -48,15 +48,15 @@ Here comes the last step . Go to your [netlify](https://bit.ly/netlify-account) 
 ## Quick Start
 Quick start options:
 
-- Clone the repo: `git clone https://github.com/themefisher/bigspring.git`.
-- [Download from Github](https://github.com/themefisher/bigspring/archive/master.zip).
+- Clone the repo: `git clone https://github.com/themefisher/bigspring-hugo-startup-theme.git`.
+- [Download from Github](https://github.com/themefisher/bigspring-hugo-startup-theme/archive/master.zip).
 - [Download from themefisher website](https://themefisher.com/products/bigspringtive-portfolio-template).
 
 ## Installation
 At the top we have shown an easy hugo installation. but still if you think you want to go with the traditional way then use the following commands:
 
 ```
-$ git clone git@github.com:themefisher/bigspring.git
+$ git clone git@github.com:themefisher/bigspring-hugo-startup-theme.git
 $ cd bigspring/exampleSite/
 $ hugo server --themesDir ../..
 ```
@@ -64,8 +64,8 @@ $ hugo server --themesDir ../..
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the **bigspringe**. Please Search [existing issues](https://github.com/themefisher/bigspring/issues). It’s possible someone has already reported the same problem.
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/bigspring/issues/new)
+We use GitHub Issues as the official bug tracker for the **bigspringe**. Please Search [existing issues](https://github.com/themefisher/bigspring-hugo-startup-theme/issues). It’s possible someone has already reported the same problem.
+If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/bigspring-hugo-startup-theme/issues/new)
 
 ## Technical Support or Questions (Paid)
 
@@ -74,7 +74,7 @@ If you have questions or need help integrating the product please [contact us](m
 ## Licensing
 
 - Copyright 2020 Designed by [Themefisher](https://themefisher.com/) & Developed by [Gethugothemes](https://gethugothemes.com/)
-- Licensed under MIT (https://github.com/themefisher/bigspring/blob/master/LICENSE)
+- Licensed under MIT (https://github.com/themefisher/bigspring-hugo-startup-theme/blob/master/LICENSE)
 
 ### Donate Us (Author) 
 This project needs you! If you would like to support this project's further development, the creator of this project or the continuous maintenance of this project, feel free to donate. Your donation is highly appreciated . Thank you!
