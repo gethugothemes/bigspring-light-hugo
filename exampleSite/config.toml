@@ -1,6 +1,6 @@
 ######################## default configuration ####################
-baseURL = "https://bigspring.netlify.app/"
-title = "BigSpring Hugo"
+baseURL = "http://examplesite.org/"
+title = "Bigspring Hugo"
 theme = "bigspring"
 languageName = "En"
 languageCode = "en-us"
