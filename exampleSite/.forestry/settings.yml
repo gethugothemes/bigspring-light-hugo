@@ -7,142 +7,49 @@ sections:
 - type: heading
   label: Homepage
 - type: document
-  path: exampleSite/data/en/homepage.yml
-  label: Homepage Data (en)
-- type: document
-  path: exampleSite/data/fr/homepage.yml
-  label: Homepage Data (fr)
+  path: exampleSite/data/homepage.yml
+  label: Homepage Data
 - type: heading
   label: Blog Post
 - type: document
-  path: exampleSite/content/english/blog/_index.md
-  label: Blog Page (en)
+  path: exampleSite/content/blog/_index.md
+  label: Blog Page
+- type: directory
+  path: exampleSite/content/blog
+  label: Blog Post
+  create: documents
+  match: "**/*"
+  exclude: _index.md
+  templates:
+  - post
+- type: heading
+  label: Others Page
 - type: document
-  path: exampleSite/content/french/blog/_index.md
-  label: Blog Page (fr)
-- type: directory
-  path: exampleSite/content/english/blog
-  label: Post (en)
-  create: documents
-  match: "**/*"
-  exclude: _index.md
-  templates:
-  - post
-- type: directory
-  path: exampleSite/content/french/blog
-  label: Post (fr)
-  create: documents
-  match: "**/*"
-  exclude: _index.md
-  templates:
-  - post
-- type: heading
+  path: exampleSite/content/faq/_index.md
   label: FAQ
-- type: directory
-  path: exampleSite/content/english/faq
-  label: FAQ (en)
-  create: documents
-  match: "**/*"
-- type: directory
-  path: exampleSite/content/french/faq
-  label: FAQ (fr)
-  create: documents
-  match: "**/*"
-- type: heading
-  label: Pricing
-- type: directory
-  path: exampleSite/content/english/pricing
-  label: Pricing (en)
-  create: documents
-  match: "**/*"
-- type: directory
-  path: exampleSite/content/french/pricing
-  label: Pricing (fr)
-  create: documents
-  match: "**/*"
-- type: heading
-  label: Career
-- type: directory
-  path: exampleSite/content/english/career
-  label: Career (en)
-  create: all
-  match: "**/*"
-- type: directory
-  path: exampleSite/content/french/career
-  label: Career (fr)
-  create: all
-  match: "**/*"
-- type: heading
-  label: About
-- type: directory
-  path: exampleSite/content/english/about
-  label: About (en)
-  create: none
-  match: "*"
-- type: directory
-  path: exampleSite/content/french/about
-  label: About (fr)
-  create: none
-  match: "*"
-- type: heading
+- type: document
+  path: exampleSite/content/contact/_index.md
   label: Contact
-- type: directory
-  path: exampleSite/content/english/contact
-  label: Contact (en)
-  create: none
-  match: "*"
-- type: directory
-  path: exampleSite/content/french/contact
-  label: Contact (fr)
-  create: none
-  match: "*"
-- type: heading
-  label: Service
-- type: directory
-  path: exampleSite/content/english/service
-  label: Service (en)
-  create: documents
-  match: "**/*"
-- type: directory
-  path: exampleSite/content/french/service
-  label: Service (fr)
-  create: all
-  match: "**/*"
-- type: heading
-  label: Team
-- type: directory
-  path: exampleSite/content/english/team
-  label: Team (en)
-  create: all
-  match: "**/*"
-- type: directory
-  path: exampleSite/content/french/team
-  label: Team (fr)
-  create: all
-  match: "**/*"
+- type: document
+  path: exampleSite/content/pricing/_index.md
+  label: Pricing
+- type: document
+  path: exampleSite/content/privacy-policy/_index.md
+  label: Privacy Policy
+- type: document
+  path: exampleSite/content/terms-conditions/_index.md
+  label: Terms & Conditions
 - type: heading
   label: All Pages
 - type: directory
-  path: exampleSite/content/english
-  label: All Pages (en)
-  create: all
-  match: "**/*"
-  templates:
-  - new-page
-- type: directory
-  path: exampleSite/content/french
-  label: All Pages (fr)
+  path: exampleSite/content
+  label: All Pages
   create: all
   match: "**/*"
   templates:
   - new-page
 - type: heading
   label: Configuration
-- type: directory
-  path: exampleSite/i18n
-  label: i18n
-  create: documents
-  match: "**/*"
 - type: document
   path: exampleSite/config.toml
   label: Configuration
