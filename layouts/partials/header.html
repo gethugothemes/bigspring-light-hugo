@@ -5,8 +5,9 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <a class="navbar-brand" href="{{ site.BaseURL }}">
         {{ with site.Params.logo}}
-        <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | absURL }}" alt="{{ site.Title }}"></a>
+        <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | absURL }}" alt="{{ site.Title }}">
         {{ else }}{{site.Title}}{{end}}
+      </a>
       <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
         <i class="ti-menu h3"></i>
       </button>
