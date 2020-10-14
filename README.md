@@ -50,7 +50,7 @@ Quick start options:
 
 - Clone the repo: `git clone https://github.com/themefisher/bigspring-hugo-startup-theme.git`.
 - [Download from Github](https://github.com/themefisher/bigspring-hugo-startup-theme/archive/master.zip).
-- [Download from themefisher website](https://themefisher.com/products/bigspringtive-portfolio-template).
+- [Download from gethugothemes website](https://gethugothemes.com/products/bigspring/).
 
 ## Installation
 At the top we have shown an easy hugo installation. but still if you think you want to go with the traditional way then use the following commands:
