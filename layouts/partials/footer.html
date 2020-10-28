@@ -2,38 +2,46 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-6 mb-5">
+        {{ if site.Menus.company }}
         <h3 class="mb-4">Company</h3>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.company }}
           <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
+        {{ end }}
       </div>
       <div class="col-md-3 col-sm-6 mb-5">
+        {{ if site.Menus.product }}
         <h3 class="mb-4">Product</h3>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.product }}
           <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
+        {{ end }}
       </div>
       <div class="col-md-3 col-sm-6 mb-5">
+        {{ if site.Menus.support }}
         <h3 class="mb-4">Support</h3>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.support }}
           <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
+        {{ end }}
       </div>
       <div class="col-md-3 col-sm-6 mb-5">
         <a class="d-block mb-3" href="{{ site.BaseURL }}"><img width="{{site.Params.logo_width}}"  class="img-fluid" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}"></a>
         <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
         
+        {{ if site.Params.social }}
         <ul class="list-inline social-icons">
           {{ range site.Params.social }}
           <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
+        {{ end }}
       </div>
     </div>
     <div class="border-top border-default text-center py-4 mt-4">
