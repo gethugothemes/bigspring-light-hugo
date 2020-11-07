@@ -2,30 +2,30 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-6 mb-5">
-        {{ if site.Menus.company }}
-        <h3 class="mb-4">Company</h3>
+        {{ if site.Menus.footer_left }}
+        <div class="h3 mb-4">{{ site.Params.footer_menu_left }}</div>
         <ul class="list-unstyled footer-list">
-          {{ range site.Menus.company }}
+          {{ range site.Menus.footer_left }}
           <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
       </div>
       <div class="col-md-3 col-sm-6 mb-5">
-        {{ if site.Menus.product }}
-        <h3 class="mb-4">Product</h3>
+        {{ if site.Menus.footer_middle }}
+        <div class="h3 mb-4">{{ site.Params.footer_menu_middle }}</div>
         <ul class="list-unstyled footer-list">
-          {{ range site.Menus.product }}
+          {{ range site.Menus.footer_middle }}
           <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
       </div>
       <div class="col-md-3 col-sm-6 mb-5">
-        {{ if site.Menus.support }}
-        <h3 class="mb-4">Support</h3>
+        {{ if site.Menus.footer_right }}
+        <div class="h3 mb-4">{{ site.Params.footer_menu_right }}</div>
         <ul class="list-unstyled footer-list">
-          {{ range site.Menus.support }}
+          {{ range site.Menus.footer_right }}
           <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
