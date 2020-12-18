@@ -1,150 +1,100 @@
-######################## default configuration ####################
-baseURL = "http://examplesite.org/"
-title = "Bigspring Hugo"
-theme = "bigspring"
-languageName = "En"
+baseURL = "http://sadiaTestAB.netlify.com"
+disqusShortname = ""
+googleAnalytics = ""
 languageCode = "en-us"
-# post pagination
+languageName = "En"
 paginate = "3"
-# post excerpt
 summaryLength = "15"
-# disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
-# google analytics
-googleAnalytics = "" # example : UA-123-45
-# unsafe html
+theme = "bigspring"
+title = "Bigspring Hugo"
 [markup.goldmark.renderer]
 unsafe = true
-
-############################# Plugins ##############################
-
-# CSS Plugins
+[[menu.footer_left]]
+URL = "#"
+name = "About Us"
+[[menu.footer_left]]
+URL = "#"
+name = "Quick Start"
+[[menu.footer_left]]
+URL = "pricing"
+name = "Pricing"
+[[menu.footer_middle]]
+URL = "pricing"
+name = "Pricing"
+[[menu.footer_middle]]
+URL = "#"
+name = "Platform"
+[[menu.footer_middle]]
+URL = "#"
+name = "Features"
+[[menu.footer_right]]
+URL = "privacy-policy"
+name = "Privacy Policy"
+[[menu.footer_right]]
+URL = "terms-conditions"
+name = "Terms & Conditions"
+[[menu.footer_right]]
+URL = "faq"
+name = "FAQ"
+[[menu.main]]
+URL = "blog"
+name = "Blog"
+weight = 1
+[[menu.main]]
+URL = "pricing"
+name = "Pricing"
+weight = 2
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 3
+[[menu.main]]
+URL = "faq"
+name = "FAQ"
+weight = 4
+[params]
+author = "Themefisher"
+contact_form_action = "#"
+copyright = "Design By [Themefisher](https://themefisher.com/) Develop By [Gethugothemes](https://gethugothemes.com/)"
+description = "This is meta description"
+footer_content = "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
+footer_menu_left = "Company"
+footer_menu_middle = "Product"
+footer_menu_right = "Support"
+logo = "images/logo.png"
+logo_width = "200px"
+[params.navigation_button]
+enable = true
+label = "Get Started"
+link = "contact"
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/themify-icons/themify-icons.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.css"
-
-# JS Plugins
 [[params.plugins.js]]
 link = "plugins/jQuery/jquery.min.js"
 [[params.plugins.js]]
 link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
 link = "plugins/slick/slick.min.js"
-
-
-############################## navigation ###############################
-
-# main menu
-[[menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 1
-
-[[menu.main]]
-name = "Pricing"
-URL = "pricing"
-weight = 2
-
-[[menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 3
-
-[[menu.main]]
-name = "FAQ"
-URL = "faq"
-weight = 4
-
-# footer menu left
-[[menu.footer_left]]
-name = "About Us"
-URL = "#"
-
-[[menu.footer_left]]
-name = "Quick Start"
-URL = "#"
-
-[[menu.footer_left]]
-name = "Pricing"
-URL = "pricing"
-
-
-# footer menu middle
-[[menu.footer_middle]]
-name = "Pricing"
-URL = "pricing"
-
-[[menu.footer_middle]]
-name = "Platform"
-URL = "#"
-
-[[menu.footer_middle]]
-name = "Features"
-URL = "#"
-
-# footer menu right
-[[menu.footer_right]]
-name = "Privacy Policy"
-URL = "privacy-policy"
-
-[[menu.footer_right]]
-name = "Terms & Conditions"
-URL = "terms-conditions"
-
-[[menu.footer_right]]
-name = "FAQ"
-URL = "faq"
-
-#################### default parameters ################################
-[params]
-logo = "images/logo.png"
-logo_width = "200px"
-# Meta data
-description = "This is meta description"
-author = "Themefisher"
-# contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
-
-########### footer content ##########
-footer_menu_left = "Company"
-footer_menu_middle = "Product"
-footer_menu_right = "Support"
-footer_content = "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
-# copyright
-copyright = "Design By [Themefisher](https://themefisher.com/) Develop By [Gethugothemes](https://gethugothemes.com/)"
-
-# Preloader
 [params.preloader]
 enable = false
-preloader = "" # use jpg, png, svg or gif format.
-
-# Navigation buttons
-[params.navigation_button]
-enable = true
-label = "Get Started"
-link = "contact"
-
-  
-############################# social site ########################
+preloader = ""
 [[params.social]]
+icon = "ti-facebook"
+link = "#"
 title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
-
 [[params.social]]
+icon = "ti-twitter-alt"
+link = "#"
 title = "twitter"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
-link = "#"
-
 [[params.social]]
+icon = "ti-skype"
+link = "#"
 title = "skype"
-icon = "ti-skype" # themify icon : https://themify.me/themify-icons
-link = "#"
-
 [[params.social]]
-title = "linkedin"
-icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
+icon = "ti-linkedin"
 link = "#"
+title = "linkedin"
