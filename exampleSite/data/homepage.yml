@@ -1,14 +1,12 @@
 ---
 banner:
-  title: Let us solve your critical website <br> development challenges
+  title: The Honeybee Podcast
   image: images/banner-art.svg
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim
-    maxime corporis cumque <br> totam aliquid nam sint inventore optio modi neque
-    laborum officiis necessitatibus
+  content: Debugging the Personal Finance Industry.
   button:
     enable: true
-    label: Contact With Us
-    link: contact
+    label: Listen to the Podcast
+    link: https://anchor.fm/honeybee-podcast
 feature:
   enable: true
   title: Something You Need To Know
