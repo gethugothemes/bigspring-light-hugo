@@ -89,7 +89,7 @@ screenshot:
 call_to_action:
   enable: true
   title: Become a Sponsor
-  image: ''
+  image: "/images/honeybee-podcast.png"
   content: Interested in becoming a sponsor? Check out our sponsorships page for more
     information.
   button:
