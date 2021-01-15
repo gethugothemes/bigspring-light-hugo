@@ -1,7 +1,7 @@
 ---
 banner:
   title: The Honeybee Podcast
-  image: images/banner-art.svg
+  image: "/images/honeybee-podcast.png"
   content: Debugging the Personal Finance Industry.
   button:
     enable: true
@@ -89,7 +89,7 @@ screenshot:
 call_to_action:
   enable: true
   title: Become a Sponsor
-  image: images/cta.svg
+  image: ''
   content: Interested in becoming a sponsor? Check out our sponsorships page for more
     information.
   button:
