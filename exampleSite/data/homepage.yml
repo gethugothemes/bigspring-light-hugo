@@ -1,7 +1,7 @@
 ---
 banner:
   title: The Honeybee Podcast
-  image: "/images/honeybee-podcast.png"
+  image: ''
   content: Debugging the Personal Finance Industry.
   button:
     enable: true
