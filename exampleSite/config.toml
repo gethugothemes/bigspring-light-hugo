@@ -1,4 +1,4 @@
-baseURL = "https://honeybeepodcast.netlify.app"
+baseURL = "https://honeybeepodcast.com"
 disqusShortname = ""
 googleAnalytics = ""
 languageCode = "en-us"
@@ -53,15 +53,15 @@ URL = "faq"
 name = "FAQ"
 weight = 4
 [params]
-author = "Themefisher"
+author = "Honeybee Podcast"
 contact_form_action = "#"
-copyright = "Design By [Themefisher](https://themefisher.com/) Develop By [Gethugothemes](https://gethugothemes.com/)"
-description = "This is meta description"
-footer_content = "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
+copyright = "Design By [Honeybee Podcast](https://honeybeepodcast.com) Develop By [Honeybee Podcast](https://honeybeepodcast.com)"
+description = "The Honeybee Podcast: Debugging Persona Finance"
+footer_content = "The Honeybee Podcast debugs personal finance through interviews with real living hoomans in Snigapore."
 footer_menu_left = "Company"
 footer_menu_middle = "Product"
 footer_menu_right = "Support"
-logo = "images/logo.png"
+logo = "images/honeybee-podcast.png"
 logo_width = "200px"
 [params.navigation_button]
 enable = true
@@ -83,18 +83,11 @@ link = "plugins/slick/slick.min.js"
 enable = false
 preloader = ""
 [[params.social]]
-icon = "ti-facebook"
-link = "#"
-title = "facebook"
+icon = "ti-instagram"
+link = "wwww.instagram.com/honeybeepodcast"
+title = "instagram"
 [[params.social]]
 icon = "ti-twitter-alt"
-link = "#"
+link = "https://twitter.com/honeybeepodcast"
 title = "twitter"
-[[params.social]]
-icon = "ti-skype"
-link = "#"
-title = "skype"
-[[params.social]]
-icon = "ti-linkedin"
-link = "#"
-title = "linkedin"
+

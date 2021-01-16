@@ -1,12 +1,11 @@
-name = "Bigspring"
+name = "The Honeybee Podcast"
 license = "MIT"
 licenselink = "https://github.com/themefisher/bigspring-hugo-startup-theme/blob/master/LICENSE"
-description = "Bigspring is a web development company Hugo theme. It is very stylish, responsive and ready to use theme. You can use this theme to create your contemporary web design studio, creative agency, advertising firm website. This theme has a very creative and well decorated landing page, Blog page, Contact page, Pricing page and many more."
-homepage = "https://gethugothemes.com/products/bigspring/"
-tags = ['landing-page', 'fast', 'light', 'white', 'modern', 'themefisher', 'hugo-theme', 'hugo-templates', 'bootstrap', 'blog', 'responsive', 'clean', 'simple', 'creative', 'contact-form', 'custom-themes', 'mobile', 'minimalistic', 'pages', 'google analytics', 'customizable', 'flexbox', 'presentation', 'product', 'theme', 'typography', 'gethugothemes']
+description = "The Honeybee Podcast"
+tags = ['personal finance', 'singapore', 'financial planning', 'finances', 'money mind', 'cna money', 'the woke salaryman', 'woke salary', 'the simple sum', 'insurance', 'cheapest insurance singapore', 'seedly', 'money sense', 'singapore cpf', 'money talks', 'sgbudgetbabe', 'finance podcast', 'top finance podcast', 'top podcast singapore', ''singapore podcast'', 'top podcast', 'money podcast in singapore', 'singaporeans money', 'financials', 'planning financials', 'money talks', 'buy insurance singapore']
 features = ['bootstrap','responsive']
 min_version = "0.64.0"
 
 [author]
-name = "Themefisher"
-homepage = "https://themefisher.com/"
+name = "Honeybee Podcast"
+homepage = "https://honeybeepodcast.com/"
