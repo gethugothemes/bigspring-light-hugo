@@ -8,14 +8,14 @@
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
-  {{ "<!-- plugins -->" | safeHTML }}
+  {{ "<!-- Plugins + Stylesheets -->" | safeHTML }}
+  {{ $allcss := slice }}
   {{ range site.Params.plugins.css }}
-  <link rel="stylesheet" href="{{ .link | absURL }}">
+      {{ $allcss = $allcss | append (resources.Get .link) }}
   {{ end }}
-
-  {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  {{ $style := resources.Get "scss/style.scss" | toCSS | minify }}
-  <link href="{{ $style.Permalink }}" rel="stylesheet" media="screen"/>
+  {{ $allcss := $allcss | append (resources.Get "scss/style.scss" | toCSS | minify) }}
+  {{ $allcss := $allcss | resources.Concat "/css/vendor.css" | minify | fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $allcss.RelPermalink }}" integrity="{{ $allcss.Data.Integrity }}" rel="stylesheet" media="screen">
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">

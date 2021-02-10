@@ -50,11 +50,11 @@
   </div>
 </footer>
 
-{{ "<!-- JS Plugins -->" | safeHTML }}
+{{ "<!-- JS Plugins + Main Script -->" | safeHTML }}
+{{ $allscript := slice }}
 {{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
+    {{ $allscript = $allscript | append (resources.Get .link) }}
 {{ end }}
-
-{{ "<!-- Main Script -->" | safeHTML }}
-{{ $script := resources.Get "js/script.js" | minify}}
-<script src="{{ $script.Permalink }}"></script>
+{{ $allscript := $allscript | append (resources.Get "js/script.js" | minify) }}
+{{ $allscript := $allscript | resources.Concat "/js/vendor.js" | minify | fingerprint "sha512" }}
+<script src="{{ $allscript.RelPermalink }}" integrity="{{ $allscript.Data.Integrity }}"></script>
