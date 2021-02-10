@@ -53,7 +53,11 @@
 {{ "<!-- JS Plugins + Main Script -->" | safeHTML }}
 {{ $allscript := slice }}
 {{ range site.Params.plugins.js}}
-    {{ $allscript = $allscript | append (resources.Get .link) }}
+{{ if findRE "^http" .link }}
+<script src="{{ .link | absURL }}"></script>
+{{ else }}
+  {{ $allscript = $allscript | append (resources.Get .link) }}
+{{ end }}
 {{ end }}
 {{ $allscript := $allscript | append (resources.Get "js/script.js" | minify) }}
 {{ $allscript := $allscript | resources.Concat "/js/vendor.js" | minify | fingerprint "sha512" }}

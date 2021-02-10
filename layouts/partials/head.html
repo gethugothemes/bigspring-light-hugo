@@ -4,14 +4,20 @@
 
   {{ "<!-- mobile responsive meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
-  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  <meta name="description"
+    content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  {{ with site.Params.author }}
+  <meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
   {{ "<!-- Plugins + Stylesheets -->" | safeHTML }}
   {{ $allcss := slice }}
   {{ range site.Params.plugins.css }}
-      {{ $allcss = $allcss | append (resources.Get .link) }}
+  {{ if findRE "^http" .link }}
+  <link rel="stylesheet" href="{{ .link | absURL }}">
+  {{ else }}
+  {{ $allcss = $allcss | append (resources.Get .link) }}
+  {{ end }}
   {{ end }}
   {{ $allcss := $allcss | append (resources.Get "scss/style.scss" | toCSS | minify) }}
   {{ $allcss := $allcss | resources.Concat "/css/vendor.css" | minify | fingerprint "sha512" }}
@@ -21,11 +27,10 @@
   <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
   <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
 
-  
   {{ template "_internal/opengraph.html" . }}
-  {{ with .Params.Image }}
+  {{ with .Params.image }}
   <meta property="og:image" content="{{ . | absURL }}" />
   {{ end }}
   {{ template "_internal/google_analytics_async.html" . }}
-  
+
 </head>
