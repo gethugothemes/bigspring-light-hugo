@@ -155,11 +155,13 @@ link = "#"
 #   [languages.en]
 #     languageName = "English"
 #     title = "Bigspring Hugo"
+#     contentDir = "content" # content/english
 #     weight = 1
 #     [languages.en.params]
 #   [languages.de]
 #     languageName = "Deutsch"
 #     title = "Bigspring Hugo"
+#     contentDir = "contentde" # content/german
 #     weight = 2
 #     [languages.de.params]
 #       footer_menu_left = "Firma"
