@@ -6,7 +6,7 @@
         <div class="h3 mb-4">{{ site.Params.footer_menu_left }}</div>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.footer_left }}
-          <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+          <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -16,7 +16,7 @@
         <div class="h3 mb-4">{{ site.Params.footer_menu_middle }}</div>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.footer_middle }}
-          <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+          <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -26,12 +26,31 @@
         <div class="h3 mb-4">{{ site.Params.footer_menu_right }}</div>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.footer_right }}
-          <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+          <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
       </div>
       <div class="col-md-3 col-sm-6 mb-5">
+        {{ if .IsTranslated }}
+            <div class="h3 mb-4">{{ i18n "translations" }}</div>
+            <ul class="list-unstyled footer-list">
+                {{ range .Translations }}
+                    <li><a href="{{ .RelPermalink }}">{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }} ({{ .Lang }})</a></li>
+                {{ end}}
+                {{ range $.Site.Home.AllTranslations }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+                {{ end }}
+            </ul>
+        {{ else if gt (len $.Site.Home.AllTranslations) 0 }}
+            <h5>{{ i18n "translations" }}</h5>
+            <ul class="list-unstyled footer-list">
+                {{ range $.Site.Home.AllTranslations }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+                {{ end }}
+            </ul>
+        {{ end }}
+
         <a class="d-block mb-3" href="{{ site.BaseURL }}"><img width="{{site.Params.logo_width}}"  class="img-fluid" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}"></a>
         <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
         

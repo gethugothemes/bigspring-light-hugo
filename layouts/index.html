@@ -1,7 +1,9 @@
 {{ define "main" }}
 
+{{ $content := (index .Site.Data .Site.Language.Lang) }}
+
 <!-- banner -->
-{{ with site.Data.homepage.banner }}
+{{ with $content.homepage.banner }}
 <section class="banner">
   <div class="container">
     <div class="row">
@@ -23,8 +25,8 @@
 <!-- /banner -->
 
 <!-- feature -->
-{{ if site.Data.homepage.feature.enable }}
-{{ with site.Data.homepage.feature }}
+{{ if $content.homepage.feature.enable }}
+{{ with $content.homepage.feature }}
 <section class="section bg-light">
   <div class="container">
     <div class="row justify-content-center">
@@ -48,8 +50,8 @@
 <!-- /feature -->
 
 <!-- service -->
-{{ if site.Data.homepage.service.enable }}
-{{ with site.Data.homepage.service }}
+{{ if $content.homepage.service.enable }}
+{{ with $content.homepage.service }}
 {{ range $i,$p := .service_item }}
 {{if modBool $i 2}}
 <section class="section">
@@ -104,8 +106,8 @@
 <!-- /service -->
 
 <!-- screenshot -->
-{{ if site.Data.homepage.screenshot.enable }}
-{{ with site.Data.homepage.screenshot }}
+{{ if $content.homepage.screenshot.enable }}
+{{ with $content.homepage.screenshot }}
 <section class="section pb-0">
   <div class="container">
     <div class="row">
@@ -121,8 +123,8 @@
 <!-- /screenshot -->
 
 <!-- call to action -->
-{{ if site.Data.homepage.call_to_action.enable }}
-{{ with site.Data.homepage.call_to_action }}
+{{ if $content.homepage.call_to_action.enable }}
+{{ with $content.homepage.call_to_action }}
 <section class="section">
   <div class="container section shadow rounded-lg px-4">
     <div class="row align-items-center justify-content-center text-center text-md-left">

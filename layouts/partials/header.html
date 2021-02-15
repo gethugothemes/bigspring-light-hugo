@@ -22,13 +22,13 @@
             </a>
             <div class="dropdown-menu">
               {{ range .Children }}
-              <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+              <a class="dropdown-item" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
               {{ end }}
             </div>
           </li>
           {{ else }}
           <li class="nav-item">
-            <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+            <a class="nav-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
           </li>
           {{ end }}
           {{ end }}
@@ -36,7 +36,7 @@
 
         {{ if site.Params.navigation_button.enable }}
         {{ with site.Params.navigation_button }}
-        <a href="{{ .link | absURL }}" class="btn btn-sm btn-primary ml-3">{{ .label }}</a>
+        <a href="{{ .link | absLangURL }}" class="btn btn-sm btn-primary ml-3">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>

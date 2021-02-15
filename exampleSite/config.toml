@@ -148,3 +148,29 @@ link = "#"
 title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
 link = "#"
+
+
+############################# multi lang ########################
+# [languages]
+#   [languages.en]
+#     languageName = "English"
+#     title = "Bigspring Hugo"
+#     contentDir = "content" # content/english
+#     weight = 1
+#     [languages.en.params]
+#   [languages.de]
+#     languageName = "Deutsch"
+#     title = "Bigspring Hugo"
+#     contentDir = "contentde" # content/german
+#     weight = 2
+#     [languages.de.params]
+#       footer_menu_left = "Firma"
+#       footer_menu_middle = "Produkte"
+#       footer_menu_right = "Support"
+#       footer_content = "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
+#       # copyright
+#       copyright = "Design von [Themefisher](https://themefisher.com/) Entwickelt von [Gethugothemes](https://gethugothemes.com/)"      
+#     # [[menu.main]]
+#     #   name = "Example"
+#     #   URL = "blog"
+#     #   weight = 1
