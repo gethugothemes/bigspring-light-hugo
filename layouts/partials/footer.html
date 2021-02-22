@@ -32,7 +32,7 @@
         {{ end }}
       </div>
       <div class="col-md-3 col-sm-6 mb-5">
-        <a class="d-block mb-3" href="{{ site.BaseURL }}"><img width="{{site.Params.logo_width}}"  class="img-fluid" src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}"></a>
+        <a class="d-block mb-3" href="{{ site.BaseURL }}"><img width="{{site.Params.logo_width}}"  class="img-fluid" src="{{ site.Params.logo | relURL }}" alt="{{ site.Title }}"></a>
         <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
         {{ with site.Params.social }}
         <ul class="list-inline social-icons">
@@ -53,7 +53,7 @@
 {{ $allscript := slice }}
 {{ range site.Params.plugins.js}}
 {{ if findRE "^http" .link }}
-<script src="{{ .link | absURL }}"></script>
+<script src="{{ .link | relURL }}"></script>
 {{ else }}
   {{ $allscript = $allscript | append (resources.Get .link) }}
 {{ end }}
