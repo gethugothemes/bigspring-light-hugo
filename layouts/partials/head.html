@@ -14,7 +14,7 @@
   {{ $allcss := slice }}
   {{ range site.Params.plugins.css }}
   {{ if findRE "^http" .link }}
-  <link rel="stylesheet" href="{{ .link | absURL }}">
+  <link rel="stylesheet" href="{{ .link | relURL }}">
   {{ else }}
   {{ $allcss = $allcss | append (resources.Get .link) }}
   {{ end }}
@@ -24,12 +24,12 @@
   <link rel="stylesheet" href="{{ $allcss.RelPermalink }}" integrity="{{ $allcss.Data.Integrity }}" rel="stylesheet" media="screen">
 
   {{ "<!--Favicon-->" | safeHTML }}
-  <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-  <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }}" type="image/x-icon">
+  <link rel="icon" href="{{ `images/favicon.png` | relURL }}" type="image/x-icon">
 
   {{ template "_internal/opengraph.html" . }}
   {{ with .Params.image }}
-  <meta property="og:image" content="{{ . | absURL }}" />
+  <meta property="og:image" content="{{ . | relURL }}" />
   {{ end }}
   {{ template "_internal/google_analytics_async.html" . }}
 
