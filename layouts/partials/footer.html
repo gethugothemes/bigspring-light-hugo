@@ -32,7 +32,7 @@
         {{ end }}
       </div>
       <div class="col-md-3 col-sm-6 mb-5">
-        <a class="d-block mb-3" href="{{ site.BaseURL }}"><img width="{{site.Params.logo_width}}"  class="img-fluid" src="{{ site.Params.logo | relURL }}" alt="{{ site.Title }}"></a>
+        <a class="d-block mb-3" href="{{ site.Params.org_url | default site.BaseURL }}"><img width="{{site.Params.org_logo_width | default site.Params.logo_width}}"  class="img-fluid" src="{{ site.Params.org_logo | default site.Params.logo | relURL }}" alt="{{ site.Params.org_name | default site.Title }}"></a>
         <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
         {{ with site.Params.social }}
         <ul class="list-inline social-icons">
