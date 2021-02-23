@@ -144,7 +144,7 @@ link = "#"
 [languages.en]
 languageName = "En"
 title = "Bigspring Hugo"
-contentDir = "content" # content/english
+contentDir = "content/english" # content/english
 weight = 1
 ########### footer content ##########
 footer_menu_left = "Company"
