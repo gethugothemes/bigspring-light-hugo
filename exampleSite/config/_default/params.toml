@@ -1,0 +1,59 @@
+#################### default parameters ################################
+logo = "images/logo.png"
+logo_width = "200px"
+# Meta data
+description = "This is meta description"
+author = "Themefisher"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+
+# Preloader
+[preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation buttons
+[navigation_button]
+enable = true
+label = "Get Started"
+link = "contact"
+
+  
+############################# social site ########################
+[[social]]
+title = "facebook"
+icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[social]]
+title = "twitter"
+icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[social]]
+title = "skype"
+icon = "ti-skype" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[social]]
+title = "linkedin"
+icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+
+############################# Plugins ##############################
+# CSS Plugins
+[[plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+[[plugins.css]]
+link = "plugins/slick/slick.css"
+
+# JS Plugins
+[[plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[plugins.js]]
+link = "plugins/slick/slick.min.js"

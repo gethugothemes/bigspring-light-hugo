@@ -1,3 +1,4 @@
+---
 ####################### Banner #########################
 banner:
   title : "Let us solve your critical website <br> development challenges"
@@ -109,3 +110,4 @@ call_to_action:
     enable : true
     label : "Contact Us"
     link : "contact"
+---
