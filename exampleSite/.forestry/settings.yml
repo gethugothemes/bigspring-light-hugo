@@ -7,8 +7,12 @@ sections:
 - type: heading
   label: Homepage
 - type: document
-  path: exampleSite/content/_index.md
+  path: exampleSite/content/english/_index.md
   label: Homepage (en)
+- type: document
+  path: exampleSite/content/deutsch/_index.md
+  label: Homepage (de)
+  match: "**/*"
 - type: heading
   label: Blog Post
 - type: document
