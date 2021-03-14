@@ -14,35 +14,49 @@ sections:
   label: Homepage (de)
   match: "**/*"
 - type: heading
-  label: Blog Post
+  label: Blog
 - type: document
-  path: exampleSite/content/blog/_index.md
-  label: Blog Page
+  path: exampleSite/content/english/blog/_index.md
+  label: Blog Page (en)
+- type: document
+  path: exampleSite/content/deutsch/blog/_index.md
+  label: Blog Page (de)
+  match: "**/*"
 - type: directory
-  path: exampleSite/content/blog
-  label: Blog Post
+  path: exampleSite/content/english/blog
+  label: Blog Post (en)
   create: documents
   match: "**/*"
   exclude: _index.md
   templates:
   - post
+- type: directory
+  path: exampleSite/content/deutsch/blog
+  label: Blog Post (de)
+  create: all
+  match: "**/*"
 - type: heading
   label: Others Page
 - type: document
-  path: exampleSite/content/faq/_index.md
-  label: FAQ
+  path: exampleSite/content/english/contact/_index.md
+  label: Contact (en)
 - type: document
-  path: exampleSite/content/contact/_index.md
-  label: Contact
+  path: exampleSite/content/deutsch/contact/_index.md
+  label: Contact (de)
+  match: "**/*"
 - type: document
-  path: exampleSite/content/pricing/_index.md
-  label: Pricing
+  path: exampleSite/content/english/pricing/_index.md
+  label: Pricing (en)
 - type: document
-  path: exampleSite/content/privacy-policy/_index.md
-  label: Privacy Policy
+  path: exampleSite/content/deutsch/pricing/_index.md
+  label: Pricing (de)
+  match: "**/*"
 - type: document
-  path: exampleSite/content/terms-conditions/_index.md
-  label: Terms & Conditions
+  path: exampleSite/content/english/faq/_index.md
+  label: FAQ (en)
+- type: document
+  path: exampleSite/content/deutsch/faq/_index.md
+  label: FAQ (de)
 - type: heading
   label: All Pages
 - type: directory
