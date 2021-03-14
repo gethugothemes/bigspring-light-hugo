@@ -12,7 +12,6 @@ sections:
 - type: document
   path: exampleSite/content/deutsch/_index.md
   label: Homepage (de)
-  match: "**/*"
 - type: heading
   label: Blog
 - type: document
@@ -21,7 +20,6 @@ sections:
 - type: document
   path: exampleSite/content/deutsch/blog/_index.md
   label: Blog Page (de)
-  match: "**/*"
 - type: directory
   path: exampleSite/content/english/blog
   label: Blog Post (en)
@@ -33,8 +31,11 @@ sections:
 - type: directory
   path: exampleSite/content/deutsch/blog
   label: Blog Post (de)
-  create: all
+  create: documents
   match: "**/*"
+  exclude: _index.md
+  templates:
+  - post
 - type: heading
   label: Others Page
 - type: document
@@ -43,14 +44,12 @@ sections:
 - type: document
   path: exampleSite/content/deutsch/contact/_index.md
   label: Contact (de)
-  match: "**/*"
 - type: document
   path: exampleSite/content/english/pricing/_index.md
   label: Pricing (en)
 - type: document
   path: exampleSite/content/deutsch/pricing/_index.md
   label: Pricing (de)
-  match: "**/*"
 - type: document
   path: exampleSite/content/english/faq/_index.md
   label: FAQ (en)
