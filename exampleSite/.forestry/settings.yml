@@ -63,6 +63,7 @@ sections:
   label: All Pages
   create: all
   match: "**/*"
+  exclude: _index.md
   templates:
   - new-page
 - type: heading
