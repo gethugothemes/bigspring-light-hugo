@@ -1,15 +1,19 @@
 {{ define "main" }}
 
 {{ partial "page-header.html" . }}
+
 <section class="section">
   <div class="container pricing-container">
     <div class="row justify-content-center align-items-center">
       <div class="col-lg-4 mb-5 mb-lg-0 px-3 pl-3 px-lg-0">
-        {{ with .Params.basic }}
+        {{ with .Params.individual }}
         <div class="card shadow">
-          <div class="card-body text-center py-5">
+          <div class="card-body text-center py-4">
             <h3 class="mb-4">{{ .name | markdownify }}</h3>
             <span class="price">{{ .price }}</span><span>/{{ .price_per }}</span>
+            {{ if .per_device }}
+            <br><p class="mb-1"><small>* price per licence</small></p>
+            {{ end }}
             <p class="lead">{{ .info | markdownify }}</p>
             <ul class="list-unstyled mb-5">
               {{ range .services }}
@@ -26,11 +30,14 @@
         {{ end }}
       </div>
       <div class="col-lg-4 col-recommended">
-        {{ with .Params.professional }}
+        {{ with .Params.lot10 }}
         <div class="card border-0 shadow-lg">
           <div class="card-body text-center py-5">
             <h3 class="mb-4">{{ .name | markdownify }}</h3>
             <span class="price">{{ .price }}</span><span>/{{ .price_per }}</span>
+            {{ if .per_device }}
+            <br><p class="mb-1"><small>* price per licence</small></p>
+            {{ end }}
             <p class="lead">{{ .info | markdownify }}</p>
             <ul class="list-unstyled mb-5">
               {{ range .services }}
@@ -47,11 +54,14 @@
         {{ end }}
       </div>
       <div class="col-lg-4 mb-5 mb-lg-0 px-3 pr-3 px-lg-0">
-        {{ with .Params.business }}
+        {{ with .Params.lot50 }}
         <div class="card shadow">
-          <div class="card-body text-center py-5">
+          <div class="card-body text-center py-4">
             <h3 class="mb-4">{{ .name | markdownify }}</h3>
             <span class="price">{{ .price }}</span><span>/{{ .price_per }}</span>
+            {{ if .per_device }}
+            <br><p class="mb-1"><small>* price per licence</small></p>
+            {{ end }}
             <p class="lead">{{ .info | markdownify }}</p>
             <ul class="list-unstyled mb-5">
               {{ range .services }}

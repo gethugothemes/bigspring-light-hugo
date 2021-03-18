@@ -11,6 +11,8 @@
         {{ if .button.enable }}
         {{ with .button }}
         <div><a href="{{ .link | safeURL }}" class="btn btn-primary">{{ .label }}</a></div>
+        <br>
+        <div class="text-center">( No Credit Card Required )</div>
         {{ end }}
         {{ end }}
 
