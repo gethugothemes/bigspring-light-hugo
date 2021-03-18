@@ -22,6 +22,7 @@
         </div>
       </div>
       {{ end }}
+      
       {{ $paginator := .Paginate .Data.Pages }}
       {{ range $paginator.Pages }}
       <div class="col-lg-4 col-sm-6 mb-5">
@@ -37,6 +38,7 @@
       {{ end }}
       <div class="col-12">
         {{ template "_internal/pagination.html" . }}
+        {{ partial "newsletter.html" . }}
       </div>
     </div>
   </div>

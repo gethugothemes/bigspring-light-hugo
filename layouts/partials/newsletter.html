@@ -1,0 +1,29 @@
+<section class="section">
+  <div class="container section shadow rounded-lg px-4">
+    <div class="row align-items-center justify-content-center text-center text-md-left">
+      <div class="col-lg-6 col-md-5">
+    
+          <h2 class="section-title">{{ if .Params.title_newsletter }}{{ .Params.title_newsletter | markdownify }}{{ else }}Get the Latest News{{end}}</h2>
+        {{if .Params.content }}<p class="mb-4">{{ .Params.content | markdownify }}{{ else }}If you want to be notified when new posts or updates are released, subscribe below. No spam and your email is never shared.</p>{{ end }}
+          
+          <form
+                  action="https://buttondown.email/api/emails/embed-subscribe/dansult"
+                  method="post"
+                  target="popupwindow"
+                  onsubmit="window.open('https://buttondown.email/dansult', 'popupwindow')"
+                  class="embeddable-buttondown-form form-inline justify-content-center"
+          >
+              <div class="form-group">
+                  <label class="sr-only" for="bd-email">Enter your email</label>
+                  <input class="form-control" type="email" name="email" id="bd-email"
+                         placeholder="Enter your email"/>
+                  <input type="hidden" value="1" name="embed"/>
+                  <button class="btn btn-primary ml-2" type="submit">Subscribe
+                  </button>
+              </div>
+          </form>
+          
+      </div>
+    </div>
+  </div>
+</section>

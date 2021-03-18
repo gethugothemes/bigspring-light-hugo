@@ -11,6 +11,10 @@
         <h2 class="mb-4">{{ .Title }}</h2>
         <div class="content">{{.Content}}</div>
         
+          <section id="blog-index-header" class="text-center">
+
+          </section>
+       
         <!-- comments -->
         {{ if site.DisqusShortname }}
         <div class="mt-5">
@@ -22,6 +26,7 @@
   </div>
 </section>
 
+{{ partial "newsletter.html" . }}
 <!-- regular page -->
 {{ else }}
 {{ partial "page-header.html" . }}
