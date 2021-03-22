@@ -75,11 +75,19 @@ sections:
   path: exampleSite/config/_default/params.toml
   label: Parameters
 - type: document
+  path: config.toml
+  label: Variables & Plugins
+  match: "**/*"
+- type: document
   path: exampleSite/config/_default/languages.toml
   label: Languages
 - type: document
-  path: exampleSite/config/_default/menu.toml
-  label: Menu
+  path: exampleSite/config/_default/menus.en.toml
+  label: Menu (en)
+- type: document
+  path: exampleSite/config/_default/menus.de.toml
+  label: Menu (de)
+  match: "**/*"
 upload_dir: exampleSite/static/images
 public_path: "/images"
 front_matter_path: ''
