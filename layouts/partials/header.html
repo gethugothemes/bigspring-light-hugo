@@ -3,7 +3,7 @@
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <a class="navbar-brand" href="{{ site.BaseURL }}">
+      <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}">
         {{ with site.Params.logo}}
         <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
         {{ else }}{{site.Title}}{{end}}
