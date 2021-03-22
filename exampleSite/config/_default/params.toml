@@ -39,21 +39,3 @@ link = "#"
 title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
 link = "#"
-
-
-############################# Plugins ##############################
-# CSS Plugins
-[[plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
-[[plugins.css]]
-link = "plugins/themify-icons/themify-icons.css"
-[[plugins.css]]
-link = "plugins/slick/slick.css"
-
-# JS Plugins
-[[plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
-[[plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-[[plugins.js]]
-link = "plugins/slick/slick.min.js"
