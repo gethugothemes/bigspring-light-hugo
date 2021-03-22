@@ -74,15 +74,12 @@ sections:
 - type: document
   path: exampleSite/config/_default/params.toml
   label: Parameters
-  match: "**/*"
 - type: document
   path: exampleSite/config/_default/languages.toml
   label: Languages
-  match: "**/*"
 - type: document
   path: exampleSite/config/_default/menu.toml
   label: Menu
-  match: "**/*"
 upload_dir: exampleSite/static/images
 public_path: "/images"
 front_matter_path: ''
