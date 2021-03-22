@@ -1,15 +1,18 @@
-/*!------------------------------------------------------------------
-[MAIN STYLESHEET]
+// Color Variables
+{{ with site.Params.variables }}
+$primary-color: {{.primary_color}};
+$text-color: {{.text_color}};
+$text-color-dark: {{.text_color_dark}};
+$body-color: {{.body_color}};
+$border-color: {{.border_color}};
+$black: {{.black}};
+$white: {{.white}};
+$light: {{.light}};
 
-PROJECT:	Project Name
-VERSION:	Versoin Number
--------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------
-[TABLE OF CONTENTS]
--------------------------------------------------------------------*/
-
-@import 'variables';
+// Font Variables
+$primary-font: '{{ replaceRE ":[ital,]*wght@[0-9,;]+" "" .primary_font }}', sans-serif;
+$icon-font: '{{.icon_font}}';
+{{ end }}
 
 @import 'mixins';
 

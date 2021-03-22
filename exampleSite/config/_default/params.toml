@@ -22,20 +22,20 @@ link = "contact"
 ############################# social site ########################
 [[social]]
 title = "facebook"
-icon = "ti-facebook" # themify icon : https://themify.me/themify-icons
+icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
 link = "#"
 
 [[social]]
 title = "twitter"
-icon = "ti-twitter-alt" # themify icon : https://themify.me/themify-icons
+icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
 link = "#"
 
 [[social]]
 title = "skype"
-icon = "ti-skype" # themify icon : https://themify.me/themify-icons
+icon = "fab fa-skype" # themify icon : https://themify.me/themify-icons
 link = "#"
 
 [[social]]
 title = "linkedin"
-icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
+icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
 link = "#"

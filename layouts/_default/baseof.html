@@ -1,12 +1,28 @@
+<!-- 
+
+PROJECT: Bigspring Hugo
+VERSION: 2.0.0
+AUTHOR: Gethugothemes
+AUTHOR WEBSITE: https://gethugothemes.com
+
+-->
+
 <!DOCTYPE html>
-<html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-{{- partial "head.html" . -}}
+<html lang="{{ site.LanguageCode | default `en-US` }}">
+
+<head>
+	{{ partial "head.html" . }}
+	{{ partialCached "style.html" . }}
+</head>
 
 <body>
-	{{- partial "preloader.html" . -}}
-	{{- partial "header.html" . -}}
-	{{- block "main" . }}{{- end }}
-	{{- partial "footer.html" . -}}
+	{{ partialCached "preloader.html" . }}
+	{{ partial "header.html" . }}
+	<main>
+		{{ block "main" . }}{{ end }}
+	</main>
+	{{ partial "footer.html" . }}
+	{{ partialCached "script.html" . }}
 </body>
 
 </html>

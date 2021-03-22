@@ -1,36 +1,18 @@
-<head>
-  <meta charset="utf-8">
-  <title>{{with .Title}}{{.}}{{else}}{{site.Title}}{{end}}</title>
+<meta charset="utf-8">
+<title>{{with .Title}}{{.}}{{else}}{{site.Title}}{{end}}</title>
 
-  {{ "<!-- mobile responsive meta -->" | safeHTML }}
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-  <meta name="description"
-    content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
-  {{ with site.Params.author }}
-  <meta name="author" content="{{ . }}">{{ end }}
-  {{ hugo.Generator }}
+<meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
 
-  {{ "<!-- Plugins + Stylesheets -->" | safeHTML }}
-  {{ $allcss := slice }}
-  {{ range site.Params.plugins.css }}
-  {{ if findRE "^http" .link }}
-  <link rel="stylesheet" href="{{ .link | relURL }}">
-  {{ else }}
-  {{ $allcss = $allcss | append (resources.Get .link) }}
-  {{ end }}
-  {{ end }}
-  {{ $allcss := $allcss | append (resources.Get "scss/style.scss" | toCSS | minify) }}
-  {{ $allcss := $allcss | resources.Concat "/css/vendor.css" | minify | fingerprint "sha512" }}
-  <link rel="stylesheet" href="{{ $allcss.RelPermalink }}" integrity="{{ $allcss.Data.Integrity }}" rel="stylesheet" media="screen">
+<!-- multilingual SEO optimizations -->
+{{ if .IsTranslated }}
+{{ range .Page.AllTranslations }}
+<link rel="alternate" title="{{.Title}}" hreflang="{{.Lang}}" href="{{.RelPermalink}}">
+{{ end }}
+{{ end }}
 
-  {{ "<!--Favicon-->" | safeHTML }}
-  <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }}" type="image/x-icon">
-  <link rel="icon" href="{{ `images/favicon.png` | relURL }}" type="image/x-icon">
-
-  {{ template "_internal/opengraph.html" . }}
-  {{ with .Params.image }}
-  <meta property="og:image" content="{{ . | relURL }}" />
-  {{ end }}
-  {{ template "_internal/google_analytics_async.html" . }}
-
-</head>
+{{ with .Params.image }}
+<meta property="og:image" content="{{ . | absURL }}" />
+{{ end }}
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/google_analytics_async.html" . }}
+{{ site.Params.custom_script | safeHTML }}
