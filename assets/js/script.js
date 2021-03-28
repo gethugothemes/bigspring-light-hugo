@@ -1,10 +1,11 @@
-(function ($) {
-  'use strict';
+$(document).on('turbolinks:load', function () {
+	'use strict';
+	
+	// prelaoder
+	$('.preloader').delay(100).fadeOut(10);
 
-  // Preloader js    
-  $(window).on('load', function () {
-    $('.preloader').fadeOut(100);
-  });
+	// re initialize bootstrap dropdown for turbolinks
+	$('.dropdown-toggle').dropdown()
 
 	//slider
 	$('.slider').not('.slick-initialized').slick({
