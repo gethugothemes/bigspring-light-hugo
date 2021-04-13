@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-{{- partial "head.html" . -}}
+<head>
+	{{ partial "head.html" . }}
+	{{ partialCached "style.html" . }}
+</head>
 
 <body>
 	{{- partial "preloader.html" . -}}
