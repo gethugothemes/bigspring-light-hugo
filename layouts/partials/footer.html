@@ -6,7 +6,7 @@
         <div class="h3 mb-4">{{ site.Params.footer_menu_left }}</div>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.footer_left }}
-          <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -16,7 +16,7 @@
         <div class="h3 mb-4">{{ site.Params.footer_menu_middle }}</div>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.footer_middle }}
-          <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -26,7 +26,7 @@
         <div class="h3 mb-4">{{ site.Params.footer_menu_right }}</div>
         <ul class="list-unstyled footer-list">
           {{ range site.Menus.footer_right }}
-          <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
           {{ end }}
         </ul>
         {{ end }}
@@ -41,7 +41,7 @@
         {{ with site.Params.social }}
         <ul class="list-inline social-icons">
           {{ range . }}
-          <li class="list-inline-item"><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+          <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
         {{ end }}

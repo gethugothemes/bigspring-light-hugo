@@ -10,11 +10,11 @@
         <p class="mb-4">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
-        <div><a href="{{ .link | safeURL }}" class="btn btn-primary">{{ .label }}</a></div>
+        <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
         {{ end }}
         {{ end }}
 
-        {{with .image}}<img src="{{ . | relURL }}" class="img-fluid mt-5" width="750px">{{end}}
+        {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="750px">{{end}}
       </div>
     </div>
   </div>
@@ -60,14 +60,14 @@
         <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relURL }}" class="btn-link">{{ .label }} <i class="ti-arrow-right"></i></a>
+        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i class="ti-arrow-right"></i></a>
         {{ end }}
         {{ end }}
       </div>
       <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        <div {{if gt (len .images) 1}}class="slider" {{end}}>
+        <div {{if gt (len .images) 1}} class="slider" {{end}}>
           {{ range .images }}
-          <img src="{{ . | relURL }}" class="img-fluid">
+          <img src="{{ . | relURL }}" alt="" class="img-fluid">
           {{ end }}
         </div>
       </div>
@@ -81,7 +81,7 @@
       <div class="col-md-6 mb-4 mb-md-0">
         <div {{if gt (len .images) 1}}class="slider" {{end}}>
           {{ range .images }}
-          <img src="{{ . | relURL }}" class="img-fluid">
+          <img src="{{ . | relURL }}" alt="" class="img-fluid">
           {{ end }}
         </div>
       </div>
@@ -90,7 +90,7 @@
         <p>{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relURL }}" class="btn-link">{{ .label }} <i class="ti-arrow-right"></i></a>
+        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i class="ti-arrow-right"></i></a>
         {{ end }}
         {{ end }}
       </div>
@@ -114,7 +114,7 @@
       </div>
     </div>
   </div>
-  {{ with .image }} <img src="{{ . | relURL }}" class="img-fluid w-100">{{ end }}
+  {{ with .image }} <img src="{{ . | relURL }}" alt="" class="img-fluid w-100">{{ end }}
 </section>
 {{ end }}
 {{ end }}
@@ -127,14 +127,14 @@
   <div class="container section shadow rounded-lg px-4">
     <div class="row align-items-center justify-content-center text-center text-md-left">
       <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
-        <img src="{{ .image | relURL }}" class="img-fluid">
+        <img src="{{ .image | relURL }}" alt="" class="img-fluid">
       </div>
       <div class="col-lg-5 col-md-6">
         <h2 class="section-title">{{ .title | markdownify }}</h2>
         {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relURL }}" class="btn btn-primary">{{ .label }}</a>
+        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>
