@@ -1,8 +1,10 @@
-$(document).on('turbolinks:load', function () {
+// Preloader js
+$(window).on('load', function () {
+	$('.preloader').fadeOut(100);
+});
+
+$(document).ready(function () {
 	'use strict';
-	
-	// prelaoder
-	$('.preloader').delay(100).fadeOut(10);
 
 	//slider
 	$('.slider').not('.slick-initialized').slick({
@@ -13,4 +15,4 @@ $(document).on('turbolinks:load', function () {
 		arrows: false
 	});
 
-})(jQuery);
+});
