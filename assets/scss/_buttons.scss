@@ -80,9 +80,11 @@
 .btn-link {
   color: $primary-color;
 
-  i {
+  i,
+  svg {
     font-size: 12px;
     margin-left: 5px;
+    margin-bottom: 1px;
     transition: .2s ease;
   }
 
@@ -93,7 +95,8 @@
     color: $primary-color;
     text-decoration: none;
 
-    i {
+    i,
+    svg {
       margin-left: 10px;
     }
   }
