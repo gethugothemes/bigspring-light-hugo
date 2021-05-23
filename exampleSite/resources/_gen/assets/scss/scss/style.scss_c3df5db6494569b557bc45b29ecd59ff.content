@@ -117,14 +117,20 @@ h6,
 
 .btn-link {
   color: #0AA8A7; }
-  .btn-link i {
+  .btn-link i,
+  .btn-link svg {
     font-size: 12px;
     margin-left: 5px;
+    margin-bottom: 1px;
     transition: .2s ease; }
   .btn-link:active, .btn-link:hover, .btn-link.focus, .btn-link.active {
     color: #0AA8A7;
     text-decoration: none; }
-    .btn-link:active i, .btn-link:hover i, .btn-link.focus i, .btn-link.active i {
+    .btn-link:active i,
+    .btn-link:active svg, .btn-link:hover i,
+    .btn-link:hover svg, .btn-link.focus i,
+    .btn-link.focus svg, .btn-link.active i,
+    .btn-link.active svg {
       margin-left: 10px; }
 
 body {
