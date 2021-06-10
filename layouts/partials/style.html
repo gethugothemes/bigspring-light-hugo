@@ -1,14 +1,3 @@
-{{ with site.Params.author }}
-<meta name="author" content="{{ . }}">{{ end }}
-{{ hugo.Generator }}
-
-<!--Favicon-->
-<link rel="shortcut icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
-<link rel="icon" href="{{ site.Params.favicon | absURL }}" type="image/x-icon">
-
-<!-- mobile responsive meta -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-
 <!-- DNS preconnect -->
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="preconnect" href="//ajax.googleapis.com">
@@ -41,11 +30,11 @@
 {{ $styles := $styles | resources.Concat "/css/style.css" | minify  | fingerprint "sha512"}}
 <style crossorigin="anonymous" media="all" type="text/css" integrity="{{ $styles.Data.Integrity }}">{{$styles.Content | safeCSS}}</style>
 
-<style>
+<!-- <style>
   .check-mark::before {
     font-family: "{{ site.Params.variables.icon_font }}";
     font-weight: 900;
     content: "\f058";
     display: none;
   }
-</style>
+</style> -->

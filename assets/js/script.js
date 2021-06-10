@@ -1,9 +1,9 @@
 // Preloader js
 $(window).on('load', function () {
-	$('.preloader').fadeOut(100);
+	$('.preloader').addClass('d-none');
 });
 
-$(document).ready(function () {
+(function($) {
 	'use strict';
 
 	//slider
@@ -15,4 +15,4 @@ $(document).ready(function () {
 		arrows: false
 	});
 
-});
+})(jQuery);

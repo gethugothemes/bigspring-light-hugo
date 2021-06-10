@@ -2,11 +2,11 @@
 <script src="https://cdn.jsdelivr.net/gh/theprojectsomething/webfontloader@feature/google-fonts-v2/webfontloader.js"></script>
 {{$pf:= site.Params.variables.primary_font}}
 {{$sf:= site.Params.variables.secondary_font}}
-<script>
+<script type="application/javascript">
   WebFont.load({
     google: {
       api: 'https://fonts.googleapis.com/css2',
-      families: ['{{$pf | default `Lato:wght@400`}}{{if not $sf}}&display=swap{{end}}'{{with $sf}},'{{.}}&display=swap'{{end}}],
+      families: ['{{$pf | default `Lato:wght@400`}}{{if not $sf}}&display=swap{{end}}'{{with $sf}},'{{. | default `Lato:wght@400`}}&display=swap'{{end}}],
       version: 2
     },
     active: () => {
@@ -19,22 +19,23 @@
 {{ $scripts := slice }}
 {{ range site.Params.plugins.js}}
 {{ if findRE "^http" .link }}
-<script src="{{ .link | absURL }}" type="application/javascript" {{.attributes | safeHTMLAttr}}></script>
+<script crossorigin="anonymous" defer="defer" src="{{ .link | relURL }}" type="application/javascript" {{.attributes | safeHTMLAttr}}></script>
 {{ else }}
 {{ $scripts = $scripts | append (resources.Get .link) }}
 {{ end }}
 {{ end }}
 {{ $scripts := $scripts | append (resources.Get "js/script.js" | minify) }}
 {{ $scripts := $scripts | resources.Concat "/js/script.js" | minify | fingerprint "sha512" }}
-<script crossorigin="anonymous" defer="defer" data-turbolinks-suppress-warning integrity="{{ $scripts.Data.Integrity }}" type="application/javascript">{{$scripts.Content | safeJS}}</script>
+<script crossorigin="anonymous" defer="defer" integrity="{{ $scripts.Data.Integrity }}" type="application/javascript">{{$scripts.Content | safeJS}}</script>
 
 <!-- cookie -->
-{{ if site.Params.cookies.enable }}
+{{ with site.Params.cookies }}
+{{ if .enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-outline-primary ml-2">I Accept</span>
+	{{.content | markdownify}}<span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">{{.button}}</span>
 </div>
-<script>
+<script type="application/javascript">
 	(function ($) {
 		const cookieBox = document.getElementById('js-cookie-box');
 		const cookieButton = document.getElementById('js-cookie-button');
@@ -42,7 +43,7 @@
 			cookieBox.classList.remove('cookie-box-hide');
 			cookieButton.onclick = function () {
 				Cookies.set('cookie-box', true, {
-					expires: {{ site.Params.cookies.expire_days }}
+					expires: {{ .expire_days }}
 				});
 				cookieBox.classList.add('cookie-box-hide');
 			};
@@ -69,4 +70,5 @@
   display: none;
 }
 </style>
+{{ end }}
 {{ end }}

@@ -155,6 +155,16 @@ textarea.form-control {
 .check-mark{
   position: relative;
   padding-left: 0px;
+  &::before{
+    position: absolute;
+    content: "\f058";
+    color: $primary-color;
+    font-size: 25px;
+    font-family: $icon-font;
+    font-weight: 900;
+    left: -30px;
+    top: 3px;
+  }
   svg{
     position: absolute;
     color: $primary-color;
