@@ -52,16 +52,3 @@
     </div>
   </div>
 </footer>
-
-{{ "<!-- JS Plugins + Main Script -->" | safeHTML }}
-{{ $allscript := slice }}
-{{ range site.Params.plugins.js}}
-{{ if findRE "^http" .link }}
-<script src="{{ .link | relURL }}"></script>
-{{ else }}
-  {{ $allscript = $allscript | append (resources.Get .link) }}
-{{ end }}
-{{ end }}
-{{ $allscript := $allscript | append (resources.Get "js/script.js" | minify) }}
-{{ $allscript := $allscript | resources.Concat "/js/vendor.js" | minify | fingerprint "sha512" }}
-<script src="{{ $allscript.RelPermalink }}" integrity="{{ $allscript.Data.Integrity }}"></script>
