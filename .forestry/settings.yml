@@ -77,7 +77,6 @@ sections:
 - type: document
   path: config.toml
   label: Variables & Plugins
-  match: "**/*"
 - type: document
   path: exampleSite/config/_default/languages.toml
   label: Languages
@@ -87,7 +86,6 @@ sections:
 - type: document
   path: exampleSite/config/_default/menus.de.toml
   label: Menu (de)
-  match: "**/*"
 upload_dir: exampleSite/static/images
 public_path: "/images"
 front_matter_path: ''
