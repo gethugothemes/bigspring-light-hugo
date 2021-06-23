@@ -5,7 +5,7 @@ subtitle: ""
 description: "This is meta description"
 draft: false
 ---
-* ** Smart Vistos** 
+* **Smart Vistos** 
 * **Rua Conceição, 233 - sala 916**
 * **Campinas/SP - CEP:13010-050 Brasil**
 * **Tel: +55 19 4062-7311**
