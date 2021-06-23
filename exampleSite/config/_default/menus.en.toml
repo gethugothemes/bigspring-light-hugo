@@ -35,7 +35,7 @@ url = "Imigração"
 weight = 2
 [[main]]
 name = "Vistos AUS"
-url = "Vistos AUS"
+url = "vistos aus"
 weight = 3
 [[main]]
 name = "Empresa"
