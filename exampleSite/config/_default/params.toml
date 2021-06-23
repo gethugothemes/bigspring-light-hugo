@@ -18,7 +18,7 @@ enable = false
 preloader = ""
 [[social]]
 icon = "fab fa-facebook"
-link = "#"
+link = "https://www.facebook.com/smartvistos"
 title = "facebook"
 [[social]]
 icon = "fab fa-twitter"
