@@ -26,6 +26,10 @@ url = "terms-conditions"
 name = "FAQ"
 url = "faq"
 [[main]]
+name = "Depoimentos"
+url = "Depoimentos"
+weight = "5"
+[[main]]
 name = "Home"
 url = "/"
 weight = 1
