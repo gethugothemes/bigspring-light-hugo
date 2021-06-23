@@ -38,10 +38,10 @@ name = "Vistos AUS"
 url = "Vistos AUS"
 weight = 3
 [[main]]
+name = "Empresa"
+url = "Empresa"
+weight = 5
+[[main]]
 name = "Contact"
 url = "contact"
 weight = 4
-[[main]]
-name = "FAQ"
-url = "faq"
-weight = 5
