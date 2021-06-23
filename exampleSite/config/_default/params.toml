@@ -3,7 +3,7 @@ contact_form_action = "#"
 description = "Imigração para Austrália - Trabalhar na Austrália"
 image = "images/SMART_VISTOS_logowebsite.png"
 logo = "images/SMART_VISTOS_logowebsite.png"
-logo_width = "200px"
+logo_width = "250px"
 [cookies]
 button = "I Accept"
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
