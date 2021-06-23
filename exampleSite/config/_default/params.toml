@@ -26,7 +26,7 @@ link = "http://api.whatsapp.com/send?phone=5519971511269"
 title = "whatsapp"
 [[social]]
 icon = "fab fa-linkedin"
-link = "#"
+link = "linkedin.com/in/marcelo-mota-fukuoka-2514b0"
 title = "linkedin"
 [[social]]
 icon = "fab fa-twitter"
