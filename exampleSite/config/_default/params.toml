@@ -17,22 +17,18 @@ link = "contact"
 enable = false
 preloader = ""
 [[social]]
-icon = "fab fa-whatsapp"
-link = "#"
-title = "whatsapp"
-[[social]]
 icon = "fab fa-facebook"
 link = "https://www.facebook.com/smartvistos"
 title = "facebook"
 [[social]]
-icon = "fab fa-twitter"
-link = "#"
-title = "twitter"
-[[social]]
-icon = "fab fa-skype"
-link = "#"
-title = "skype"
+icon = "fab fa-whatsapp"
+link = "(19) 97151-1269"
+title = "whatsapp"
 [[social]]
 icon = "fab fa-linkedin"
 link = "#"
 title = "linkedin"
+[[social]]
+icon = "fab fa-twitter"
+link = "#"
+title = "twitter"
