@@ -43,7 +43,7 @@ url = "Empresa"
 weight = 5
 [[main]]
 name = "Depoimentos"
-url = "Depoimentos"
+url = "depoimentos"
 weight = "5"
 [[main]]
 name = "Contato"
