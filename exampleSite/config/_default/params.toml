@@ -22,7 +22,7 @@ link = "https://www.facebook.com/smartvistos"
 title = "facebook"
 [[social]]
 icon = "fab fa-whatsapp"
-link = "https://wa.me/message/RKQLZNKP7ZPMI1 "
+link = "http://api.whatsapp.com/send?phone=5519971511269"
 title = "whatsapp"
 [[social]]
 icon = "fab fa-linkedin"
