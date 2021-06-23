@@ -1,8 +1,8 @@
 author = "Themefisher"
 contact_form_action = "#"
 description = "This is meta description"
-image = "images/SMART VISTOS LOGO OFICIAL.jpg"
-logo = "images/SMART VISTOS LOGO OFICIAL.jpg"
+image = "images/SMART_VISTOS_logowebsite.png"
+logo = "images/SMART_VISTOS_logowebsite.png"
 logo_width = "200px"
 [cookies]
 button = "I Accept"
