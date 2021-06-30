@@ -99,6 +99,7 @@ build:
   - IsProduction=true
   - hugo.Environment=production
   - Environment=production
+  - ENV=production
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:node12
   mount_path: "/srv"
