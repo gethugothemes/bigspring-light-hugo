@@ -96,6 +96,7 @@ build:
   - HUGO_ENV=production
   - HUGO_VERSION=0.58.2
   - hugo.IsPoduction=true
+  - IsProduction=true
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:node12
   mount_path: "/srv"
