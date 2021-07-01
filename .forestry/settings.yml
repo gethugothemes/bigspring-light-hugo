@@ -99,6 +99,6 @@ build:
   preview_docker_image: forestryio/hugo:node12
   mount_path: "/bigspring"
   working_dir: "/bigspring"
-  instant_preview_command: pwd && cd /bigspring/exampleSite && hugo server -D -E -F
-    --port 8080 --bind 0.0.0.0 --renderToDisk -d public --themesDir ../..
+  instant_preview_command: pwd && cd /bigspring/exampleSite && hugo server --watch
+    -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public --themesDir ../..
 version: 0.58.2
