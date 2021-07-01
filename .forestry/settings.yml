@@ -94,7 +94,7 @@ file_template: ":filename:"
 build:
   preview_env:
   - HUGO_ENV=production
-  - HUGO_VERSION=0.81.0
+  - HUGO_VERSION=0.74.3
   - hugo.IsPoduction=true
   - IsProduction=true
   - hugo.Environment=production
