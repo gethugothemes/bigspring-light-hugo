@@ -95,16 +95,10 @@ build:
   preview_env:
   - HUGO_ENV=production
   - HUGO_VERSION=0.74.3
-  - hugo.IsPoduction=true
-  - IsProduction=true
-  - hugo.Environment=production
-  - Environment=production
-  - ENV=production
-  - HUGO_ENVIRONMENT=production
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:node12
   mount_path: "/srv"
   working_dir: "/srv"
   instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
-    -d public --environment production
+    -d public
 version: 0.58.2
