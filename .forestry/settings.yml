@@ -96,8 +96,8 @@ build:
   - HUGO_ENV=production
   - HUGO_VERSION=0.74.3
   preview_output_directory: public
-  preview_docker_image: forestryio/hugo:node12
-  mount_path: "/bigspring"
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: "/srv"
   working_dir: "/bigspring"
   instant_preview_command: pwd && cd /bigspring/exampleSite && hugo server --watch
     -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d public --themesDir ../..
