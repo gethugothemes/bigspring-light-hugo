@@ -1,29 +1,27 @@
+############################# Romana ############################
+[ro]
+languageName = "Ro"
+title = "Flamingo Menu"
+contentDir = "content/romana" # content/german
+weight = 1
+########### footer content ##########
+footer_menu_left = "Companie"
+footer_menu_middle = "Produs"
+footer_menu_right = "Suport"
+footer_content = "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
+# copyright
+copyright = "Construit cu &hearts; în Brașov, România"
+
 ############################# English ############################
 [en]
 languageName = "En"
-title = "Bigspring Hugo"
+title = "Flamingo Menu"
 contentDir = "content/english" # content/english
-weight = 1
+weight = 2
 ########### footer content ##########
 footer_menu_left = "Company"
 footer_menu_middle = "Product"
 footer_menu_right = "Support"
 footer_content = "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
 # copyright
-copyright = "Design By [Themefisher](https://themefisher.com/) Develop By [Gethugothemes](https://gethugothemes.com/)"
-
-
-
-############################# Deutsch ############################
-[de]
-languageName = "De"
-title = "Bigspring Hugo"
-contentDir = "content/deutsch" # content/german
-weight = 2
-########### footer content ##########
-footer_menu_left = "Firma"
-footer_menu_middle = "Produkte"
-footer_menu_right = "Support"
-footer_content = "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
-# copyright
-copyright = "Design von [Themefisher](https://themefisher.com/) Entwickelt von [Gethugothemes](https://gethugothemes.com/)"
+copyright = "Made with &hearts; in Brașov, Romania"
