@@ -6,7 +6,7 @@ banner:
   content : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus"
   button:
     enable : true
-    label : "Contact With Us"
+    label : "Contact Us"
     link : "contact"
 
 ##################### Feature ##########################
