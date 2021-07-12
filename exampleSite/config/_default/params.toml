@@ -2,8 +2,9 @@ author = "Themefisher"
 contact_form_action = "#"
 description = "This is meta description"
 image = "images/logo.png"
-logo = "images/logo.png"
+logo = "images/flamingo_menu_logo.png"
 logo_width = "200px"
+social = []
 [cookies]
 button = "I Accept"
 content = "This site uses cookies. By continuing to use this website, you agree to their use."
@@ -16,19 +17,3 @@ link = "contact"
 [preloader]
 enable = true
 preloader = ""
-[[social]]
-icon = "fab fa-facebook"
-link = "#"
-title = "facebook"
-[[social]]
-icon = "fab fa-twitter"
-link = "#"
-title = "twitter"
-[[social]]
-icon = "fab fa-skype"
-link = "#"
-title = "skype"
-[[social]]
-icon = "fab fa-linkedin"
-link = "#"
-title = "linkedin"
