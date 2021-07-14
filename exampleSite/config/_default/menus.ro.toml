@@ -5,12 +5,7 @@ url = "/"
 weight = 1
 
 [[main]]
-name = "Blog"
-url = "blog"
-weight = 2
-
-[[main]]
-name = "Pricing"
+name = "Prețuri"
 url = "pricing"
 weight = 3
 
@@ -20,7 +15,7 @@ url = "contact"
 weight = 4
 
 [[main]]
-name = "FAQ"
+name = "Întrebări frecvente"
 url = "faq"
 weight = 5
 
@@ -57,9 +52,5 @@ name = "Privacy Policy"
 url = "privacy-policy"
 
 [[footer_right]]
-name = "Terms & Conditions"
-url = "terms-conditions"
-
-[[footer_right]]
-name = "FAQ"
+name = "Întrebări frecvente"
 url = "faq"

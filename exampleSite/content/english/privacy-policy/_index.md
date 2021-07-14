@@ -5,6 +5,7 @@ subtitle: ""
 description: "This is meta description"
 draft: false
 ---
+
 **Last updated June 28, 2021**
 
 Thank you for choosing to be part of our community at FlamingoMenu ("**Company**", "**we**", "**us**", "**our**"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at rareszamfiriu@yahoo.com.
@@ -25,7 +26,7 @@ We automatically collect certain information when you visit, use or navigate the
 
 The information we collect includes:
 
-* _Log and Usage Data._ Log and usage data is service-related, diagnostic, usage and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called 'crash dumps') and hardware settings).
+- _Log and Usage Data._ Log and usage data is service-related, diagnostic, usage and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called 'crash dumps') and hardware settings).
 
 #### **2. HOW DO WE USE YOUR INFORMATION?**
 
@@ -35,16 +36,13 @@ We use personal information collected via our Services for a variety of business
 
 We use the information we collect or receive:
 
-* **To send administrative information to you.** We may use your personal information to send you product, service and new feature information and/or information about changes to our terms, conditions, and policies.
+- **To send administrative information to you.** We may use your personal information to send you product, service and new feature information and/or information about changes to our terms, conditions, and policies.
 
+- **To protect our Services.** We may use your information as part of our efforts to keep our Services safe and secure (for example, for fraud monitoring and prevention).
 
-* **To protect our Services.** We may use your information as part of our efforts to keep our Services safe and secure (for example, for fraud monitoring and prevention).
+- **To enforce our terms, conditions and policies for business purposes, to comply with legal and regulatory requirements or in connection with our contract.**
 
-
-* **To enforce our terms, conditions and policies for business purposes, to comply with legal and regulatory requirements or in connection with our contract.**
-
-
-* **To respond to legal requests and prevent harm.** If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
+- **To respond to legal requests and prevent harm.** If we receive a subpoena or other legal request, we may need to inspect the data we hold to determine how to respond.
 
 #### **3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?**
 
@@ -52,23 +50,19 @@ We use the information we collect or receive:
 
 We may process or share your data that we hold based on the following legal basis:
 
-* **Consent:** We may process your data if you have given us specific consent to use your personal information for a specific purpose.
+- **Consent:** We may process your data if you have given us specific consent to use your personal information for a specific purpose.
 
+- **Legitimate Interests:** We may process your data when it is reasonably necessary to achieve our legitimate business interests.
 
-* **Legitimate Interests:** We may process your data when it is reasonably necessary to achieve our legitimate business interests.
+- **Performance of a Contract:** Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.
 
+- **Legal Obligations:** We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).
 
-* **Performance of a Contract:** Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.
-
-
-* **Legal Obligations:** We may disclose your information where we are legally required to do so in order to comply with applicable law, governmental requests, a judicial proceeding, court order, or legal process, such as in response to a court order or a subpoena (including in response to public authorities to meet national security or law enforcement requirements).
-
-
-* **Vital Interests:** We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.
+- **Vital Interests:** We may disclose your information where we believe it is necessary to investigate, prevent, or take action regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.
 
 More specifically, we may need to process your data or share your personal information in the following situations:
 
-* **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
+- **Business Transfers.** We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.
 
 #### **4. HOW DO WE HANDLE YOUR SOCIAL LOGINS?**
 
@@ -114,7 +108,7 @@ If you have questions or comments about your privacy rights, you may email us at
 
 If you would at any time like to review or change the information in your account or terminate your account, you can:
 
-* Contact us using the contact information provided.
+- Contact us using the contact information provided.
 
 Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our Terms of Use and/or comply with applicable legal requirements.
 
@@ -152,4 +146,7 @@ FlamingoMenu
 Zaharia Stancu 06  
 Brasov, Brasov 500338  
 Romania
+<<<<<<< HEAD
 >>>>>>> Update from Forestry.io
+=======
+>>>>>>> First round - basic changes
