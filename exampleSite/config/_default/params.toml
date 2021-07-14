@@ -12,7 +12,7 @@ enable = false
 expire_days = 2
 [navigation_button]
 enable = true
-label = "Get Started"
+label = "Contact"
 link = "contact"
 [preloader]
 enable = true
