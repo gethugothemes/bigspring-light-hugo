@@ -6,7 +6,7 @@ description: Privacy policy
 
 **Last updated June 28, 2021**
 
-Thank you for choosing to be part of our community at FlamingoMenu ("**Company**", "**we**", "**us**", "**our**"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at rareszamfiriu@yahoo.com.
+Thank you for choosing to be part of our community at FlamingoMenu ("**Company**", "**we**", "**us**", "**our**"). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at hello@flamingomenu.com.
 
 When you visit our website [https://flamingomenu.com](https://flamingomenu.com "https://flamingomenu.com") (the "**Website**"), use our mobile application, as the case may be (the "**App**") and more generally, use any of our services (the "**Services**", which include the Website and App), we appreciate that you are trusting us with your personal information. We take your privacy very seriously. In this privacy notice, we seek to explain to you in the clearest way possible what information we collect, how we use it and what rights you have in relation to it. We hope you take some time to read through it carefully, as it is important. If there are any terms in this privacy notice that you do not agree with, please discontinue use of our Services immediately.
 
@@ -100,7 +100,7 @@ If you are a resident in the EEA or UK and you believe we are unlawfully process
 
 If you are a resident in Switzerland, the contact details for the data protection authorities are available here: [https://www.edoeb.admin.ch/edoeb/en/home.html](https://www.edoeb.admin.ch/edoeb/en/home.html "https://www.edoeb.admin.ch/edoeb/en/home.html").
 
-If you have questions or comments about your privacy rights, you may email us at rareszamfiriu@yahoo.com.
+If you have questions or comments about your privacy rights, you may email us at hello@flamingomenu.com.
 
 **Account Information**
 
@@ -132,7 +132,7 @@ We may update this privacy notice from time to time. The updated version will be
 
 #### **12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?**
 
-If you have questions or comments about this notice, you may email us at rareszamfiriu@yahoo.com or by post to:
+If you have questions or comments about this notice, you may email us at hello@flamingomenu.com or by post to:
 
 FlamingoMenu  
 Zaharia Stancu 06  
