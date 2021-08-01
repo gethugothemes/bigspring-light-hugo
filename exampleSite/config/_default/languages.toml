@@ -2,7 +2,7 @@
 [ro]
 languageName = "Ro"
 title = "Flamingo Menu"
-contentDir = "content/romana" # content/german
+contentDir = "content/romana" # content/romana
 weight = 1
 ########### footer content ##########
 footer_menu_left = "Companie"
