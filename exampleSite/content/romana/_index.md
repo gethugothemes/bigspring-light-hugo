@@ -44,43 +44,42 @@ service:
         - 'images/service-2.png'
         - 'images/service-3.png'
       content: '
-      **Avantaje Meniu digital pentru clientul locatiei:**
-
-      * Nu mai asteapta dupa chelner
-
+      **Avantaje Meniu digital pentru clientul locației:**
+ 
+      * Nu mai aștepta după chelner
+ 
       * Nu atinge meniul fizic
-
+ 
       * Nu trebuie sa ceara din nou meniul
-
-      * Limba romana si engleza la alegerea sa
-
-      * Este loc berechet pentru poze si descriere
-
+ 
+      * Limba română și engleză la alegerea sa
+ 
+      * Este loc berechet pentru poze și descriere
+ 
       * Usor de accesat paginile de social media
-
+ 
       
-      **Avantaje Meniu digital pentru locatie:**
+      **Avantaje Meniu digital pentru locație:**
       
       * Clientul poate comanda mai rapid, odata sosit in locatie
       
-      * Poate sa continue sa comande fara sa ceara de fiecare data meniul, ceea ce inseamna mai mula consumatie in timpul petrecut in locatie
-
-      * Ospatarii nu trebuie sa piarda timpul ducand si aducand meniuri
-
-      * Se evita un drum in plus cand se cere meniul in limba Engleza
-
-      * Clientul pote da share la meniu catre prietenii sai
-
+      * Poate sa continue sa comande fara sa ceara de fiecare data meniul, ceea ce înseamnă mai multă consumație în timpul petrecut în locație
+ 
+      * Ospatarii nu trebuie sa piardă timpul ducand și aducand meniuri
+ 
+      * Se evita un drum in plus cand se cere meniul în limba Engleza
+ 
+      * Clientul poate da share la meniu către prietenii sai
+ 
       * Usor de accesat paginile de social media
-
-      * Preturile pot fi acutalizate fara costuri de print
-
-      * Orice modificari pot fi aduse imediat meniului din admin
-
-      * Produsele indisponibile momentan pot fi dezactivate pentru a evita confuzie si fustrare
-
-      * Se pot adauga poze si descrieri detaliate la toate produsele fara costuri de print sau meniu greu de parcurs
-      
+ 
+      * Prețurile pot fi actualizate fără costuri de print
+ 
+      * Orice modificări pot fi aduse imediat meniului din admin
+ 
+      * Produsele indisponibile momentan pot fi dezactivate pentru a evita confuzie și frustrare
+ 
+      * Se pot adăuga poze și descrieri detaliate la toate produsele fără costuri de print sau meniu greu de parcurs
       '
       button:
         enable: true
