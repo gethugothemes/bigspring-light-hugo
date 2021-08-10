@@ -17,21 +17,21 @@ subscriptions:
     price2: '€250'
     price2_per: 'An'
     services:
-      - 'Îți administrezi datele singur, din aplicație'
+      - 'Îți modifici datele singur din aplicație'
     button:
       enable: true
       label: 'Contact'
       link: 'contact'
 
   professional:
-    name: 'Personal Assistant'
+    name: 'Asistent Personal'
     price1: '€50'
     price1_per: 'Lună'
     price2_old: '€600'
     price2: '€500'
     price2_per: 'An'
     services:
-      - 'Îți administrăm noi datele conform cererilor tale'
+      - 'Îți modificăm noi datele la cererea ta'
     button:
       enable: true
       label: 'Contact'
