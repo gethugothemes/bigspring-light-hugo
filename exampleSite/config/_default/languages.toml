@@ -8,7 +8,7 @@ weight = 1
 footer_menu_left = "Companie"
 footer_menu_middle = "Produs"
 footer_menu_right = "Suport"
-footer_content = "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
+footer_content = "Ultimul meniu de care vei avea nevoie"
 # copyright
 copyright = "Construit cu &hearts; în Brașov, România"
 
@@ -22,6 +22,6 @@ weight = 2
 footer_menu_left = "Company"
 footer_menu_middle = "Product"
 footer_menu_right = "Support"
-footer_content = "Lorem ipsum dolor sit amet, consectetur elit. Consjat tristique eget amet, tempus eu at cttur."
+footer_content = "The last menu you will ever need"
 # copyright
 copyright = "Made with &hearts; in Brașov, Romania"

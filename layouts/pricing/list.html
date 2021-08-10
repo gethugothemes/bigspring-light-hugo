@@ -3,17 +3,21 @@
 <section class="section">
   {{ with .Params.subscriptions }}
   <div class="container pricing-container">
-    <h2>{{.title}}</h2>
+    <h2 class="mb-4">{{.title}}</h2>
     <div class="row justify-content-center align-items-center">
-      <div class="col-lg-4 mb-5 mb-lg-0 px-3 pl-3 px-lg-0">
+      <div class="col-lg-5 mb-3 mb-lg-0 px-3 pl-3 px-lg-0">
         {{ with .basic }}
         <div class="card shadow">
           <div class="card-body text-center py-5">
             <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span>
-            <span>/{{ .price_per }}</span>
+            <span class="price">{{ .price1 }}</span>
+            <span>/ {{ .price1_per }}</span>
+            <br />
+            <span class="price-old">{{ .price2_old }}</span>
+            <span class="price">{{ .price2 }}</span>
+            <span>/ {{ .price2_per }}</span>
             <p class="lead">{{ .info | markdownify }}</p>
-            <ul class="list-unstyled mb-5">
+            <ul class="list-unstyled mb-4">
               {{ range .services }}
               <li>{{ . | markdownify }}</li>
               {{ end }}
@@ -31,13 +35,17 @@
         </div>
         {{ end }}
       </div>
-      <div class="col-lg-4 col-recommended">
+      <div class="col-lg-5 col-recommended">
         {{ with .professional }}
         <div class="card border-0 shadow-lg">
           <div class="card-body text-center py-5">
             <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span>
-            <span>/{{ .price_per }}</span>
+            <span class="price">{{ .price1 }}</span>
+            <span>/ {{ .price1_per }}</span>
+            <br />
+            <span class="price-old">{{ .price2_old }}</span>
+            <span class="price">{{ .price2 }}</span>
+            <span>/ {{ .price2_per }}</span>
             <p class="lead">{{ .info | markdownify }}</p>
             <ul class="list-unstyled mb-5">
               {{ range .services }}
@@ -49,208 +57,6 @@
               href="{{ .link | relURL }}"
               title="{{ .label }}"
               class="btn btn-primary"
-            >
-              {{ .label }}
-            </a>
-            {{ end }} {{ end }}
-          </div>
-        </div>
-        {{ end }}
-      </div>
-      <div class="col-lg-4 mb-5 mb-lg-0 px-3 pr-3 px-lg-0">
-        {{ with .business }}
-        <div class="card shadow">
-          <div class="card-body text-center py-5">
-            <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span>
-            <span>/{{ .price_per }}</span>
-            <p class="lead">{{ .info | markdownify }}</p>
-            <ul class="list-unstyled mb-5">
-              {{ range .services }}
-              <li>{{ . | markdownify }}</li>
-              {{ end }}
-            </ul>
-            {{ if .button.enable }} {{ with .button }}
-            <a
-              href="{{ .link | relURL }}"
-              title="{{ .label }}"
-              class="btn btn-outline-primary"
-            >
-              {{ .label }}
-            </a>
-            {{ end }} {{ end }}
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-  {{ end }}
-</section>
-
-<section class="section">
-  {{ with .Params.onboarding }}
-  <div class="container pricing-container">
-    <h2>{{.title}}</h2>
-    <div class="row justify-content-center align-items-center">
-      <div class="col-lg-4 mb-5 mb-lg-0 px-3 pl-3 px-lg-0">
-        {{ with .basic }}
-        <div class="card shadow">
-          <div class="card-body text-center py-5">
-            <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span>
-            <span>/{{ .price_per }}</span>
-            <p class="lead">{{ .info | markdownify }}</p>
-            <ul class="list-unstyled mb-5">
-              {{ range .services }}
-              <li>{{ . | markdownify }}</li>
-              {{ end }}
-            </ul>
-            {{ if .button.enable }} {{ with .button }}
-            <a
-              href="{{ .link | relURL }}"
-              title="{{ .label }}"
-              class="btn btn-outline-primary"
-            >
-              {{ .label }}
-            </a>
-            {{ end }} {{ end }}
-          </div>
-        </div>
-        {{ end }}
-      </div>
-      <div class="col-lg-4 col-recommended">
-        {{ with .professional }}
-        <div class="card border-0 shadow-lg">
-          <div class="card-body text-center py-5">
-            <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span>
-            <span>/{{ .price_per }}</span>
-            <p class="lead">{{ .info | markdownify }}</p>
-            <ul class="list-unstyled mb-5">
-              {{ range .services }}
-              <li>{{ . | markdownify }}</li>
-              {{ end }}
-            </ul>
-            {{ if .button.enable }} {{ with .button }}
-            <a
-              href="{{ .link | relURL }}"
-              title="{{ .label }}"
-              class="btn btn-primary"
-            >
-              {{ .label }}
-            </a>
-            {{ end }} {{ end }}
-          </div>
-        </div>
-        {{ end }}
-      </div>
-      <div class="col-lg-4 mb-5 mb-lg-0 px-3 pr-3 px-lg-0">
-        {{ with .business }}
-        <div class="card shadow">
-          <div class="card-body text-center py-5">
-            <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span>
-            <span>/{{ .price_per }}</span>
-            <p class="lead">{{ .info | markdownify }}</p>
-            <ul class="list-unstyled mb-5">
-              {{ range .services }}
-              <li>{{ . | markdownify }}</li>
-              {{ end }}
-            </ul>
-            {{ if .button.enable }} {{ with .button }}
-            <a
-              href="{{ .link | relURL }}"
-              title="{{ .label }}"
-              class="btn btn-outline-primary"
-            >
-              {{ .label }}
-            </a>
-            {{ end }} {{ end }}
-          </div>
-        </div>
-        {{ end }}
-      </div>
-    </div>
-  </div>
-  {{ end }}
-</section>
-
-<section class="section">
-  {{ with .Params.packages }}
-  <div class="container pricing-container">
-    <h2>{{.title}}</h2>
-    <div class="row justify-content-center align-items-center">
-      <div class="col-lg-4 mb-5 mb-lg-0 px-3 pl-3 px-lg-0">
-        {{ with .basic }}
-        <div class="card shadow">
-          <div class="card-body text-center py-5">
-            <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span>
-            <span>/{{ .price_per }}</span>
-            <p class="lead">{{ .info | markdownify }}</p>
-            <ul class="list-unstyled mb-5">
-              {{ range .services }}
-              <li>{{ . | markdownify }}</li>
-              {{ end }}
-            </ul>
-            {{ if .button.enable }} {{ with .button }}
-            <a
-              href="{{ .link | relURL }}"
-              title="{{ .label }}"
-              class="btn btn-outline-primary"
-            >
-              {{ .label }}
-            </a>
-            {{ end }} {{ end }}
-          </div>
-        </div>
-        {{ end }}
-      </div>
-      <div class="col-lg-4 col-recommended">
-        {{ with .professional }}
-        <div class="card border-0 shadow-lg">
-          <div class="card-body text-center py-5">
-            <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span>
-            <span>/{{ .price_per }}</span>
-            <p class="lead">{{ .info | markdownify }}</p>
-            <ul class="list-unstyled mb-5">
-              {{ range .services }}
-              <li>{{ . | markdownify }}</li>
-              {{ end }}
-            </ul>
-            {{ if .button.enable }} {{ with .button }}
-            <a
-              href="{{ .link | relURL }}"
-              title="{{ .label }}"
-              class="btn btn-primary"
-            >
-              {{ .label }}
-            </a>
-            {{ end }} {{ end }}
-          </div>
-        </div>
-        {{ end }}
-      </div>
-      <div class="col-lg-4 mb-5 mb-lg-0 px-3 pr-3 px-lg-0">
-        {{ with .business }}
-        <div class="card shadow">
-          <div class="card-body text-center py-5">
-            <h3 class="mb-4">{{ .name | markdownify }}</h3>
-            <span class="price">{{ .price }}</span>
-            <span>/{{ .price_per }}</span>
-            <p class="lead">{{ .info | markdownify }}</p>
-            <ul class="list-unstyled mb-5">
-              {{ range .services }}
-              <li>{{ . | markdownify }}</li>
-              {{ end }}
-            </ul>
-            {{ if .button.enable }} {{ with .button }}
-            <a
-              href="{{ .link | relURL }}"
-              title="{{ .label }}"
-              class="btn btn-outline-primary"
             >
               {{ .label }}
             </a>

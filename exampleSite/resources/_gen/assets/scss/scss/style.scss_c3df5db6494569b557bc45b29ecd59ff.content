@@ -539,5 +539,11 @@ a.post-title {
       margin: 0;
       margin-bottom: 40px; } }
 .price {
-  font-size: 50px;
+  font-size: 30px;
   color: #222; }
+
+.price-old {
+  text-decoration: line-through;
+  font-size: 20px;
+  vertical-align: super;
+}
