@@ -19,19 +19,19 @@ name = "Contact"
 url = "contact"
 weight = 4
 
-[[main]]
-name = "FAQ"
-url = "faq"
-weight = 5
+# [[main]]
+# name = "FAQ"
+# url = "faq"
+# weight = 5
 
 # footer menu left
-[[footer_left]]
-name = "About Us"
-url = "#"
+# [[footer_left]]
+# name = "About Us"
+# url = "#"
 
 [[footer_left]]
-name = "Quick Start"
-url = "#"
+# name = "Quick Start"
+# url = "#"
 
 [[footer_left]]
 name = "Pricing"
@@ -43,13 +43,13 @@ url = "pricing"
 name = "Pricing"
 url = "pricing"
 
-[[footer_middle]]
-name = "Platform"
-url = "#"
+# [[footer_middle]]
+# name = "Platform"
+# url = "#"
 
-[[footer_middle]]
-name = "Features"
-url = "#"
+# [[footer_middle]]
+# name = "Features"
+# url = "#"
 
 # footer menu right
 [[footer_right]]
@@ -60,6 +60,6 @@ url = "privacy-policy"
 name = "Terms & Conditions"
 url = "terms-conditions"
 
-[[footer_right]]
-name = "FAQ"
-url = "faq"
+# [[footer_right]]
+# name = "FAQ"
+# url = "faq"

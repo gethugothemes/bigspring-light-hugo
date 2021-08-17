@@ -8,16 +8,16 @@ other="Traduceri"
 other = "Ne pare foarte rău, însă pare să nu fie nimic aici."
 
 [yourname]
-other = "Numele Tău"
+other = "Nume"
 
 [youremail]
-other = "Email-ul Tău"
+other = "Email"
 
 [subject]
 other = "Subiect"
 
 [yourmessage]
-other = "Mesajul Tău"
+other = "Mesaj"
 
 [sendnow]
 other = "Trimite Acum"

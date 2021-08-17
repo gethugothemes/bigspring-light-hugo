@@ -6,9 +6,9 @@ contentDir = "content/romana" # content/romana
 weight = 1
 ########### footer content ##########
 footer_menu_left = "Companie"
-footer_menu_middle = "Produs"
-footer_menu_right = "Suport"
-footer_content = "Ultimul meniu de care vei avea nevoie"
+# footer_menu_middle = "Produs"
+# footer_menu_right = "Suport"
+# footer_content = "Ultimul meniu de care vei avea nevoie1aa"
 # copyright
 copyright = "Construit cu &hearts; în Brașov, România"
 

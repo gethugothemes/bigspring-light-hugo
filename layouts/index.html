@@ -7,10 +7,12 @@
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
         <h1 class="mb-3 font-weight-bold">{{ .title | markdownify }}</h1>
-        <p class="mb-4">{{ .content | markdownify }}</p>
+        <br />
+        <p class="mb-4" style="font-size: 1.25rem">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
-        <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
+        <br />
+        <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary" style="text-transform: none">{{ .label }}</a></div>
         {{ end }}
         {{ end }}
 

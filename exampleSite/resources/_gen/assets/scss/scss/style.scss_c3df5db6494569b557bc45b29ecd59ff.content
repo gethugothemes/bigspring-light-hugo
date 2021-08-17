@@ -1,7 +1,7 @@
 /*  typography */
 body {
   line-height: 1.2;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   color: #777; }
@@ -12,7 +12,7 @@ p,
   color: #777;
   font-size: 16px;
   line-height: 1.7;
-  font-family: "Lato", sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 small {
   font-size: 88%; }
@@ -24,7 +24,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   color: #222;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 1.2; }
 
@@ -64,7 +64,7 @@ h6,
 /* Button style */
 .btn {
   font-size: 16px;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-transform: capitalize;
   padding: 15px 30px;
@@ -290,9 +290,10 @@ textarea.form-control {
 .feature-card {
   border-radius: 10px;
   padding: 20px;
-  transition: .2s ease;
+  transition: 0.2s ease;
   background-color: #fff; }
-  .feature-card svg, .feature-card i {
+  .feature-card svg,
+  .feature-card i {
     font-size: 30px;
     color: #610BEF;
     display: inline-block; }
@@ -382,7 +383,7 @@ a.post-title {
 
 .content table td,
 .content table th {
-  padding: .75rem;
+  padding: 0.75rem;
   vertical-align: top;
   margin-bottom: 0; }
 
@@ -416,9 +417,9 @@ a.post-title {
   position: absolute;
   top: 2px;
   color: #fff;
-  font-family: "themify";
+  font-family: 'themify';
   font-weight: 900;
-  content: "\e717";
+  content: '\e717';
   left: 10px; }
 
 .content .notices.note p {
@@ -433,7 +434,7 @@ a.post-title {
   left: 2rem; }
 
 .content .notices.tip p {
-  border-top: 30px solid #78C578;
+  border-top: 30px solid #78c578;
   background: #fff; }
 
 .content .notices.tip p::after {
@@ -444,7 +445,7 @@ a.post-title {
   left: 2rem; }
 
 .content .notices.info p {
-  border-top: 30px solid #F0B37E;
+  border-top: 30px solid #f0b37e;
   background: #fff; }
 
 .content .notices.info p::after {
@@ -455,7 +456,7 @@ a.post-title {
   left: 2rem; }
 
 .content .notices.warning p {
-  border-top: 30px solid #E06F6C;
+  border-top: 30px solid #e06f6c;
   background: #fff; }
 
 .content .notices.warning p::after {
@@ -529,7 +530,7 @@ a.post-title {
       padding: 0;
       border: 1px solid #610BEF;
       background-color: transparent;
-      transition: .2s ease; }
+      transition: 0.2s ease; }
 
 .col-recommended {
   margin: -2rem -1.5rem;
@@ -545,5 +546,4 @@ a.post-title {
 .price-old {
   text-decoration: line-through;
   font-size: 20px;
-  vertical-align: super;
-}
+  vertical-align: super; }

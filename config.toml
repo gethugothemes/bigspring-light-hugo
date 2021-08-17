@@ -20,7 +20,7 @@ light = "#EBECFE"
 # font variable
 # Give your font name from google font. add font weight using ":wght@" and separate by ";"
 # example: "Work Sans:wght@400;500;600"
-primary_font = "Lato:wght@400"
+primary_font = "Poppins:wght@400;700"
 primary_font_type = "sans-serif" # [serif/sans-serif]
 icon_font = "Font Awesome 5 Free"
 

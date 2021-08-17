@@ -14,43 +14,45 @@ name = "Contact"
 url = "contact"
 weight = 4
 
-[[main]]
-name = "Întrebări frecvente"
-url = "faq"
-weight = 5
+[[footer_left]]
+name = "Contact"
+url = "contact"
+
+[[footer_left]]
+name = "Politică de confidențialitate"
+url = "privacy-policy"
+
+[[footer_left]]
+name = "Prețuri"
+url = "pricing"
+
+# [[main]]
+# name = "Întrebări frecvente"
+# url = "faq"
+# weight = 5
 
 # footer menu left
-[[footer_left]]
-name = "About Us"
-url = "#"
+# [[footer_left]]
+# name = "About Us"
+# url = "#"
 
-[[footer_left]]
-name = "Quick Start"
-url = "#"
-
-[[footer_left]]
-name = "Pricing"
-url = "pricing"
+# [[footer_left]]
+# name = "Quick Start"
+# url = "#"
 
 
 # footer menu middle
-[[footer_middle]]
-name = "Pricing"
-url = "pricing"
 
-[[footer_middle]]
-name = "Platform"
-url = "#"
+# [[footer_middle]]
+# name = "Platform"
+# url = "#"
 
-[[footer_middle]]
-name = "Features"
-url = "#"
+# [[footer_middle]]
+# name = "Features"
+# url = "#"
 
 # footer menu right
-[[footer_right]]
-name = "Privacy Policy"
-url = "privacy-policy"
 
-[[footer_right]]
-name = "Întrebări frecvente"
-url = "faq"
+# [[footer_right]]
+# name = "Întrebări frecvente"
+# url = "faq"
