@@ -1,85 +1,126 @@
-# Easy Setup (Hugo + Netlify + Forestry)
-Build your website with bigspring theme by following this easy steps (No Coding Required)
+<h1 align=center>Bigspring Hugo | <a target="_blank" href="https://demo.gethugothemes.com/bigspring" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fbigspring%2F">Page Speed (91%)</a></h1>
 
-_Checkout this video tutorial_
-<a href="https://youtu.be/ResipmZmpDU" target="_blank" title="meghna hugo installation" rel="nofollow"><img width="100%" src="https://user-images.githubusercontent.com/37659754/103056582-88270880-45c7-11eb-9124-ab17bae951ec.png"></a>
+<p align=center>
+  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.64.0" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.64.0&color=f00&logo=hugo" />
+  </a>
 
-In this tutorial we will show you to make your website live without buying any hosting and touching a single line of code. We made this tutorial based on [meghna hugo](https://github.com/themefisher/meghna-hugo) but you can setup everithing like this.
+  <a href="https://github.com/themefisher/bigspring-hugo/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/themefisher/bigspring-hugo" alt="license"></a>
 
-### What you need !!
+  <img src="https://img.shields.io/github/languages/code-size/themefisher/bigspring-hugo" alt="code size">
 
-1. Git acccount (Ex: Github, Gitlab etc ) . In our case we use github.
-2. [Netlify](https://netlify.app/) account to host files and add custom domain .
-3. [Forestry](https://forestry.io) account to maintain whole project without code.
+  <a href="https://github.com/themefisher/bigspring-hugo/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/themefisher/bigspring-hugo" alt="contributors"></a>
+
+  <a href="https://twitter.com/intent/follow?screen_name=gethugothemes">
+    <img src="https://img.shields.io/twitter/follow/gethugothemes?style=social&logo=twitter"
+      alt="follow on Twitter"></a>
+</p>
+
+---
+
+<p align="center">
+
+![bigspring](images/tn.png)
+</p>
+
+---
+## Features
+- Multiple language support (De, En) 
+- Google analytics  support
+- CSS and JS bundle with hugo pipe
+- Netlify settings predefine
+- Forestry cms pre-configured
+- Google page speed optimized ( 91% )
+- Color and fonts variable in config file
+- Contact form Support
+- GDPR consent enable
+- Open graph meta tag
+- Twitter card meta tag
 
 
-### Step 1 : Fork or Clone repository
+## Local development
 
-First we will fork this [bigspring](https://github.com/themefisher/bigspring-hugo-startup-theme) template.
+```bash
+# clone the repository
+git clone git@github.com:themefisher/bigspring-hugo.git
 
-### Step 2 : Add your repository in Forestry
+# cd in the project directory
+$ cd bigspring-hugo/exampleSite/
 
-Go to your [forestry](https://forestry.io)  account and click on `import your site now`. declare your config.toml file [`exampleSite`] and fill up basic settings .
-
-**Or just click this button for one click installation** [![import to forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=themefisher/bigspring-hugo-startup-theme&engine=hugo&version=0.60.1&config=exampleSite)
-
-Now mark everything as done, then go to configuration to change the base url . You can put any url but this have to similar as netlify . So for now put a name which you are going to put in netlify as netlify subdomain.
-
-### Step 3 : Setup and host website with Netlify
-
-Here comes the last step . Go to your [netlify](https://netlify.app/) account and click add new site . Choose your git repository to import your website in netlify .  And now you can see the forked `bigspring` theme. select it and follow the steps. Then go to `site settings` for change the site name and put your subdoamin name here what you puted on forestry as base url. save it and go to `deploy` from top menu, Wait a while and click on `site preview` or just simply go to the subdomain you puted as base url. **BOOM! Your site is live.** Now you can go to forestry and add, remove or customize every setting and content.
-
-> If you face any issue regarding the installation feel free to onen [open a new issue](https://github.com/themefisher/bigspring-hugo-startup-theme/issues)
-
-
-## Table of Contents
-
-- [Demo](#demo)
-- [Quick Start](#quick-start)
-- [Installation](#installation)
-- [Reporting Issues](#reporting-issues)
-- [Technical Support or Questions](#technical-support-or-questions-(paid))
-- [License](#license)
-- [More Hugo Themes](https://themefisher.com/hugo-themes/)
-
-## Demo
-
-[Live Preview](http://demo.gethugothemes.com/bigspring/).
-
-## Quick Start
-Quick start options:
-
-- Clone the repo: `git clone https://github.com/themefisher/bigspring-hugo-startup-theme.git`.
-- [Download from Github](https://github.com/themefisher/bigspring-hugo-startup-theme/archive/master.zip).
-- [Download from gethugothemes website](https://gethugothemes.com/products/bigspring/).
-
-## Installation
-At the top we have shown an easy hugo installation. but still if you think you want to go with the traditional way then use the following commands:
-
-```
-$ git clone git@github.com:themefisher/bigspring-hugo-startup-theme.git
-$ cd bigspring/exampleSite/
+# Start local dev server
 $ hugo server --themesDir ../..
 ```
 Or Check out [Full Documentation](https://docs.gethugothemes.com/bigspring/?ref=github).
 
+## Content Management System
+
+[![import to
+Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=themefisher/bigspring-hugo&engine=hugo&version=0.87.0)
+
+This project has been pre-configured to work with [Forestry](https://forestry.io) a git-based CMS, [import your
+repository in Forestry](https://app.forestry.io/quick-start?repo=themefisher/bigspring-hugo&engine=hugo&version=0.87.0) and
+you will be able to edit and preview your site ✨.
+
+Any changes you make in Forestry will be committed back to the repo and deployed if you use [Netlify](#netlify).
+
+## Deployment and hosting
+
+[![Deploy to
+Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/themefisher/bigspring-hugo)
+
+Follow the steps.
+
+## Prefer a video? (Hugo + Netlify + Forestry)
+Build your website with **Bigspring Hugo** theme by following these easy steps (No Coding Required!)
+[Video Tutorial](https://youtu.be/ResipmZmpDU).
+
+<!-- reporting issue -->
 ## Reporting Issues
+We use GitHub Issues as the official bug tracker for the Bigspring Template. Please Search [existing
+issues](https://github.com/themefisher/bigspring-hugo/issues). Someone may have already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new
+issue](https://github.com/themefisher/bigspring-hugo/issues).
 
-We use GitHub Issues as the official bug tracker for the **bigspringe**. Please Search [existing issues](https://github.com/themefisher/bigspring-hugo-startup-theme/issues). It’s possible someone has already reported the same problem.
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/bigspring-hugo-startup-theme/issues/new)
+## Bigspring Hugo Powered Websites
+- https://atomicreader.com/
+- https://www.basculasmarti.com/
+- https://www.betaclient.ch/
+- https://cliq-inc.com/
+- https://cloudinalconsulting.com/
+- https://devsineurope.com/
+- https://www.mujerestech.com/
+- https://offnote.co/
 
-## Technical Support or Questions (Paid)
+View all the websites powered by Bigspring Hugo [here](https://github.com/themefisher/bigspring-hugo/wiki/Popular-sites-powered-by-Bigspring-Hugo). Want to submit your own website powered by Bigspring Hugo? You can submit it [here](https://github.com/themefisher/bigspring-hugo/discussions/46).
 
-If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
-
+<!-- licence -->
 ## License
-Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)
+Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed by
+[Gethugothemes](https://gethugothemes.com)
 
-**Code License:** Released under the [MIT](https://github.com/themefisher/bigspring-hugo-startup-theme/blob/master/LICENSE) license.
+**Code License:** Released under the [MIT](https://github.com/themefisher/bigspring-hugo/blob/master/LICENSE) license.
 
-**Image license:** The images are only for demonstration purposes. They have their own licence, we don't have permission to share those image.
-## Premium Themes
+**Image license:** The images are only for demonstration purposes. They have their licenses. We don't have permission to
+share those images.
 
-| [![Mega-Bundle-HUGO](https://gethugothemes.com/wp-content/uploads/edd/2019/09/Mega-Bundle-HUGO.png)](https://themefisher.com/products/hugo-mega-bundle/) | [![](https://gethugothemes.com/wp-content/uploads/edd/2020/09/Copper-hugo-sass-landingpage.jpg)](https://gethugothemes.com/products/copper/) | [![redlab](https://gethugothemes.com/wp-content/uploads/edd/2019/09/redlab-hugo-thumbnail.jpg)](https://gethugothemes.com/products/redlab-hugo/) |
+<!-- resources -->
+## Special Thanks
+- [Bootstrap](https://getbootstrap.com)
+- [Jquery](https://jquery.com)
+- [Font Awesome Icons](https://fontawesome.com)
+- [Slick Slider](https://kenwheeler.github.io/slick/)
+- [Google Fonts](https://fonts.google.com/)
+- [All Contributors](https://github.com/themefisher/bigspring-hugo/graphs/contributors)
+
+
+## Hire Us
+We are available for **Hiring** for your next HUGO project. Please, check our
+[services](https://cutt.ly/ght-service)
+
+<!-- premium themes -->
+## Premium Themes By Us
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![reporter](https://demo.gethugothemes.com/thumbnails/reporter.webp)](https://gethugothemes.com/products/reporter/) | [![agen](https://demo.gethugothemes.com/thumbnails/agen.webp)](https://gethugothemes.com/products/agen/) |
 |:---:|:---:|:---:|
-| **Hugo Mega Bundle**  | **Copper**  | **Red Lab**  |
+| **Premium Theme Bundle (40+)** | **Reporter** | **Agen** |
