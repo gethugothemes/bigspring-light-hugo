@@ -117,10 +117,10 @@ share those images.
 
 ## Hire Us
 We are available for **Hiring** for your next HUGO project. Please, check our
-[services](https://cutt.ly/ght-service)
+[services](https://gethugothemes.com/services/?ref=github)
 
 <!-- premium themes -->
 ## Premium Themes By Us
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![reporter](https://demo.gethugothemes.com/thumbnails/reporter.webp)](https://gethugothemes.com/products/reporter/) | [![agen](https://demo.gethugothemes.com/thumbnails/agen.webp)](https://gethugothemes.com/products/agen/) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![revolve](https://demo.gethugothemes.com/thumbnails/revolve.webp)](https://gethugothemes.com/products/revolve/) | [![influencer](https://demo.gethugothemes.com/thumbnails/influencer.webp)](https://gethugothemes.com/products/influencer/) |
 |:---:|:---:|:---:|
-| **Premium Theme Bundle (40+)** | **Reporter** | **Agen** |
+| **Premium Theme Bundle (40+)** | **Revolve** | **Influencer** |
