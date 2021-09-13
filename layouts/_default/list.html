@@ -22,7 +22,7 @@
         </div>
       </div>
       {{ end }}
-      {{ $paginator := .Paginate .Data.Pages }}
+      {{ $paginator := .Paginate  (where .Data.Pages "Type" "!=" "featured") }}
       {{ range $paginator.Pages }}
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card border-0">
