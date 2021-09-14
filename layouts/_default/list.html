@@ -3,7 +3,7 @@
 {{ partial "page-header.html" . }}
 
 <!-- checking blog -->
-{{ if or (or (eq .Section "post") (eq .Section "blog")) (or (eq .Section "categories") (eq .Section "tags") )}}
+{{ if or (or (eq .Section "post") (eq .Section "blog") (eq .Type site.Params.blogCategoryType)) (or (eq .Section "categories") (eq .Section "tags") )}}
 
 <section class="section">
   <div class="container">
@@ -22,7 +22,7 @@
         </div>
       </div>
       {{ end }}
-      {{ $paginator := .Paginate .Data.Pages }}
+      {{ $paginator := .Paginate  (where .Data.Pages "Type" "!=" "featured") }}
       {{ range $paginator.Pages }}
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card border-0">
