@@ -13,6 +13,7 @@
 {{ end }}
 <link rel="alternate" hreflang="x-default" href="{{ .RelPermalink | absLangURL }}">
 {{ end }}
+<meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ end }}" />
 {{ with site.Params.author }}
 <meta name="author" content="{{ . }}">{{ end }}
 {{ hugo.Generator }}
