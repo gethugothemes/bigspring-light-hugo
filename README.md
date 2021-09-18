@@ -1,6 +1,6 @@
 <h1 align=center>Bigspring Light | <a target="_blank" href="https://demo.gethugothemes.com/bigspring-light" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fbigspring%2F">Page Speed (91%)</a></h1>
 
-<h1 align=center>We are thrilled to announce bigspring Pro today with lots of new features . For more Details please [check here](https://gethugothemes.com/products/bigspring)</h1>
+<h1 align=center>We are thrilled to announce bigspring Pro today with lots of new features . For more Details please <a href="https://gethugothemes.com/products/bigspring">check here<a></h1>
 
 
 <p align=center>
