@@ -1,5 +1,8 @@
 <h1 align=center>Bigspring Light | <a target="_blank" href="https://demo.gethugothemes.com/bigspring-light" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fbigspring%2F">Page Speed (91%)</a></h1>
 
+<h1 align=center>We are thrilled to announce bigspring Pro today with lots of new features . For more Details please [check here](https://gethugothemes.com/products/bigspring)</h1>
+
+
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.64.0" alt="Contributors">
     <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.64.0&color=f00&logo=hugo" />
@@ -26,7 +29,7 @@
 </p>
 
 ---
-## Features
+## ⚡ Features
 - Multiple language support (De, En) 
 - Google analytics  support
 - CSS and JS bundle with hugo pipe
@@ -83,7 +86,7 @@ issues](https://github.com/themefisher/bigspring-hugo/issues). Someone may have 
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/bigspring-hugo/issues).
 
-## Bigspring Hugo Powered Websites
+##  Bigspring Hugo Powered Websites
 - https://atomicreader.com/
 - https://www.basculasmarti.com/
 - https://www.betaclient.ch/
@@ -106,7 +109,7 @@ Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed 
 share those images.
 
 <!-- resources -->
-## Special Thanks
+## 🤝 Special Thanks
 - [Bootstrap](https://getbootstrap.com)
 - [Jquery](https://jquery.com)
 - [Font Awesome Icons](https://fontawesome.com)
