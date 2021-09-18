@@ -319,6 +319,11 @@ textarea.form-control {
     color: #fff;
     background-color: #0AA8A7; }
 
+.card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 10vw; }
+
 a.post-title {
   color: #222;
   display: block; }

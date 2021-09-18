@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "http://examplesite.org/"
 title = "Bigspring Hugo"
-theme = "bigspring"
+theme = "bigspring-light"
 # post pagination
 paginate = "3"
 # post excerpt
