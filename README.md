@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.64.0&color=f00&logo=hugo" />
   </a>
 
-  <a href="https://github.com/themefisher/bigspring-hugo/blob/master/LICENSE">
+  <a href="https://github.com/themefisher/bigspring-light/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/themefisher/bigspring-hugo" alt="license"></a>
 
   <img src="https://img.shields.io/github/languages/code-size/themefisher/bigspring-hugo" alt="code size">
@@ -54,7 +54,7 @@ Caching enable                             | ![](https://demo.gethugothemes.com/
 17+ Premium Pages                          | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
 Site verification support (google, bing, baidu)       | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
 Priority Support                           | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
-Get It Now | [![download-light](https://demo.gethugothemes.com/icons/download.png)](https://github.com/gethugothemes/bigspring-light/archive/refs/heads/master.zip) | [![download](https://demo.gethugothemes.com/icons/grab.png)](https://gethugothemes.com/products/bigspring/?ref=github)
+Get It Now | [![download-light](https://demo.gethugothemes.com/icons/download.png)](https://github.com/themefisher/bigspring-light/archive/refs/heads/master.zip) | [![download](https://demo.gethugothemes.com/icons/grab.png)](https://gethugothemes.com/products/bigspring/?ref=github)
 
 
 ## Local development
@@ -138,6 +138,6 @@ We are available for **Hiring** for your next HUGO project. Please, check our
 
 <!-- premium themes -->
 ## Premium Themes By Us
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![revolve](https://demo.gethugothemes.com/thumbnails/revolve.webp)](https://gethugothemes.com/products/revolve/) | [![influencer](https://demo.gethugothemes.com/thumbnails/influencer.webp)](https://gethugothemes.com/products/influencer/) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![revolve](https://demo.gethugothemes.com/thumbnails/revolve.webp)](https://gethugothemes.com/products/revolve/) | [![editor](https://demo.gethugothemes.com/thumbnails/editor.webp)](https://gethugothemes.com/products/editor/) |
 |:---:|:---:|:---:|
-| **Premium Theme Bundle (40+)** | **Revolve** | **Influencer** |
+| **Premium Theme Bundle (40+)** | **Revolve** | **Editor** |
