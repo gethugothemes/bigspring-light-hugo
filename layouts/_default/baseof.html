@@ -24,11 +24,10 @@ AUTHOR WEBSITE: https://gethugothemes.com
 
 	{{ if hugo.IsProduction }}
 	{{ partialCached "preloader.html" . }}
-	{{ partialCached "header.html" . }}
 	{{ else }}
 	{{ partial "preloader.html" . }}
-	{{ partial "header.html" . }}
 	{{ end }}
+	{{ partial "header.html" . }}
 
 	<main>
 		{{ block "main" . }}{{ end }}

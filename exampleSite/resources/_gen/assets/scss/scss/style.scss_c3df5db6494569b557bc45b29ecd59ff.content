@@ -284,6 +284,10 @@ textarea.form-control {
   @media (max-width: 991px) {
     .navbar-expand-lg .navbar-nav .nav-link {
       padding: 10px; } }
+#select-language {
+  background-color: transparent;
+  font-weight: 700; }
+
 .banner {
   padding: 100px 0 50px; }
 
