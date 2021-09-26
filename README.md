@@ -24,8 +24,7 @@
 ---
 
 <p align="center">
-
-![bigspring](images/tn.png)
+  <img src="https://demo.gethugothemes.com/thumbnails/bigspring-light.webp" alt="screenshot" width="100%">
 </p>
 
 
