@@ -523,7 +523,8 @@ a.post-title {
 
 .slick-dots {
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding: 0; }
   .slick-dots li {
     display: inline-block;
     margin: 0 5px; }
