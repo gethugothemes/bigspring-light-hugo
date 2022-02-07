@@ -7,7 +7,7 @@ banner:
   button:
     enable : true
     label : "Contact Us"
-    link : "contact"
+    link : "contact/"
 
 ##################### Feature ##########################
 feature:
@@ -109,5 +109,5 @@ call_to_action:
   button:
     enable : true
     label : "Contact Us"
-    link : "contact"
+    link : "contact/"
 ---
