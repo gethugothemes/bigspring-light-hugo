@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "http://examplesite.org/"
+baseURL = "http://demo.gethugothemes.com/bigspring-light/examplesite/"
 title = "Bigspring Light"
 theme = "bigspring-light"
 # post pagination
