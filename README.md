@@ -60,10 +60,10 @@ Get It Now | [![download-light](https://demo.gethugothemes.com/icons/download.pn
 
 ```bash
 # clone the repository
-git clone git@github.com:themefisher/bigspring-hugo.git
+git clone git@github.com:themefisher/bigspring-light.git
 
 # cd in the project directory
-$ cd bigspring-hugo/exampleSite/
+$ cd bigspring-light/exampleSite/
 
 # Start local dev server
 $ hugo server --themesDir ../..
