@@ -48,7 +48,6 @@ Google font loads from webfont loader      | ![](https://demo.gethugothemes.com/
 Multiple language support (En, De, Zh-Cn, Hi, Jp, ko, Fr, Es, Id, It, Ru)      | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
 Caching enable                            | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
 Multiple author support                    | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
-Caching enable                             | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
 17+ Premium Pages                          | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
 Site verification support (google, bing, baidu)       | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
 Priority Support                           | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
@@ -58,10 +57,10 @@ Get It Now | [![download-light](https://demo.gethugothemes.com/icons/download.pn
 
 ```bash
 # clone the repository
-git clone git@github.com:themefisher/bigspring-hugo.git
+git clone git@github.com:themefisher/bigspring-light.git
 
 # cd in the project directory
-$ cd bigspring-hugo/exampleSite/
+$ cd bigspring-light/exampleSite/
 
 # Start local dev server
 $ hugo server --themesDir ../..
@@ -136,12 +135,14 @@ share those images.
 
 ## Hire Us
 
-We are available for **Hiring** for your next HUGO project. Please, check our
-[services](https://gethugothemes.com/services/?ref=github)
+Besides developing unique, blazing-fast Hugo themes, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Hugo.
+
+If you need to customize the theme or complete website development from scratch, you can hire us. **Check Our
+[Services](https://gethugothemes.com/services/?utm_source=bigspring_github&utm_medium=referral&utm_campaign=github_theme_readme)**
 
 <!-- premium themes -->
 ## Premium Themes By Us
 
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png)](https://gethugothemes.com/bundle) | [![Orbitor](https://demo.gethugothemes.com/thumbnails/orbitor.png)](https://gethugothemes.com/products/orbitor/) | [![Andromeda](https://demo.gethugothemes.com/thumbnails/andromeda.png)](https://gethugothemes.com/products/andromeda/) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png)](https://gethugothemes.com/bundle/?utm_source=bigspring_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Orbitor](https://demo.gethugothemes.com/thumbnails/orbitor.png)](https://gethugothemes.com/products/orbitor/) | [![Andromeda](https://demo.gethugothemes.com/thumbnails/andromeda.png)](https://gethugothemes.com/products/andromeda/) |
 |:---:|:---:|:---:|
-| **Premium Theme Bundle (40+)** | **Orbitor** | **Andromeda** |
+| **Get 50+ Premium Hugo Themes Bundle**| **Orbitor** | **Andromeda** |
