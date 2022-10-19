@@ -1,6 +1,11 @@
-<h1 align=center>Bigspring Light | <a target="_blank" href="https://demo.gethugothemes.com/bigspring-light" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fbigspring%2F">Page Speed (91%)</a></h1>
+<h1 align=center>Bigspring Light</h1>
 
-<h1 align=center>We are thrilled to announce bigspring Pro today with lots of new features . For more Details please <a href="https://gethugothemes.com/products/bigspring">check here<a></h1>
+<p align=center>It is an ideal theme for Digital Agency, Creative Agency, Marketing Agency, Design Studios, Digital Marketing Agencies, and other business service websites. </p>
+
+<h2 align="center"> <a target="_blank" href="https://demo.gethugothemes.com/bigspring-light" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fbigspring%2Fsite%2F&form_factor=desktop">Page Speed (95%)</a></h2>
+
+
+<h2 align=center>We are thrilled to announce bigspring Pro today with lots of new features . For more Details please <a href="https://gethugothemes.com/products/bigspring">check here<a></h2>
 
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.64.0" alt="Contributors">
@@ -101,16 +106,19 @@ issue](https://github.com/themefisher/bigspring-hugo/issues).
 
 ## Bigspring Hugo Powered Websites
 
-- <https://atomicreader.com/>
+- <https://www.cheshta.org.in/>
+- <https://www.yser.agency/>
+- <https://www.roadenn.com/>
+- <https://marblewingconsulting.com/>
+- <https://cliq-inc.com/>
+- <https://segence.com/>
 - <https://www.basculasmarti.com/>
 - <https://www.betaclient.ch/>
 - <https://cliq-inc.com/>
 - <https://cloudinalconsulting.com/>
-- <https://devsineurope.com/>
 - <https://www.mujerestech.com/>
-- <https://offnote.co/>
 
-View all the websites powered by Bigspring Hugo [here](https://github.com/themefisher/bigspring-hugo/wiki/Popular-sites-powered-by-Bigspring-Hugo). Want to submit your own website powered by Bigspring Hugo? You can submit it [here](https://github.com/themefisher/bigspring-hugo/discussions/46).
+View all the websites powered by Bigspring Hugo [here](https://gethugothemes.com/showcase). Want to submit your own website powered by Bigspring Hugo? You can submit it [here](https://gethugothemes.com/showcase).
 
 <!-- licence -->
 ## License
@@ -143,6 +151,6 @@ If you need to customize the theme or complete website development from scratch,
 <!-- premium themes -->
 ## Premium Themes By Us
 
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png)](https://gethugothemes.com/bundle/?utm_source=bigspring_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Orbitor](https://demo.gethugothemes.com/thumbnails/orbitor.png)](https://gethugothemes.com/products/orbitor/) | [![Andromeda](https://demo.gethugothemes.com/thumbnails/andromeda.png)](https://gethugothemes.com/products/andromeda/) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png?)](https://gethugothemes.com/bundle/?utm_source=bigspring_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Orbitor](https://demo.gethugothemes.com/thumbnails/orbitor.png)](https://gethugothemes.com/products/orbitor/) | [![Andromeda](https://demo.gethugothemes.com/thumbnails/andromeda.png)](https://gethugothemes.com/products/andromeda/) |
 |:---:|:---:|:---:|
-| **Get 50+ Premium Hugo Themes Bundle**| **Orbitor** | **Andromeda** |
+| **Get 55+ Premium Hugo Themes Bundle**| **Orbitor** | **Andromeda** |
