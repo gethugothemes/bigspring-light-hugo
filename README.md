@@ -104,21 +104,15 @@ issues](https://github.com/themefisher/bigspring-hugo/issues). Someone may have 
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/bigspring-hugo/issues).
 
-## Bigspring Hugo Powered Websites
+## Submit Your Website To Our Showcase
 
-- <https://www.cheshta.org.in/>
-- <https://www.yser.agency/>
-- <https://www.roadenn.com/>
-- <https://marblewingconsulting.com/>
-- <https://cliq-inc.com/>
-- <https://segence.com/>
-- <https://www.basculasmarti.com/>
-- <https://www.betaclient.ch/>
-- <https://cliq-inc.com/>
-- <https://cloudinalconsulting.com/>
-- <https://www.mujerestech.com/>
+Are you using Bigspring Hugo theme? Submit it to our [showcase](https://gethugothemes.com/showcase). 
 
-View all the websites powered by Bigspring Hugo [here](https://gethugothemes.com/showcase). Want to submit your own website powered by Bigspring Hugo? You can submit it [here](https://gethugothemes.com/showcase).
+Our showcase aims to demonstrate to the world what amazing websites people like you have created utilizing our Hugo themes and to show that Hugo has tremendous capabilities as a Static Site Generator. 
+
+View all the websites powered by Bigspring Hugo from [here](https://gethugothemes.com/showcase?theme=bigspring). 
+
+[Submit](https://gethugothemes.com/showcase?submit=show) your Bigspring Hugo powered website.
 
 <!-- licence -->
 ## License
