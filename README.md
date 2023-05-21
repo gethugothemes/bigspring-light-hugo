@@ -2,7 +2,7 @@
 
 <p align=center>It is an ideal theme for Digital Agency, Creative Agency, Marketing Agency, Design Studios, Digital Marketing Agencies, and other business service websites. </p>
 
-<h2 align="center"> <a target="_blank" href="https://demo.gethugothemes.com/bigspring-light" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fbigspring%2Fsite%2F&form_factor=desktop">Page Speed (95%)</a></h2>
+<h2 align="center"> <a target="_blank" href="https://demo.gethugothemes.com/bigspring-light" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fbigspring%2Fsite%2F&form_factor=desktop">Page Speed (95%)🚀</a></h2>
 
 
 <h2 align=center>We are thrilled to announce bigspring Pro today with lots of new features . For more Details please <a href="https://gethugothemes.com/products/bigspring">check here<a></h2>
@@ -33,14 +33,13 @@
 
 ---
 
-## Discover Free & Premium Features
+## 🔑Discover Free & Premium Features
 
 Featurees | [Bigspring LIght](https://github.com/themefisher/bigspring-light)  | [Bigspring Premium](https://gethugothemes.com/products/bigspring/?ref=github) |
 :------------ |    :----:    |     :----:    |
 Google analytics support                   | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
 CSS and Js bundle with hugo pipe           | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
-Netlify settings predefine                 | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
-Forestry cms pre-configured                | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
+Netlify settings predefine                 | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)               |
 Color and fonts variable in config file    | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
 Contact form Support                       | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
 GDPR consent enable                        | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
@@ -58,7 +57,7 @@ Site verification support (google, bing, baidu)       | ![](https://demo.gethugo
 Priority Support                           | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
 Get It Now | [![download-light](https://demo.gethugothemes.com/icons/download.png)](https://github.com/themefisher/bigspring-light/archive/refs/heads/master.zip) | [![download](https://demo.gethugothemes.com/icons/grab.png)](https://gethugothemes.com/products/bigspring/?ref=github)
 
-## Local development
+## 🔧Local development
 
 ```bash
 # clone the repository
@@ -73,7 +72,7 @@ $ hugo server --themesDir ../..
 
 Or Check out [Full Documentation](https://docs.gethugothemes.com/bigspring/?ref=github).
 
-## Content Management System
+## 📋Content Management System
 
 [![import to
 Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=themefisher/bigspring-hugo&engine=hugo&version=0.87.0)
@@ -84,27 +83,27 @@ you will be able to edit and preview your site ✨.
 
 Any changes you make in Forestry will be committed back to the repo and deployed if you use [Netlify](#netlify).
 
-## Deployment and hosting
+## ⚙️Deployment and hosting
 
 [![Deploy to
 Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/themefisher/bigspring-hugo)
 
 Follow the steps.
 
-## Prefer a video? (Hugo + Netlify + Forestry)
+## 🎥Prefer a video? (Hugo + Netlify + Forestry)
 
 Build your website with **Bigspring Hugo** theme by following these easy steps (No Coding Required!)
 [Video Tutorial](https://youtu.be/ResipmZmpDU).
 
 <!-- reporting issue -->
-## Reporting Issues
+## 🐞Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the Bigspring Template. Please Search [existing
 issues](https://github.com/themefisher/bigspring-hugo/issues). Someone may have already reported the same problem.
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/bigspring-hugo/issues).
 
-## Submit Your Website To Our Showcase
+## 📱Submit Your Website To Our Showcase
 
 Are you using Bigspring Hugo theme? Submit it to our [showcase](https://gethugothemes.com/showcase). 
 
@@ -115,7 +114,7 @@ View all the websites powered by Bigspring Hugo from [here](https://gethugotheme
 [Submit](https://gethugothemes.com/showcase?submit=show) your Bigspring Hugo powered website.
 
 <!-- licence -->
-## License
+## 📄License
 
 Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed by
 [Gethugothemes](https://gethugothemes.com)
@@ -126,7 +125,7 @@ Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed 
 share those images.
 
 <!-- resources -->
-## Special Thanks
+## 🙏Special Thanks
 
 - [Bootstrap](https://getbootstrap.com)
 - [Jquery](https://jquery.com)
@@ -135,7 +134,7 @@ share those images.
 - [Google Fonts](https://fonts.google.com/)
 - [All Contributors](https://github.com/themefisher/bigspring-hugo/graphs/contributors)
 
-## Hire Us
+##👨‍💻Hire Us
 
 Besides developing unique, blazing-fast Hugo themes, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Hugo.
 
@@ -143,7 +142,7 @@ If you need to customize the theme or complete website development from scratch,
 [Services](https://gethugothemes.com/services/?utm_source=bigspring_github&utm_medium=referral&utm_campaign=github_theme_readme)**
 
 <!-- premium themes -->
-## Premium Themes By Us
+## 💎Premium Themes By Us
 
 | [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png?)](https://gethugothemes.com/bundle/?utm_source=bigspring_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Orbitor](https://demo.gethugothemes.com/thumbnails/orbitor.png)](https://gethugothemes.com/products/orbitor/) | [![Andromeda](https://demo.gethugothemes.com/thumbnails/andromeda.png)](https://gethugothemes.com/products/andromeda/) |
 |:---:|:---:|:---:|
