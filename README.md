@@ -79,10 +79,6 @@ Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com
 
 Follow the steps.
 
-## 🎥Prefer a video? (Hugo + Netlify + Forestry)
-
-Build your website with **Bigspring Hugo** theme by following these easy steps (No Coding Required!)
-[Video Tutorial](https://youtu.be/ResipmZmpDU).
 
 <!-- reporting issue -->
 ## 🐞Reporting Issues
