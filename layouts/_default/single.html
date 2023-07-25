@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 <!-- checking blog -->
-{{ if or (or (eq .Section "post") (eq .Section "blog")) (or (eq .Section "categories") (eq .Section "tags") )}}
+{{ if (eq .Section "post") | or (eq .Section "blog") | or (eq .Section "categories") | or (eq .Section "tags") | or (eq .Section site.Params.blogCategoryType) }}
 
 <section class="section">
   <div class="container">
