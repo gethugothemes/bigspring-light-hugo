@@ -8,7 +8,8 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      {{ range first 1 (where .Data.Pages "Type" "featured") }}
+      {{ $featured := first 1 (where .Data.Pages "Type" "featured") }}
+      {{ range $featured }}
       <div class="col-12 mb-5 pb-5">
         <div class="row align-items-center">
           {{ if .Params.image }}
@@ -24,7 +25,7 @@
         </div>
       </div>
       {{ end }}
-      {{ $paginator := .Paginate  (where .Data.Pages "Type" "!=" "featured") }}
+      {{ $paginator := .Paginate (complement $featured .Data.Pages) }}
       {{ range $paginator.Pages }}
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card border-0">
