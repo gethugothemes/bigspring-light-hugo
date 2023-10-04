@@ -21,3 +21,12 @@ other = "Your Message"
 
 [sendnow]
 other = "Send Now"
+
+[search_input_placeholder]
+other = "Search Here"
+
+[no_results_for]
+other = "No results for"
+
+[empty_search_results_placeholder]
+other = "Type something to search..."

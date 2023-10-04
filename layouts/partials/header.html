@@ -61,8 +61,13 @@
         <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-sm btn-primary ml-3">{{ .label }}</a>
         {{ end }}
         {{ end }}
+
+        {{ if site.Params.search.enable }}
+        <button class="search-toggle ml-3" data-target="search-modal"><i class="fas fa-search"></i></button>
+        {{end}}
       </div>
     </nav>
   </div>
 </header>
+{{ partial "search-modal.html" (dict "Context" .) }}
 {{ "<!-- /navigation -->" | safeHTML }}

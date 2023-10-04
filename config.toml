@@ -4,6 +4,12 @@
 #
 # The actual configuration files are stored in the `config/_default/` folder.
 
+############################ Output Format ###########################
+[outputFormats.SearchIndex]
+mediaType = "application/json"
+baseName = "searchindex"
+isPlainText = true
+notAlternative = true
 
 ######################### site variables ##############################
 # customize your color and font from here.
@@ -24,6 +30,15 @@ primary_font = "Lato:wght@400"
 primary_font_type = "sans-serif" # [serif/sans-serif]
 icon_font = "Font Awesome 5 Free"
 
+# search module
+[params.search]
+enable = true
+primary_color = "#0AA8A7"
+include_all_sections = true
+show_image = true
+show_description = true
+show_tags = true
+show_categories = true
 
 ############################# Plugins ##############################
 # CSS Plugins
@@ -49,3 +64,9 @@ link = "plugins/slick/slick.min.js"
 # [[params.plugins.js]]
 # link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
 # attributes = "crossorigin='anonymous' defer='defer' data-search-pseudo-elements"
+[[params.plugins.js]]
+link = "js/search.js"
+
+############################# Modules ##############################
+[[module.imports]]
+path = "github.com/gethugothemes/hugo-modules/search"

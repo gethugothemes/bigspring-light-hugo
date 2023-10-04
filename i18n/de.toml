@@ -22,3 +22,11 @@ other = "Ihre Nachricht"
 [sendnow]
 other = "Abschicken"
 
+[search_input_placeholder]
+other = "Suche hier"
+
+[no_results_for]
+other = "Keine Ergebnisse für"
+
+[empty_search_results_placeholder]
+other = "Geben Sie etwas zum Suchen ein..."

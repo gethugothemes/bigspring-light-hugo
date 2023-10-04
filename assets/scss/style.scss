@@ -22,6 +22,8 @@ $icon-font: '{{.icon_font | default "Font Awesome 5 Free"}}';
 
 @import 'common';
 
+@import 'search';
+
 @import 'templates/navigation.scss';
 
 @import 'templates/main.scss';

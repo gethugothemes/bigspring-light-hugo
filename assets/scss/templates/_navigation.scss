@@ -27,3 +27,13 @@
   background-color: transparent;
   font-weight: 700;
 }
+
+.search-toggle {
+  background-color: transparent;
+  border: 0;
+  font-size: 22px;
+
+  &:hover {
+    color: $primary-color;
+  }
+}

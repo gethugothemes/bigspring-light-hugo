@@ -13,3 +13,5 @@ googleAnalytics = "" # example : UA-123-45
 # unsafe html
 [markup.goldmark.renderer]
 unsafe = true
+[outputs]
+home = [ "html", "SearchIndex" ]
