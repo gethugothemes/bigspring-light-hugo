@@ -1,7 +1,7 @@
 /* Button style */
 .btn {
   font-size: 16px;
-  font-family: $primary-font;
+  font-family: $font-primary;
   font-weight: 600;
   text-transform: capitalize;
   padding: 15px 30px;
@@ -46,22 +46,22 @@
 }
 
 .btn-primary {
-  background-color: $primary-color;
+  background-color: $color-primary;
   color: $white;
-  border-color: $primary-color;
+  border-color: $color-primary;
 
   &:active,
   &:hover,
   &.focus,
   &.active {
-    background-color: $primary-color !important;
-    border-color: $primary-color !important;
+    background-color: $color-primary !important;
+    border-color: $color-primary !important;
   }
 }
 
 .btn-outline-primary {
   background-color: transparent;
-  color: $text-color-dark;
+  color: $color-primary;
   border-color: transparent;
 
   &:active,
@@ -69,16 +69,16 @@
   &.focus,
   &.active {
     background-color: transparent !important;
-    border-color: $primary-color !important;
-    color: $primary-color;
+    border-color: $color-primary !important;
+    color: $color-primary;
   }
   &::before{
-    border-color: $primary-color;
+    border-color: $color-primary;
   }
 }
 
 .btn-link {
-  color: $primary-color;
+  color: $color-primary;
 
   i,
   svg {
@@ -92,7 +92,7 @@
   &:hover,
   &.focus,
   &.active {
-    color: $primary-color;
+    color: $color-primary;
     text-decoration: none;
 
     i,

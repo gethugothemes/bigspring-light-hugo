@@ -1,0 +1,196 @@
+// theme switcher
+.theme-switcher {
+  cursor: pointer;
+  user-select: none;
+  margin-left: 20px;
+
+  .sun {
+    opacity: 0;
+  }
+
+  .moon,
+  .sun {
+    transition: 0.35s;
+  }
+}
+
+.dark .theme-switcher {
+  svg {
+    stroke: $white;
+  }
+
+  .sun {
+    opacity: 1;
+  }
+
+  .moon {
+    opacity: 0;
+  }
+}
+
+// content switcher
+body {
+  .only-dark {
+    display: none;
+  }
+
+  .only-light {
+    display: initial;
+  }
+
+  &.dark {
+    .only-light {
+      display: none;
+    }
+
+    .only-dark {
+      display: initial;
+    }
+  }
+}
+
+// other css
+body.dark {
+  .card-body {
+    color: $dark-text-color !important;
+  }
+  .accordion-item {
+    color: $dark-text-color !important;
+  }
+
+  background-color: $dark-body-bg;
+  &::-webkit-scrollbar-track {
+    background-color: lighten($dark-body-bg, 2);
+  }
+
+  .preloader {
+    background-color: $dark-body-bg;
+  }
+
+  .border-default {
+    border-color: $dark-border-color !important;
+  }
+
+  .border {
+    border-color: $dark-border-color !important;
+  }
+
+  .bg-white {
+    background-color: $black !important;
+  }
+
+  .bg-light {
+    background-color: $dark !important;
+  }
+
+  .text-muted,
+  .text-dark {
+    color: $dark-text-dark !important;
+  }
+
+  .text-color {
+    color: $dark-text-color !important;
+  }
+
+  .text-light {
+    color: $dark-text-light !important;
+  }
+
+  .shadow {
+    box-shadow: 0 6px 24px -1px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  // pagination
+  .pagination {
+    .page-item {
+      .page-link {
+        background: lighten($dark-body-bg, 3);
+
+        &.active,
+        &:hover {
+          background: $color-primary;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  // swiper pagination
+  .swiper-pagination-bullet {
+    border-color: $light;
+
+    &-active {
+      border-color: $color-primary;
+    }
+  }
+
+  // form
+
+  .form-select,
+  .form-control {
+    background-color: lighten(desaturate(adjust-hue($dark-body-bg, 2), 4.31), 2.94);
+    color: $white;
+    border: 1px solid rgba($white, 0.1);
+
+    &:focus {
+      border-color: rgba($color-primary, 0.5);
+    }
+  }
+
+  .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+
+    option {
+      color: $white;
+    }
+  }
+
+  .input-group-text {
+    color: $light;
+    @extend .border-default;
+  }
+
+  // content
+  .content {
+    a {
+      color: rgba($white, 0.7);
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    blockquote {
+      color: $white;
+      border-color: #454b50;
+      border-left: 2px solid $color-primary;
+      background: $dark-body-bg;
+    }
+
+    table {
+      border-color: #454b50;
+    }
+
+    tr:not(:last-child) {
+      border-bottom: 1px solid #454b50;
+    }
+
+    thead {
+      background: lighten($color: $dark, $amount: 5);
+
+      tr {
+        border-bottom: 1px solid #454b50;
+      }
+    }
+
+    tbody {
+      background: $dark-body-bg;
+    }
+
+    .notice notice-head {
+      svg {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}

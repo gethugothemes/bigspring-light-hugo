@@ -1,18 +1,27 @@
-// Preloader js
-$(window).on('load', function () {
-	$('.preloader').addClass('d-none');
-});
+// main script
+(function () {
+  "use strict";
 
-(function($) {
-	'use strict';
+  // Testimonial Slider //
+  new Swiper(".testimonial-slider", {
+    spaceBetween: 24,
+    loop: true,
+    pagination: {
+      el: ".testimonial-slider-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+  });
 
-	//slider
-	$('.slider').not('.slick-initialized').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-		dots: true,
-		arrows: false
-	});
+  // navbar toggle //
+  const navToggler = document.querySelector(".navbar-toggler");
+  const navigation = document.querySelector(".navbar-collapse");
 
-})(jQuery);
+  navToggler.addEventListener("click", function () {
+    if (navigation.classList.contains("collapse")) {
+      navigation.classList.remove("collapse");
+    } else {
+      navigation.classList.add("collapse");
+    }
+  });
+})();

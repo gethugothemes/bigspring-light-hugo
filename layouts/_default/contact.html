@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" .}}
+
+<section class="section">
+  <div class="container">
+    <div class="row gy-5">
+      <div class="col-lg-6">
+        <div class="content">{{ .Content }}</div>
+      </div>
+      <div class="col-lg-6">
+        <form method="POST" class="row g-4" action="{{site.Params.contact_form_action | safeURL}}">
+          <div class="col-lg-6">
+            <label class="mb-1" for="fname">{{ i18n "fname"}} <span class="text-danger">*</span></label>
+            <input class="form-control shadow-none" type="text" name="first_name" placeholder="{{ i18n `fname`}}" required>
+          </div>
+          <div class="col-lg-6">
+            <label class="mb-1" for="fname">{{ i18n "lname"}} <span class="text-danger">*</span></label>
+            <input class="form-control shadow-none" type="text" name="last_name" placeholder="{{ i18n `lname`}}" required>
+          </div>
+          <div class="col-lg-12">
+            <label class="mb-1" for="email">{{i18n "email"}} <span class="text-danger">*</span></label>
+            <input class="form-control shadow-none" type="email" name="email_address" placeholder="{{i18n `email`}}" required>
+          </div>
+          <div class="col-lg-12">
+            <label class="mb-1" for="email">{{i18n "message"}}</label>
+            <textarea class="form-control shadow-none" name="message" rows="4" placeholder="{{i18n `message`}}"></textarea>
+          </div>
+          <div class="col-lg-12">
+            <button class="btn btn-primary btn-sm mt-2" type="submit">{{ i18n "send"}}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

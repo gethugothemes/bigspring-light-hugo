@@ -63,11 +63,14 @@ Get It Now | [![download-light](https://demo.gethugothemes.com/icons/download.pn
 # clone the repository
 git clone git@github.com:themefisher/bigspring-light.git
 
-# cd in the project directory
-$ cd bigspring-light/exampleSite/
+# setup project
+$ npm run project-setup
+
+# Install Dependencies
+npm install
 
 # Start local dev server
-$ hugo server --themesDir ../..
+$ npm run dev
 ```
 
 Or Check out [Full Documentation](https://docs.gethugothemes.com/bigspring/?ref=github).

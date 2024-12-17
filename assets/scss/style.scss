@@ -1,29 +1,41 @@
 // Color Variables
 {{ with site.Params.variables }}
-$primary-color: {{.primary_color | default "#0AA8A7"}};
+$color-primary: {{.color_primary | default "#0AA8A7"}};
 $text-color: {{.text_color | default "#777"}};
-$text-color-dark: {{.text_color_dark | default "#222"}};
-$body-color: {{.body_color | default "#fff"}};
+$text-dark: {{.text_dark | default "#222"}};
+$text-light: {{.text_light | default "#999"}};
+$body-bg: {{.body_color | default "#fff"}};
 $border-color: {{.border_color | default "#ECECEC"}};
+$dark-body-bg: {{.dark_body_color | default "#1e262c"}};
+$dark-text-color: {{.dark_text_color | default "#cbcbcb"}};
+$dark-text-dark: {{.dark_text_dark | default "#999"}};
+$dark-text-light: {{.dark_text_light | default "#ddd"}};
+$dark-border-color: {{.dark_border_color | default "#ECECEC"}};
 $black: {{.black | default "#000"}};
 $white: {{.white | default "#fff"}};
 $light: {{.light | default "#EDF6F5"}};
+$dark: {{.dark | default "#1b2229"}};
+
 
 // Font Variables
-$primary-font: '{{ replaceRE ":[ital,]*wght@[0-9,;]+" "" .primary_font | default "Lato"}}', {{.primary_font_type | default "sans-serif"}};
-$icon-font: '{{.icon_font | default "Font Awesome 5 Free"}}';
+$font-size: {{.font_size | default "16px"}};
+$font-scale: {{.font_scale | default "1.25"}};
+$font-primary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;.]+" "" .font_primary | default "Lato") "+" " "}}', {{.font_primary_type | default "sans-serif"}};
+$font-icon: '{{.font_icon | default "Font Awesome 6 Free"}}';
 {{ end }}
 
+@import 'templates/bootstrap';
 @import 'mixins';
-
-@import 'typography';
-
 @import 'buttons';
-
+@import 'typography';
 @import 'common';
-
-@import 'templates/navigation.scss';
-
-@import 'templates/main.scss';
-
+@import 'common-dark';
+@import 'templates/navigation';
+@import 'templates/main';
+@import 'notice';
+@import 'tab';
+@import 'images';
+// @import 'gallery-slider';
+@import 'toc';
 @import 'custom';
+@import 'preloader';

@@ -1,18 +1,11 @@
-<!-- 
-
-PROJECT: Bigspring Hugo
-VERSION: 2.0.0
-AUTHOR: Gethugothemes
-AUTHOR WEBSITE: https://gethugothemes.com
-
--->
-
 <!DOCTYPE html>
-<html lang="{{ site.LanguageCode | default `en-US` }}">
+<html lang="{{ site.LanguageCode | default `en-US` }}" itemscope itemtype="http://schema.org/WebPage">
 
 <head>
+	<!-- head (don't cache it) -->
 	{{ partial "head.html" . }}
 
+	<!-- cache partial only in production -->
 	{{ if hugo.IsProduction }}
 	{{ partialCached "style.html" . }}
 	{{ else }}
@@ -21,18 +14,22 @@ AUTHOR WEBSITE: https://gethugothemes.com
 </head>
 
 <body>
-
+	<!-- cache partial only in production -->
 	{{ if hugo.IsProduction }}
 	{{ partialCached "preloader.html" . }}
+	{{ partialCached "gtm-noscript.html" . }}
 	{{ else }}
 	{{ partial "preloader.html" . }}
 	{{ end }}
+	
+	<!-- header (don't cache it) -->
 	{{ partial "header.html" . }}
 
 	<main>
 		{{ block "main" . }}{{ end }}
 	</main>
 
+	<!-- cache partial only in production -->
 	{{ if hugo.IsProduction }}
 	{{ partialCached "footer.html" . }}
 	{{ partialCached "script.html" . }}

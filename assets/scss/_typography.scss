@@ -2,7 +2,7 @@
 
 body {
   line-height: 1.2;
-  font-family: $primary-font;
+  font-family: $font-primary;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   color: $text-color;
@@ -14,7 +14,7 @@ p,
   color: $text-color;
   font-size: 16px;
   line-height: 1.7;
-  font-family: $primary-font;
+  font-family: $font-primary;
 }
 
 small {
@@ -27,8 +27,8 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  color: $text-color-dark;
-  font-family: $primary-font;
+  color: $dark;
+  font-family: $font-primary;
   font-weight: 700;
   line-height: 1.2;
 }

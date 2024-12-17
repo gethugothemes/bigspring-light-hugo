@@ -1,0 +1,12 @@
+{
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "parser": "go-template",
+        "bracketSameLine": true,
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    }
+  ]
+}

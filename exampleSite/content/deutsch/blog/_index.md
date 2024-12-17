@@ -1,7 +1,7 @@
 ---
-title: "Neuigkeiten"
-subtitle: ""
+title: "Neuesten Nachrichten"
+subtitle: "Lesen Sie alle neuesten Blog-Beiträge"
 # meta description
-description: "Dies ist die Metabeschreibung"
+description: "Lesen Sie alle neuesten Blog-Beiträge"
 draft: false
 ---

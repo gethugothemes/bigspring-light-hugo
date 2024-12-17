@@ -1,50 +1,35 @@
 body {
-  background-color: $body-color;
+  background-color: $body-bg;
   overflow-x: hidden;
 }
 
+.preloader {
+  z-index: 9898989 !important;
+  background-color: $body-bg;
+}
+
 ::selection {
-  background-color:darken($color: $primary-color, $amount: 10);
+  background-color: darken($color: $color-primary, $amount: 10);
   color: $white;
 }
 
 body::-webkit-scrollbar {
-  width: .5rem;
+  width: 0.8rem;
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #eee;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: $primary-color;
-  outline: 2px solid #fff;
-}
-
-
-/* preloader */
-
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-ol,
-ul {
-  margin: 0px;
+  background-color: $color-primary;
 }
 
 img {
   vertical-align: middle;
   border: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 a,
@@ -53,11 +38,15 @@ a:focus {
   text-decoration: none;
 }
 
+a.text-dark:hover {
+  color: $color-primary !important;
+}
+
 a,
 button,
 select {
   cursor: pointer;
-  transition: .2s ease;
+  transition: 0.2s ease;
 
   &:focus {
     outline: 0;
@@ -65,19 +54,16 @@ select {
 }
 
 a:hover {
-  color: $primary-color;
-}
-
-.slick-slide {
-  outline: 0;
+  color: $color-primary;
 }
 
 .section {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
 
-  &-title {
-    margin-bottom: 30px;
+  @include tablet {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
   }
 }
 
@@ -87,89 +73,372 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+.fit-cover {
+  object-fit: cover !important;
+}
+
 .border-default {
   border-color: $border-color !important;
 }
 
-/* overlay */
+// pagination
+.pagination {
+  margin-top: 1.8rem;
+  justify-content: center;
 
-.overlay {
-  position: relative;
+  .page-item {
+    .page-link {
+      display: inline-block;
+      width: 2.8rem;
+      height: 2.8rem;
+      line-height: 2.8rem;
+      font-weight: 600;
+      border-radius: 5px;
+      background: $light;
+      text-align: center;
+      padding: 0;
+      margin-right: 0.8rem;
+      border: 0;
+      color: $color-primary;
 
-  &::before {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: $black;
-    opacity: .5;
+      &.active,
+      &:hover {
+        background: $color-primary;
+        color: $white;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    &:first-child,
+    &:last-child {
+      .page-link {
+        border-radius: 5px;
+      }
+    }
+
+    &.active {
+      .page-link {
+        background: $color-primary;
+        color: $white;
+      }
+    }
   }
 }
 
+// swiper setting
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: -8px;
+}
+
+.swiper-pagination-bullet {
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  color: transparent;
+  margin: 0 6px !important;
+  padding: 5px;
+  border: 1px solid $color-primary;
+  background-color: transparent;
+  transition: 0.2s ease;
+
+  &-active {
+    background-color: $color-primary;
+  }
+}
+
+// helper classes
+.text-primary {
+  color: $color-primary !important;
+}
+
 .bg-primary {
-  background-color: $primary-color !important;
+  background-color: $color-primary !important;
+}
+
+.text-default {
+  color: $text-color !important;
+}
+
+.text-dark {
+  color: $text-dark !important;
 }
 
 .bg-light {
   background-color: $light !important;
 }
 
-.text-primary {
-  color: $primary-color !important;
+// font weight
+.fw-500 {
+  font-weight: 500 !important;
 }
 
-.rounded-lg{
-  border-radius: 10px !important;
+.fw-600 {
+  font-weight: 600 !important;
 }
 
-.shadow{
-  box-shadow: 0 12px 24px -6px rgba(45,67,121,.10) !important;
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+// rounded
+.rounded-1 {
+  border-radius: 5px !important;
+}
+
+.rounded-2 {
+  border-radius: 0.8rem !important;
+}
+
+.rounded-3 {
+  border-radius: 1rem !important;
+}
+
+// shadow
+.shadow {
+  box-shadow: 0 6px 24px -6px rgba(45, 67, 121, 0.15) !important;
 }
 
 // form control
-
+.form-select,
 .form-control {
+  padding: 1rem 1.2rem;
+  border: 1px solid rgba($black, 0.1);
+  height: 3rem;
+  transition: 0.3s ease;
+  border-radius: 4px;
+
   &:focus {
-    outline: 0;
-    border-color: $primary-color;
-    box-shadow: none;
+    border-color: rgba($color-primary, 0.5);
+  }
+}
+
+.dark {
+  // form control
+  .form-select,
+  .form-control {
+    &::placeholder {
+      color: rgba($white, 0.5);
+    }
+  }
+}
+
+.input-group {
+  position: relative;
+
+  .form-control {
+    padding-left: 45px;
+    background-color: transparent;
   }
 
-  &::placeholder {
-    color: $text-color;
+  .input-group-text {
+    border: 0;
+    top: 11px;
+    @extend .px-3;
+    z-index: 3;
+    background-color: transparent;
+    position: absolute;
   }
+}
+
+.form-select {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 textarea.form-control {
-  height: 100px !important;
+  height: auto;
 }
 
-.list-unstyled{
-  li{
-    margin-bottom: 10px;
+.form-control[type="file"] {
+  padding: 11px 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+form label {
+  font-size: 95%;
+  font-weight: 500;
+  @extend .text-dark;
+}
+
+// list-unstyled
+.list-unstyled {
+  li {
+    margin-bottom: 0.8rem;
   }
 }
 
-.check-mark{
+// check-mark
+.check-mark {
   position: relative;
-  padding-left: 0px;
-  &::before{
+  padding-left: 38px;
+
+  &::before {
     position: absolute;
     content: "\f058";
-    color: $primary-color;
-    font-size: 25px;
-    font-family: $icon-font;
+    color: $color-primary;
+    font-size: 1.7rem;
+    font-family: $font-icon;
     font-weight: 900;
+    left: 0;
+    top: 0;
+  }
+
+  svg {
+    position: absolute;
+    color: $color-primary;
+    font-size: 1.7rem;
     left: -30px;
     top: 3px;
   }
-  svg{
-    position: absolute;
-    color: $primary-color;
-    font-size: 25px;
-    left: -30px;
-    top: 3px;
+}
+
+// content style
+.content {
+  * {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 1rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1.4rem;
+    margin-bottom: 0.7rem;
+  }
+
+  b,
+  strong {
+    font-weight: 500;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  ol,
+  ul {
+    padding-left: 1.2rem;
+
+    li {
+      margin-bottom: 0.8rem !important;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+    margin-bottom: 1.2rem;
+    list-style-type: none;
+
+    li {
+      padding-left: 1.2rem;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background: $color-primary;
+        left: 3px;
+        top: 8px;
+      }
+    }
+  }
+  pre {
+    padding: 1rem;
+  }
+
+  table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid $border-color;
+  }
+
+  table td,
+  table th {
+    padding: 0.75rem;
+    vertical-align: top;
+    margin-bottom: 0;
+  }
+
+  tr:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+
+  th {
+    font-weight: 500;
+  }
+
+  thead {
+    background: $light;
+    margin-bottom: 0;
+
+    tr {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  tbody {
+    background: lighten($color: $light, $amount: 5);
+    margin-bottom: 0;
+  }
+
+  blockquote {
+    color: $text-color;
+    padding: 1.2rem 30px;
+    border: 1px solid #eee;
+    border-left: 2px solid $color-primary;
+    margin: 2rem 0;
+    background: $white;
+    @extend .rounded-2;
+
+    p {
+      margin-bottom: 0 !important;
+    }
+
+    cite {
+      display: inline-block;
+      margin-top: 1rem;
+    }
+  }
+
+  .notice {
+    svg {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &-title {
+    margin-bottom: 30px;
   }
 }

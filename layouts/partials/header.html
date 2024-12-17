@@ -3,16 +3,15 @@
   <div class="container">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <a class="navbar-brand" href="{{ site.BaseURL | absLangURL }}">
-        {{ with site.Params.logo}}
-        <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
-        {{ else }}{{site.Title}}{{end}}
+      <!-- navbar brand/logo -->
+      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+        {{ partial "logo.html" }}
       </a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation" aria-label="menu">
+      <button class="navbar-toggler border-0" type="button">
         <i class="fas fa-bars"></i>
       </button>
 
-      <div class="collapse navbar-collapse text-center" id="navigation">
+      <div class="collapse navbar-collapse text-center">
         <ul class="navbar-nav mx-auto">
           {{ range site.Menus.main }}
           {{ if .HasChildren }}

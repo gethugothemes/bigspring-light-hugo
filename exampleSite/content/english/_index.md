@@ -43,7 +43,7 @@ feature:
     - name : "Cloud Support"
       icon : "fas fa-cloud"
       content : "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-      
+
 
 
 ######################### Service #####################
@@ -98,7 +98,6 @@ screenshot:
   title : "Experience the best <br> workflow with us"
   image : "images/screenshot.svg"
 
-  
 
 ##################### Call to action #####################
 call_to_action:

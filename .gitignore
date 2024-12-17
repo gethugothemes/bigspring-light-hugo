@@ -9,3 +9,10 @@ builds
 package-lock.json
 public
 resources
+.hugo_build.lock
+jsconfig.json
+hugo_stats.json
+go.sum
+yarn.lock
+.lock
+jsconfig.json

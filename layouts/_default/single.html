@@ -1,23 +1,36 @@
 {{ define "main" }}
 
 <!-- checking blog -->
-{{ if (eq .Section "post") | or (eq .Section "blog") | or (eq .Section "categories") | or (eq .Section "tags") | or (eq .Section site.Params.blogCategoryType) }}
+{{ if or (or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs")) (or (eq .Section "categories") (eq .Section "tags") )}}
 
 <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        {{ if .Params.image }}
-        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="img-fluid w-100 rounded mb-4">
-        {{ end }}
-        <h2 class="mb-4">{{ .Title }}</h2>
-        <div class="content">{{.Content}}</div>
-        
-        <!-- comments -->
-        {{ if site.DisqusShortname }}
-        <div class="mt-5">
-          {{ template "_internal/disqus.html" . }}
+        {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-2 w-100 mb-5") }}
+        <h2>{{ .Title }}</h2>
+        <div class="mt-4 content">{{.Content}}</div>
+        {{ with site.GetPage (string .Params.Author | urlize | lower) }}
+        {{if .Title}}
+        <div class="d-block d-sm-flex border p-5 pb-4 rounded-2 mt-5">
+          <div class="mb-3" style="min-width: 110px">
+            {{ if .Params.image }}
+            {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-circle" "Command" "Fill" "Size" "80x80") }}
+            {{ else }}
+            <i class="far fa-user-circle mb-1" style="font-size:82px"></i>
+            {{ end }}
+          </div>
+          <div>
+            <h3 class="h5 title mb-1"><a href="{{.RelPermalink}}" class="text-dark">{{ .Title }}</a></h3>
+            <div class="content">{{ .Content | truncate 135}}</div>
+            <ul class="list-inline social-icons justify-content-start mt-3 mb-0">
+              {{ range .Params.social }}
+              <li class="list-inline-item"><a class="d-inline-block" href="{{ .link | safeURL}}"><i class="{{ .icon }}"></i></a></li>
+              {{ end }}
+            </ul>
+          </div>
         </div>
+        {{ end }}
         {{ end }}
       </div>
     </div>

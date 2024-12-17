@@ -6,22 +6,22 @@ weight = 1
 
 [[main]]
 name = "Blog"
-url = "blog/"
+url = "/blog"
 weight = 2
 
 [[main]]
 name = "Pricing"
-url = "pricing/"
+url = "/pricing"
 weight = 3
 
 [[main]]
 name = "Contact"
-url = "contact/"
+url = "/contact"
 weight = 4
 
 [[main]]
 name = "FAQ"
-url = "faq/"
+url = "/faq"
 weight = 5
 
 # footer menu left
@@ -35,13 +35,13 @@ url = "#"
 
 [[footer_left]]
 name = "Pricing"
-url = "pricing/"
+url = "/pricing"
 
 
 # footer menu middle
 [[footer_middle]]
 name = "Pricing"
-url = "pricing/"
+url = "/pricing"
 
 [[footer_middle]]
 name = "Platform"
@@ -54,12 +54,12 @@ url = "#"
 # footer menu right
 [[footer_right]]
 name = "Privacy Policy"
-url = "privacy-policy/"
+url = "/privacy-policy"
 
 [[footer_right]]
 name = "Terms & Conditions"
-url = "terms-conditions/"
+url = "/terms-conditions"
 
 [[footer_right]]
 name = "FAQ"
-url = "faq/"
+url = "/faq"

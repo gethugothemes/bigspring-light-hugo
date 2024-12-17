@@ -1,8 +1,10 @@
 ---
 title: "Pump-up the team morale and celebrate the excellence"
-date: 2020-04-18T10:07:21+06:00
+date: 2020-07-18T10:07:21+06:00
 # post image
 image: "images/blog/post-2.jpg"
+# author
+author: "Joseph Gonzalez"
 # post type (regular/featured)
 type: "regular"
 # meta description
@@ -12,29 +14,15 @@ draft: false
 ---
 
 
-#### Heading example
+Heading example Here is example of hedings. You can use this heading by following markdownify rules.
 
-Here is example of hedings. You can use this heading by following markdownify rules. For example: use `#` for heading 1 and use `######` for heading 6.
+
 
 # Heading 1 
-<br>
-
 ## Heading 2 
-
-<br>
-
 ### Heading 3 
-
-<br>
-
 #### Heading 4 
-
-<br>
-
 ##### Heading 5 
-
-<br>
-
 ###### Heading 6
 
 
@@ -163,10 +151,11 @@ Markdown | Less | Pretty
 
 ##### Image
 
-![image](../../images/blog/post-6.jpg)
+{{< image src="images/blog/post-6.jpg" caption="an image caption" alt="alter-text" height="425" width="860" position="center" command="fit" option="q100" class="img-fluid" title="image title" >}}
+
 
 <hr>
 
 ##### Youtube video
 
-{{< youtube C0DPdy98e4c >}}
+{{< youtube ResipmZmpDU >}}
