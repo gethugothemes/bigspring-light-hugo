@@ -12,8 +12,7 @@
     "preview:example": "cd exampleSite; hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
     "update-modules": "node ./scripts/clearModules.js && hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy",
     "project-setup": "node ./scripts/projectSetup.js",
-    "theme-setup": "node ./scripts/themeSetup.js",
-    "format": "prettier -w ."
+    "theme-setup": "node ./scripts/themeSetup.js"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^6.0.0",
