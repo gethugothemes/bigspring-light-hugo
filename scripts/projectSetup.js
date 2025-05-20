@@ -12,7 +12,7 @@ const extractThemeFromConfig = (content) => {
 
 const getFolderName = (rootfolder) => {
   const configPath = path.join(rootfolder, "exampleSite/hugo.toml");
-  const configFileContent = readConfigFile(configPath);
+  const configFileContent = readConfigFile(csonfigPath);
   return extractThemeFromConfig(configFileContent);
 };
 
