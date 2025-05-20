@@ -13,34 +13,47 @@ const deleteFolder = (folderPath) => {
   }
 };
 
-const getFolderName = (rootfolder) => {
-  const configPath = path.join(
-    rootfolder,
-    "exampleSite/hugo.toml"
-  );
-  const getConfig = fs.readFileSync(configPath, "utf8");
-  const match = getConfig.match(/theme\s*=\s*\[?"([^"\]]+)"\]?/);
-  let selectedTheme = null;
-  if (match && match[1]) {
-    selectedTheme = match[1];
-  }
-  return selectedTheme;
+const readConfigFile = (configPath) => {
+  return fs.readFileSync(configPath, "utf8");
 };
 
-const iterateFilesAndFolders = (rootFolder, { destinationRoot }) => {
-  const directory = path.join(rootFolder);
-  const items = fs.readdirSync(directory, { withFileTypes: true });
+const extractThemeFromConfig = (content) => {
+  const match = content.match(/theme\s*=\s*\[?"([^"\]]+)"\]?/);
+  return match ? match[1] : null;
+};
+
+const getFolderName = (rootfolder) => {
+  const configPath = path.join(rootfolder, "exampleSite/hugo.toml");
+  const configFileContent = readConfigFile(configPath);
+  return extractThemeFromConfig(configFileContent);
+};
+
+const readDirectory = (directory) => {
+  return fs.readdirSync(directory, { withFileTypes: true });
+};
+
+const moveFile = (source, destination) => {
+  fs.renameSync(source, destination);
+};
+
+const ensureFolderExists = (folder) => {
+  if (!fs.existsSync(folder)) {
+    fs.mkdirSync(folder, { recursive: true });
+  }
+};
+
+const iterateFilesAndFolders = (sourceDir, destDir) => {
+  const items = readDirectory(sourceDir);
+
   items.forEach((item) => {
+    const sourcePath = path.join(sourceDir, item.name);
+    const destPath = path.join(destDir, item.name);
+
     if (item.isDirectory()) {
-      createNewfolder(destinationRoot, item.name);
-      iterateFilesAndFolders(path.join(directory, item.name), {
-        currentFolder: item.name,
-        destinationRoot: path.join(destinationRoot, item.name),
-      });
+      ensureFolderExists(destPath);
+      iterateFilesAndFolders(sourcePath, destPath);
     } else {
-      const sourceFile = path.join(directory, item.name);
-      const destinationFile = path.join(destinationRoot, item.name);
-      fs.renameSync(sourceFile, destinationFile);
+      moveFile(sourcePath, destPath);
     }
   });
 };
@@ -49,45 +62,49 @@ const setupTheme = () => {
   const rootFolder = path.join(__dirname, "../");
 
   if (!fs.existsSync(path.join(rootFolder, "exampleSite"))) {
-    const includesFiles = [
-      "tailwind.config.js",
-      "postcss.config.js",
-      "go.mod",
-      "hugo.toml",
-      "assets",
-      "config",
-      "data",
-      "content",
-      "i18n",
-      "static",
-    ];
-
-    const folder = createNewfolder(rootFolder, "exampleSite");
-
-    fs.readdirSync(rootFolder, { withFileTypes: true }).forEach((file) => {
-      if (includesFiles.includes(file.name)) {
-        if (file.isDirectory()) {
-          const destination = path.join(rootFolder, "exampleSite", file.name);
-          fs.mkdirSync(destination, { recursive: true });
-          iterateFilesAndFolders(path.join(rootFolder, file.name), {
-            destinationRoot: destination,
-          });
-          deleteFolder(path.join(rootFolder, file.name));
-        } else {
-          fs.renameSync(
-            path.join(rootFolder, file.name),
-            path.join(folder, file.name)
-          );
-        }
-      }
-    });
-
-    const themes = path.join(rootFolder, "themes");
-    iterateFilesAndFolders(path.join(themes, getFolderName(rootFolder)), {
-      destinationRoot: rootFolder,
-    });
-    deleteFolder(themes);
+    createExampleSiteStructure(rootFolder);
+    moveThemeFiles(rootFolder);
   }
+};
+
+const createExampleSiteStructure = (rootFolder) => {
+  const includesFiles = [
+    "tailwind.config.js",
+    "postcss.config.js",
+    "go.mod",
+    "hugo.toml",
+    "assets",
+    "config",
+    "data",
+    "content",
+    "i18n",
+    "static",
+  ];
+
+  const folder = createNewfolder(rootFolder, "exampleSite");
+
+  fs.readdirSync(rootFolder, { withFileTypes: true }).forEach((file) => {
+    if (includesFiles.includes(file.name)) {
+      if (file.isDirectory()) {
+        const destination = path.join(rootFolder, "exampleSite", file.name);
+        ensureFolderExists(destination);
+        iterateFilesAndFolders(path.join(rootFolder, file.name), destination);
+        deleteFolder(path.join(rootFolder, file.name));
+      } else {
+        moveFile(
+          path.join(rootFolder, file.name),
+          path.join(folder, file.name)
+        );
+      }
+    }
+  });
+};
+
+const moveThemeFiles = (rootFolder) => {
+  const themes = path.join(rootFolder, "themes");
+  const themeName = getFolderName(rootFolder);
+  iterateFilesAndFolders(path.join(themes, themeName), rootFolder);
+  deleteFolder(themes);
 };
 
 setupTheme();
