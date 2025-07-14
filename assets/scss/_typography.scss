@@ -74,3 +74,25 @@ h6,
 .display-3{
   font-size: 3.5rem;
 }
+
+// Dark theme typography
+.dark {
+  body {
+    color: $dark-text-color;
+  }
+
+  li, th, td,
+  p,
+  .paragraph {
+    color: $dark-text-color;
+  }
+
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    color: $white;
+  }
+}

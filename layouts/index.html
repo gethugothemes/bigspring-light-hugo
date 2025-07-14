@@ -14,7 +14,7 @@
         {{ end }}
         {{ end }}
 
-        {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="750px">{{end}}
+        {{with .image}}{{ partial "image" (dict "Src" . "Alt" "Banner image" "Class" "img-fluid mt-5") }}{{end}}
       </div>
     </div>
   </div>
@@ -54,7 +54,7 @@
 {{ if .enable }}
 {{ range $i,$p := .service_item }}
 {{if modBool $i 2}}
-<section class="section">
+<section class="section service-section">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 order-2 order-md-1">
@@ -72,7 +72,7 @@
             <div {{if gt (len .images) 1}}class="swiper-wrapper" {{end}}>
               {{ range .images }}
               <div class="swiper-slide">
-                {{ partial "image.html" (dict "Src" . "Alt" "Image" ) }}
+                {{ partial "image" (dict "Src" . "Alt" "Image" ) }}
               </div>
               {{ end }}
             </div>
@@ -83,7 +83,7 @@
   </div>
 </section>
 {{ else }}
-<section class="section bg-light">
+<section class="section bg-light service-section even">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0">
@@ -91,7 +91,7 @@
           <div {{if gt (len .images) 1}}class="swiper-wrapper" {{end}}>
             {{ range .images }}
             <div class="swiper-slide">
-              {{ partial "image.html" (dict "Src" . "Alt" "Image" ) }}
+              {{ partial "image" (dict "Src" . "Alt" "Image" ) }}
             </div>
             {{ end }}
           </div>
@@ -125,7 +125,7 @@
 <!-- screenshot -->
 {{ with .Params.screenshot }}
 {{ if .enable }}
-<section class="section pb-0">
+<section class="section pb-0 screenshot-section">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto text-center">
@@ -133,7 +133,7 @@
       </div>
     </div>
   </div>
-  {{ with .image }} <img src="{{ . | relURL }}" alt="" class="img-fluid w-100">{{ end }}
+  {{ with .image }}{{ partial "image" (dict "Src" . "Alt" "Screenshot" "Class" "img-fluid w-100") }}{{ end }}
 </section>
 {{ end }}
 {{ end }}
@@ -143,7 +143,7 @@
 {{ with .Params.call_to_action }}
 {{ if .enable }}
 <section class="section">
-  <div class="container section shadow rounded-lg px-4">
+  <div class="container section shadow rounded-lg px-4 call-to-action">
     <div class="row align-items-center justify-content-center text-center text-md-left">
       <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
         {{ partial "image" (dict "Src" .image "Alt" "call to action image" "Class" "img-fluid w-100") }}

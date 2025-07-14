@@ -21,6 +21,12 @@
   }
 }
 
+.dark {
+  .feature-card {
+    background-color: $dark-body-bg;
+  }
+}
+
 // has-hover-translate
 .is-hoverable {
   transition: 0.2s ease;

@@ -1,0 +1,20 @@
+{{ $image := .Src }}
+{{ $alt := .Alt }}
+{{ $class := .Class }}
+{{ $size := .Size }}
+{{ $command := .Command }}
+
+{{ if $image }}
+  {{ if (fileExists (add `assets/` $image)) }}
+    {{ $img := resources.Get $image }}
+    {{ if $size }}
+      {{ $img = $img.Resize $size }}
+    {{ end }}
+    {{ if $command }}
+      {{ $img = $img.Fill $size }}
+    {{ end }}
+    <img src="{{ $img.RelPermalink }}" alt="{{ $alt }}" class="{{ $class }}" />
+  {{ else }}
+    <img src="{{ $image | relURL }}" alt="{{ $alt }}" class="{{ $class }}" />
+  {{ end }}
+{{ end }} 

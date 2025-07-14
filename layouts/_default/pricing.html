@@ -2,14 +2,19 @@
 
 {{ partial "page-header.html" . }}
 
-<section class="section my-0 my-lg-5">
+<section class="section pricing-section my-0 my-lg-5">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <div class="row gy-5 align-items-lg-center justify-content-center">
           {{ range $i, $e:= .Params.pricing_list}}
           <div class="col-lg-4 col-md-6 px-4 px-lg-0">
-            <div class="card shadow bg-white {{if .recommended}}recommended{{end}} {{if gt $i 2}}mt-lg-5{{end}}">
+            <div class="card shadow bg-white pricing-card {{if .recommended}}recommended{{end}} {{if gt $i 2}}mt-lg-5{{end}}">
+              {{ if .recommended }}
+              <div class="recommended-badge position-absolute top-0 start-50 translate-middle-x bg-primary text-white px-3 py-1 rounded-bottom">
+                <small><i class="fas fa-star me-1"></i>Khuyến nghị</small>
+              </div>
+              {{ end }}
               <div class="card-body text-center py-5">
                 <h3 class="mb-4">{{ .name | markdownify }}</h3>
                 <span class="h1 fw-light">{{.currency}}</span>
@@ -38,7 +43,7 @@
 <!-- call to action -->
 {{ if .Params.call_to_action.enable }}
 {{ with .Params.call_to_action }}
-<section class="section">
+<section class="section call-to-action">
   <div class="container section shadow rounded-lg px-4">
     <div class="row align-items-center justify-content-center text-center text-md-left">
       <div class="col-lg-4 col-md-5 mb-4 mb-md-0 text-center">
