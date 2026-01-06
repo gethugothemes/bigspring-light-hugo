@@ -28,7 +28,7 @@
 ---
 
 <p align="center">
-  <img src="https://demo.gethugothemes.com/thumbnails/bigspring-light.png" alt="screenshot" width="100%">
+  <img src="https://assets.teamosis.com/thumbs/bigspring-light.png" alt="screenshot" width="100%">
 </p>
 
 ---
@@ -37,25 +37,25 @@
 
 Featurees | [Bigspring LIght](https://github.com/themefisher/bigspring-light)  | [Bigspring Premium](https://gethugothemes.com/products/bigspring/?ref=github) |
 :------------ |    :----:    |     :----:    |
-Google analytics support                   | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
-CSS and Js bundle with hugo pipe           | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
-Netlify settings predefine                 | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)               |
-Color and fonts variable in config file    | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
-Contact form Support                       | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
-GDPR consent enable                        | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
-Google page speed optimized                | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
-Open graph meta tag                        | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
-Twitter card meta tag                      | ![](https://demo.gethugothemes.com/icons/tick.png) | ![](https://demo.gethugothemes.com/icons/tick.png)                |
-Dark and Light mode available              | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png)          |
-image optimize with hugo pipe              | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png)          |
-Google font loads from webfont loader      | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png)          |
-Multiple language support (En, De, Zh-Cn, Hi, Jp, ko, Fr, Es, Id, It, Ru)      | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
-Caching enable                            | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
-Multiple author support                    | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
-17+ Premium Pages                          | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
-Site verification support (google, bing, baidu)       | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
-Priority Support                           | ![](https://demo.gethugothemes.com/icons/x.png) | ![](https://demo.gethugothemes.com/icons/tick.png) |
-Get It Now | [![download-light](https://demo.gethugothemes.com/icons/download.png)](https://github.com/themefisher/bigspring-light/archive/refs/heads/master.zip) | [![download](https://demo.gethugothemes.com/icons/grab.png)](https://gethugothemes.com/products/bigspring/?ref=github)
+Google analytics support                   | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
+CSS and Js bundle with hugo pipe           | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
+Netlify settings predefine                 | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)               |
+Color and fonts variable in config file    | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
+Contact form Support                       | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
+GDPR consent enable                        | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
+Google page speed optimized                | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
+Open graph meta tag                        | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
+Twitter card meta tag                      | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
+Dark and Light mode available              | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png)          |
+image optimize with hugo pipe              | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png)          |
+Google font loads from webfont loader      | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png)          |
+Multiple language support (En, De, Zh-Cn, Hi, Jp, ko, Fr, Es, Id, It, Ru)      | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
+Caching enable                            | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
+Multiple author support                    | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
+17+ Premium Pages                          | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
+Site verification support (google, bing, baidu)       | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
+Priority Support                           | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
+Get It Now | [![download-light](https://assets.teamosis.com/icons/download.png)](https://github.com/themefisher/bigspring-light/archive/refs/heads/master.zip) | [![download](https://assets.teamosis.com/icons/grab.png)](https://gethugothemes.com/products/bigspring/?ref=github)
 
 ## 🔧Local development
 
@@ -75,13 +75,19 @@ $ npm run dev
 
 Or Check out [Full Documentation](https://docs.gethugothemes.com/bigspring/?ref=github).
 
-## ⚙️Deployment and hosting
+<!-- edit with sitepins -->
 
-[![Deploy to
-Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/themefisher/bigspring-hugo)
+## 📝 Edit Content with CMS
 
-Follow the steps.
+This template comes pre-configured with [**Sitepins**](https://sitepins.com), a Git-based Headless CMS designed for seamless content management. You can update your website’s text, images, and configuration without touching a single line of code.
 
+**How to get started:**
+
+Click the Edit with Sitepins button below and follow the on-screen instructions to start editing your content visually.
+
+  <a target="_blank" href="https://app.sitepins.com/new/clone?name=Bigspring%20Light%20Hugo&repository=https://github.com/gethugothemes/bigspring-light-hugo/">
+    <img src="https://sitepins.com/button.svg" alt="Edit with Sitepins">
+  </a>
 
 <!-- reporting issue -->
 ## 🐞Reporting Issues
@@ -132,6 +138,6 @@ If you need to customize the theme or complete website development from scratch,
 <!-- premium themes -->
 ## 💎Premium Themes By Us
 
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png?)](https://gethugothemes.com/bundle/?utm_source=bigspring_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Orbitor](https://demo.gethugothemes.com/thumbnails/orbitor.png)](https://gethugothemes.com/products/orbitor/) | [![Andromeda](https://demo.gethugothemes.com/thumbnails/andromeda.png)](https://gethugothemes.com/products/andromeda/) |
+| [![Mega-Bundle-HUGO](https://assets.teamosis.com/thumbs/bundle.png?)](https://gethugothemes.com/bundle/?utm_source=bigspring_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Orbitor](https://assets.teamosis.com/thumbs/orbitor.png)](https://gethugothemes.com/products/orbitor/) | [![Andromeda](https://assets.teamosis.com/thumbs/andromeda.png)](https://gethugothemes.com/products/andromeda/) |
 |:---:|:---:|:---:|
-| **Get 55+ Premium Hugo Themes Bundle**| **Orbitor** | **Andromeda** |
+| **Get 68+ Premium Hugo Themes Bundle**| **Orbitor** | **Andromeda** |
