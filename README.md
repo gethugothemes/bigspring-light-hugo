@@ -2,7 +2,7 @@
 
 <p align=center>It is an ideal theme for Digital Agency, Creative Agency, Marketing Agency, Design Studios, Digital Marketing Agencies, and other business service websites. </p>
 
-<h2 align="center"> <a target="_blank" href="https://demo.gethugothemes.com/bigspring-light" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fbigspring%2Fsite%2F&form_factor=desktop">Page Speed (95%)🚀</a></h2>
+<h2 align="center"> <a target="_blank" href="https://bigspring-light-hugo.vercel.app/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-bigspring-light-hugo-vercel-app/4fq55n1hds?form_factor=desktop">Page Speed (99%)🚀</a></h2>
 
 
 <h2 align=center>We are thrilled to announce bigspring Pro today with lots of new features . For more Details please <a href="https://gethugothemes.com/products/bigspring">check here<a></h2>
