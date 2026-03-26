@@ -14,7 +14,9 @@
         {{ end }}
         {{ end }}
 
-        {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="750px">{{end}}
+        {{with .image}}
+          {{ partial "image.html" (dict "Src" . "Alt" "Image" "Class" "img-fluid mt-5") }}
+        {{end}}
       </div>
     </div>
   </div>
