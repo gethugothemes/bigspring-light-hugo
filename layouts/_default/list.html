@@ -4,16 +4,16 @@
 
 <section class="section mt-4">
   <div class="container">
-    <div class="row gx-md-5 gy-6">
+    <div class="flex flex-wrap -mx-4">
       {{ range first 1 (where site.RegularPages "Type" "featured") }}
-      <div class="col-12 mb-5 pb-5">
-        <div class="row align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0">
-            {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-2 w-100") }}
+      <div class="w-full px-4 mb-12 pb-12 border-b border-default">
+        <div class="flex flex-wrap items-center -mx-4">
+          <div class="w-full md:w-1/2 px-4 mb-6 md:mb-0">
+            {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-2 w-full") }}
           </div>
-          <div class="col-md-6">
-            <h2 ><a href="{{ .Permalink }}" title="{{ .Title }}" class="text-dark d-inline-block">{{ .Title }}</a></h2>
-            <p class="mb-4">{{ .Summary }}</p>  
+          <div class="w-full md:w-1/2 px-4">
+            <h2><a href="{{ .Permalink }}" title="{{ .Title }}" class="text-dark inline-block">{{ .Title }}</a></h2>
+            <p class="mb-4">{{ .Summary }}</p>
             <a href="{{.Permalink}}" title="{{ i18n `read_more` }} - {{ .Title }}" class="btn btn-sm btn-primary">{{ i18n `read_more` }}</a>
           </div>
         </div>
@@ -21,20 +21,20 @@
       {{ end }}
       {{ $paginator := .Paginate (where site.RegularPages "Section" "in" site.Params.mainSections) }}
       {{ range $paginator.Pages }}
-      <div class="col-lg-4 col-sm-6 pb-4">
-        <div class="card bg-transparent border-0">
-          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-2 mb-4" "Size" "460x") }}
-          <div class="card-body p-0">
-            <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="text-dark d-inline-block">{{ .Title }}</a></h3>
+      <div class="w-full sm:w-1/2 lg:w-1/3 px-4 pb-8">
+        <div class="bg-transparent border-0">
+          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-2 mb-4 w-full" "Size" "460x") }}
+          <div>
+            <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="text-dark inline-block">{{ .Title }}</a></h3>
             <p class="mb-4">{{ .Summary }}</p>
-            <a href="{{.Permalink}}" title="{{ i18n `read_more` }} - {{ .Title }}" class="btn btn-sm btn-primary btn-sm">{{ i18n `read_more` }}</a>
+            <a href="{{.Permalink}}" title="{{ i18n `read_more` }} - {{ .Title }}" class="btn btn-sm btn-primary">{{ i18n `read_more` }}</a>
           </div>
         </div>
       </div>
       {{ end }}
-      
+
       <!-- pagination -->
-      <div class="col-12 pt-5">
+      <div class="w-full px-4 pt-8">
         {{ partial "custom-pagination" . }}
       </div>
       <!-- /pagination -->
