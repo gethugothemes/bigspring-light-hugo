@@ -1,45 +1,35 @@
 {{ define "main" }}
-
 {{ partial "page-header.html" . }}
-
 <section class="section mt-4">
   <div class="container">
-    <div class="row gx-md-5 gy-6">
+    <div class="row">
       {{ range first 1 (where site.RegularPages "Type" "featured") }}
-      <div class="col-12 mb-5 pb-5">
-        <div class="row align-items-center">
-          <div class="col-md-6 mb-4 mb-md-0">
-            {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-2 w-100") }}
+      <div class="col-12 mb-12 pb-5 border-b border-border">
+        <div class="row items-center">
+          <div class="col-12 md:col-6 mb-4 md:mb-0">
+            {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-lg w-full") }}
           </div>
-          <div class="col-md-6">
-            <h2 ><a href="{{ .Permalink }}" title="{{ .Title }}" class="text-dark d-inline-block">{{ .Title }}</a></h2>
-            <p class="mb-4">{{ .Summary }}</p>  
-            <a href="{{.Permalink}}" title="{{ i18n `read_more` }} - {{ .Title }}" class="btn btn-sm btn-primary">{{ i18n `read_more` }}</a>
+          <div class="col-12 md:col-6">
+            <h2><a href="{{ .Permalink }}" class="text-text-dark">{{ .Title }}</a></h2>
+            <p class="mt-3 mb-4">{{ .Summary }}</p>
+            <a href="{{ .Permalink }}" class="btn btn-primary">{{ i18n "read_more" }}</a>
           </div>
         </div>
       </div>
       {{ end }}
       {{ $paginator := .Paginate (where site.RegularPages "Section" "in" site.Params.mainSections) }}
       {{ range $paginator.Pages }}
-      <div class="col-lg-4 col-sm-6 pb-4">
-        <div class="card bg-transparent border-0">
-          {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-2 mb-4" "Size" "460x") }}
-          <div class="card-body p-0">
-            <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="text-dark d-inline-block">{{ .Title }}</a></h3>
-            <p class="mb-4">{{ .Summary }}</p>
-            <a href="{{.Permalink}}" title="{{ i18n `read_more` }} - {{ .Title }}" class="btn btn-sm btn-primary btn-sm">{{ i18n `read_more` }}</a>
-          </div>
-        </div>
+      <div class="col-12 sm:col-6 lg:col-4 mb-8">
+        {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-lg mb-4 w-full" "Size" "460x") }}
+        <h3><a href="{{ .Permalink }}" class="text-text-dark">{{ .Title }}</a></h3>
+        <p class="mt-2 mb-4">{{ .Summary }}</p>
+        <a href="{{ .Permalink }}" class="btn btn-primary btn-sm">{{ i18n "read_more" }}</a>
       </div>
       {{ end }}
-      
-      <!-- pagination -->
-      <div class="col-12 pt-5">
+      <div class="col-12 pt-8">
         {{ partial "custom-pagination" . }}
       </div>
-      <!-- /pagination -->
     </div>
   </div>
 </section>
-
 {{ end }}

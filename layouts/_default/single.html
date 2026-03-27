@@ -5,15 +5,15 @@
 
 <section class="section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-2 w-100 mb-5") }}
+    <div class="flex flex-wrap justify-center">
+      <div class="w-full lg:w-8/12 px-4 mx-auto">
+        {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-2 w-full mb-5") }}
         <h2>{{ .Title }}</h2>
         <div class="mt-4 content">{{.Content}}</div>
         {{ with site.GetPage (string .Params.Author | urlize | lower) }}
         {{if .Title}}
-        <div class="d-block d-sm-flex border p-5 pb-4 rounded-2 mt-5">
-          <div class="mb-3" style="min-width: 110px">
+        <div class="flex flex-col sm:flex-row border border-default rounded-2 p-8 pb-6 mt-8 gap-6">
+          <div class="flex-shrink-0" style="min-width: 110px">
             {{ if .Params.image }}
             {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-circle" "Command" "Fill" "Size" "80x80") }}
             {{ else }}
@@ -21,11 +21,11 @@
             {{ end }}
           </div>
           <div>
-            <h3 class="h5 title mb-1"><a href="{{.RelPermalink}}" class="text-dark">{{ .Title }}</a></h3>
+            <h3 class="h5 mb-1"><a href="{{.RelPermalink}}" class="text-dark">{{ .Title }}</a></h3>
             <div class="content">{{ .Content | truncate 135}}</div>
-            <ul class="list-inline social-icons justify-content-start mt-3 mb-0">
+            <ul class="social-icons mt-3 mb-0">
               {{ range .Params.social }}
-              <li class="list-inline-item"><a class="d-inline-block" href="{{ .link | safeURL}}"><i class="{{ .icon }}"></i></a></li>
+              <li><a class="inline-block" href="{{ .link | safeURL}}"><i class="{{ .icon }}"></i></a></li>
               {{ end }}
             </ul>
           </div>
@@ -42,14 +42,13 @@
 {{ partial "page-header.html" . }}
 <section class="section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
+    <div class="flex flex-wrap justify-center">
+      <div class="w-full lg:w-10/12 px-4 mx-auto">
         <div class="content">{{ .Content }}</div>
       </div>
     </div>
   </div>
 </section>
 {{ end }}
-
 
 {{ end }}

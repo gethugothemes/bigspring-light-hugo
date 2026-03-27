@@ -3,9 +3,6 @@ extended = true
 min = "0.124.1"
 
 [[imports]]
-path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
-
-[[imports]]
 path = "github.com/gethugothemes/hugo-modules/components/preloader"
 
 [[imports]]
