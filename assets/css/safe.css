@@ -1,0 +1,35 @@
+#hide-button {
+  @apply hidden;
+}
+
+#nav-toggle:checked ~ #show-button {
+  @apply hidden;
+}
+
+#nav-toggle:checked ~ #hide-button {
+  @apply block md:hidden;
+}
+#nav-toggle:checked ~ #nav-menu {
+  @apply block md:flex;
+}
+
+/* form style */
+.form-inputs * {
+  @apply mb-5 leading-10;
+}
+.form-input,
+.form-textarea {
+  @apply border-border py-3 focus:border-primary focus:ring-transparent;
+}
+
+/* swiper pagination */
+.service-carousel .pagination {
+  @apply flex justify-center;
+
+  span {
+    @apply mx-[5px] inline-block h-[10px] w-[10px] cursor-pointer rounded-full border border-primary;
+    &.swiper-pagination-bullet-active {
+      @apply bg-primary;
+    }
+  }
+}

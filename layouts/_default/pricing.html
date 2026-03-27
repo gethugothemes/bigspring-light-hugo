@@ -1,65 +1,53 @@
 {{ define "main" }}
-
 {{ partial "page-header.html" . }}
-
-<section class="section my-0 lg:my-20">
+<section class="section pb-0">
   <div class="container">
-    <div class="flex flex-wrap justify-center -mx-4">
-      <div class="w-full lg:w-10/12 px-4">
-        <div class="flex flex-wrap items-center justify-center gap-y-8 -mx-4">
-          {{ range $i, $e := .Params.pricing_list }}
-          <div class="w-full md:w-1/2 lg:w-1/3 px-4">
-            <div class="card shadow bg-white {{if .recommended}}recommended{{end}} {{if gt $i 2}}lg:mt-20{{end}}">
-              <div class="card-body text-center py-10">
-                <h3 class="mb-4">{{ .name | markdownify }}</h3>
-                <span class="h1 fw-light">{{.currency}}</span>
-                <span class="h1 fw-light">{{ .price }}</span>
-                <span>/{{ .price_per }}</span>
-                <p class="lead mt-4">{{ .info | markdownify }}</p>
-                <ul class="list-none mb-8 space-y-2">
-                  {{ range .services }}
-                  <li>{{ . | markdownify }}</li>
-                  {{ end }}
-                </ul>
-                {{ if .button.enable }}
-                <a href="{{ .button.link | relLangURL }}" title="{{ .button.label }}" class="btn {{if .recommended}}btn-primary{{else}}btn-outline-primary{{end}}">{{ .button.label }}</a>
-                {{ end }}
-              </div>
-            </div>
+    <div class="section row -mt-10 justify-center md:mt-0">
+      {{ range $i, $e := .Params.pricing_list }}
+      <div class="col-12 md:col-4{{ if not .recommended }} lg:px-0{{ else }} col-recommended{{ end }}">
+        <div class="card text-center">
+          <h4>{{ .name | markdownify }}</h4>
+          <div class="mt-5">
+            <span class="text-5xl text-text-dark">{{ .currency }}{{ .price }}</span>
+            <span>/ {{ .price_per }}</span>
           </div>
-          {{end}}
+          <h6 class="mt-2 font-normal text-text">{{ .info | markdownify }}</h6>
+          <ul class="mt-5">
+            {{ range .services }}
+            <li class="mb-[10px] leading-5">{{ . | markdownify }}</li>
+            {{ end }}
+          </ul>
+          {{ if .button.enable }}
+          <a class="btn mt-5{{ if .recommended }} btn-primary{{ else }} btn-outline-primary{{ end }}" href="{{ .button.link | relLangURL }}">{{ .button.label }}</a>
+          {{ end }}
         </div>
       </div>
+      {{ end }}
     </div>
   </div>
 </section>
 
-
-<!-- call to action -->
 {{ if .Params.call_to_action.enable }}
 {{ with .Params.call_to_action }}
-<section class="section">
-  <div class="container section shadow rounded-lg px-4">
-    <div class="flex flex-wrap items-center justify-center text-center md:text-left -mx-4">
-      <div class="w-full md:w-5/12 lg:w-4/12 px-4 mb-8 md:mb-0 text-center">
-        {{ partial "image" (dict "Src" .image "Alt" "call to action image" "Class" "w-full max-w-full h-auto mx-auto") }}
+<section class="section px-4">
+  <div class="section container rounded-xl shadow">
+    <div class="row mx-auto items-center justify-center">
+      <div class="md:col-5 lg:col-4">
+        {{ partial "image" (dict "Src" .image "Alt" "call to action image" "Class" "w-full") }}
       </div>
-      <div class="w-full md:w-7/12 lg:w-6/12 px-4">
-        <div class="pl-0 lg:pl-10 text-center lg:text-left">
-          <h2 class="section-title">{{ .title | markdownify }}</h2>
-          {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
-          {{ if .button.enable }}
-          {{ with .button }}
-          <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
-          {{ end }}
-          {{ end }}
-        </div>
+      <div class="mt-5 text-center md:mt-0 md:text-left md:col-6 lg:col-5">
+        <h2>{{ .title | markdownify }}</h2>
+        {{ with .content }}<p class="mt-6">{{ . | markdownify }}</p>{{ end }}
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a class="btn btn-primary mt-4" href="{{ .link | relLangURL }}">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
       </div>
     </div>
   </div>
 </section>
 {{ end }}
 {{ end }}
-<!-- /call to action -->
 
 {{ end }}

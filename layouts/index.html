@@ -2,43 +2,41 @@
 
 <!-- banner -->
 {{ with .Params.banner }}
-<section class="banner">
+<section class="section pb-[50px]">
   <div class="container">
-    <div class="flex flex-wrap justify-center">
-      <div class="w-full lg:w-10/12 mx-auto text-center">
-        <h1 class="mb-3">{{ .title | markdownify }}</h1>
-        <p class="mb-4">{{ .content | markdownify }}</p>
+    <div class="row text-center">
+      <div class="mx-auto lg:col-10">
+        <h1 class="font-primary font-bold">{{ .title | markdownify }}</h1>
+        <p class="mt-4">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
-        <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
+        <a class="btn btn-primary mt-4" href="{{ .link | safeURL }}">{{ .label }}</a>
         {{ end }}
         {{ end }}
-
-        {{with .image}}
-          {{ partial "image.html" (dict "Src" . "Alt" "Image" "Class" "w-full max-w-full h-auto mt-5 mx-auto") }}
-        {{end}}
+        {{ with .image }}
+        {{ partial "image.html" (dict "Src" . "Alt" "banner image" "Class" "mx-auto mt-12") }}
+        {{ end }}
       </div>
     </div>
   </div>
 </section>
 {{ end }}
-<!-- /banner -->
 
-<!-- feature -->
+<!-- Features -->
 {{ with .Params.feature }}
 {{ if .enable }}
 <section class="section bg-light">
   <div class="container">
-    <div class="flex flex-wrap justify-center">
-      <div class="w-full text-center mb-8">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
-      </div>
+    <div class="text-center">
+      <h2>{{ .title | markdownify }}</h2>
+    </div>
+    <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
       {{ range .feature_item }}
-      <div class="w-full sm:w-1/2 md:w-1/3 px-4 mb-8">
-        <div class="feature-card text-center">
-          <i class="{{.icon}} text-3xl text-primary mb-3 block"></i>
-          <h4 class="mb-2">{{ .name | title }}</h4>
-          <p>{{ .content | markdownify }}</p>
+      <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
+        <i class="{{ .icon }} text-3xl text-primary mx-auto block mt-2"></i>
+        <div class="mt-4">
+          <p class="h5">{{ .name | title }}</p>
+          <p class="mt-3">{{ .content | markdownify }}</p>
         </div>
       </div>
       {{ end }}
@@ -47,62 +45,42 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /feature -->
 
-<!-- service -->
+<!-- Services -->
 {{ with .Params.service }}
 {{ if .enable }}
-{{ range $i,$p := .service_item }}
-{{if modBool $i 2}}
-<section class="section">
+{{ range $i, $p := .service_item }}
+{{ $isOdd := modBool $i 2 }}
+<section class="section{{ if not $isOdd }} bg-light{{ end }}">
   <div class="container">
-    <div class="flex flex-wrap items-center">
-      <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0 md:order-1 order-2">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
-        {{ end }}
-        {{ end }}
-      </div>
-      <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0 md:order-2 order-1">
-        <div class="swiper testimonial-slider">
+    <div class="items-center gap-8 md:grid md:grid-cols-2">
+      <div class="service-carousel{{ if $isOdd }} md:order-2{{ end }}">
+        {{ if gt (len .images) 1 }}
+        <div class="swiper">
           <div class="swiper-wrapper">
             {{ range .images }}
             <div class="swiper-slide">
-              {{ partial "image.html" (dict "Src" . "Alt" "Image" ) }}
+              {{ partial "image.html" (dict "Src" . "Alt" "Image" "Class" "mx-auto") }}
             </div>
             {{ end }}
           </div>
-          <div class="testimonial-slider-pagination mt-9 flex items-center justify-center text-center"></div>
+          <div class="pagination flex justify-center mt-4"></div>
         </div>
+        {{ else }}
+        {{ range .images }}
+        {{ partial "image.html" (dict "Src" . "Alt" "Image" "Class" "mx-auto") }}
+        {{ end }}
+        {{ end }}
       </div>
-    </div>
-  </div>
-</section>
-{{ else }}
-<section class="section bg-light">
-  <div class="container">
-    <div class="flex flex-wrap items-center">
-      <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
-        <div class="swiper testimonial-slider">
-          <div class="swiper-wrapper">
-            {{ range .images }}
-            <div class="swiper-slide">
-              {{ partial "image.html" (dict "Src" . "Alt" "Image" ) }}
-            </div>
-            {{ end }}
-          </div>
-          <div class="testimonial-slider-pagination mt-9 flex items-center justify-center text-center"></div>
-        </div>
-      </div>
-      <div class="w-full md:w-1/2 px-4">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
+      <div class="service-content mt-5 md:mt-0{{ if $isOdd }} md:order-1{{ end }}">
+        <h2 class="font-bold leading-[40px]">{{ .title | markdownify }}</h2>
+        <p class="mt-4 mb-2">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i class="fas fa-arrow-right"></i></a>
+        <a href="{{ .link | relURL }}" class="cta-link inline-flex items-center text-primary">
+          {{ .label }}
+          <img class="ml-1" src="{{ "images/arrow-right.svg" | relURL }}" width="18" height="14" alt="arrow">
+        </a>
         {{ end }}
         {{ end }}
       </div>
@@ -112,41 +90,34 @@
 {{ end }}
 {{ end }}
 {{ end }}
-{{ end }}
-<!-- /service -->
 
-<!-- screenshot -->
+<!-- Screenshot/Workflow -->
 {{ with .Params.screenshot }}
 {{ if .enable }}
 <section class="section pb-0">
-  <div class="container">
-    <div class="flex flex-wrap justify-center">
-      <div class="w-full lg:w-8/12 mx-auto text-center">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
-      </div>
-    </div>
+  <div class="mb-8 text-center">
+    <h2 class="mx-auto max-w-[400px] font-bold leading-[44px]">{{ .title | markdownify }}</h2>
   </div>
-  {{ with .image }}<img src="{{ . | relURL }}" alt="" class="w-full max-w-full h-auto block">{{ end }}
+  {{ with .image }}<img src="{{ . | relURL }}" alt="workflow image" class="w-full">{{ end }}
 </section>
 {{ end }}
 {{ end }}
-<!-- /screenshot -->
 
-<!-- call to action -->
+<!-- Call to Action -->
 {{ with .Params.call_to_action }}
 {{ if .enable }}
-<section class="section">
-  <div class="container section shadow rounded-lg px-4">
-    <div class="flex flex-wrap items-center justify-center text-center md:text-left">
-      <div class="w-full md:w-5/12 lg:w-4/12 px-4 mb-8 md:mb-0 text-center">
-        {{ partial "image" (dict "Src" .image "Alt" "call to action image" "Class" "w-full max-w-full h-auto mx-auto") }}
+<section class="section px-4">
+  <div class="section container rounded-xl shadow">
+    <div class="row mx-auto items-center justify-center">
+      <div class="md:col-5 lg:col-4">
+        {{ partial "image" (dict "Src" .image "Alt" "call to action image" "Class" "w-full") }}
       </div>
-      <div class="w-full md:w-6/12 lg:w-5/12 px-4">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
-        {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
+      <div class="mt-5 text-center md:mt-0 md:text-left md:col-6 lg:col-5">
+        <h2>{{ .title | markdownify }}</h2>
+        {{ with .content }}<p class="mt-6">{{ . | markdownify }}</p>{{ end }}
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
+        <a class="btn btn-primary mt-4" href="{{ .link | relURL }}">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>
@@ -155,6 +126,5 @@
 </section>
 {{ end }}
 {{ end }}
-<!-- /call to action -->
 
 {{ end }}

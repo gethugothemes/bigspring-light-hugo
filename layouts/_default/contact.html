@@ -1,38 +1,29 @@
 {{ define "main" }}
-
-{{ partial "page-header.html" .}}
-
+{{ partial "page-header.html" . }}
 <section class="section">
   <div class="container">
-    <div class="flex flex-wrap -mx-4 gap-y-8">
-      <div class="w-full lg:w-1/2 px-4">
-        <div class="content">{{ .Content }}</div>
-      </div>
-      <div class="w-full lg:w-1/2 px-4">
-        <form method="POST" class="flex flex-wrap -mx-3 gap-y-5" action="{{site.Params.contact_form_action | safeURL}}">
-          <div class="w-full lg:w-1/2 px-3">
-            <label class="block mb-1 font-medium" for="fname">{{ i18n "fname"}} <span class="text-danger">*</span></label>
-            <input class="form-control" type="text" name="first_name" placeholder="{{ i18n `fname`}}" required>
+    <div class="section row pb-0">
+      <div class="col-12 md:col-6 lg:col-7">
+        <form class="contact-form" method="POST" action="{{ site.Params.contact_form_action | safeURL }}">
+          <div class="mb-3">
+            <input class="form-input w-full rounded" name="first_name" type="text" placeholder="{{ i18n `fname` }}" required>
           </div>
-          <div class="w-full lg:w-1/2 px-3">
-            <label class="block mb-1 font-medium" for="fname">{{ i18n "lname"}} <span class="text-danger">*</span></label>
-            <input class="form-control" type="text" name="last_name" placeholder="{{ i18n `lname`}}" required>
+          <div class="mb-3">
+            <input class="form-input w-full rounded" name="last_name" type="text" placeholder="{{ i18n `lname` }}" required>
           </div>
-          <div class="w-full px-3">
-            <label class="block mb-1 font-medium" for="email">{{i18n "email"}} <span class="text-danger">*</span></label>
-            <input class="form-control" type="email" name="email_address" placeholder="{{i18n `email`}}" required>
+          <div class="mb-3">
+            <input class="form-input w-full rounded" name="email_address" type="email" placeholder="{{ i18n `email` }}" required>
           </div>
-          <div class="w-full px-3">
-            <label class="block mb-1 font-medium" for="message">{{i18n "message"}}</label>
-            <textarea class="form-control" name="message" rows="4" placeholder="{{i18n `message`}}"></textarea>
+          <div class="mb-3">
+            <textarea class="form-textarea w-full rounded-md" name="message" rows="5" placeholder="{{ i18n `message` }}"></textarea>
           </div>
-          <div class="w-full px-3">
-            <button class="btn btn-primary btn-sm mt-2" type="submit">{{ i18n "send"}}</button>
-          </div>
+          <button type="submit" class="btn btn-primary">{{ i18n "send" }}</button>
         </form>
+      </div>
+      <div class="content col-12 md:col-6 lg:col-5">
+        {{ .Content }}
       </div>
     </div>
   </div>
 </section>
-
 {{ end }}

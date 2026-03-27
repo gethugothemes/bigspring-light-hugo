@@ -6,28 +6,15 @@
 
 @theme {
   /* === Colors === */
-  --color-primary: #0AA8A7;
-  --color-body: #ffffff;
-  --color-border: #ECECEC;
-  --color-light: #EDF6F5;
-  --color-dark: #1b2229;
-  --color-text: #777777;
-  --color-text-dark: #222222;
-  --color-text-light: #999999;
-
-  /* === Darkmode Colors === */
-  --color-darkmode-primary: #0AA8A7;
-  --color-darkmode-body: #1e262c;
-  --color-darkmode-border: #3E3E3E;
-  --color-darkmode-light: #222222;
-  --color-darkmode-dark: #ffffff;
-  --color-darkmode-text: #cbcbcb;
-  --color-darkmode-text-dark: #ffffff;
-  --color-darkmode-text-light: #B4AFB6;
+  --color-primary: #0aa8a7;
+  --color-body: #fff;
+  --color-border: #e9e9e9;
+  --color-light: #edf6f5;
+  --color-text: #555;
+  --color-text-dark: #222;
 
   /* === Font Families === */
   --font-primary: Lato, sans-serif;
-  --font-secondary: Lato, sans-serif;
 
   /* === Font Sizes === */
   --text-base: 16px;
