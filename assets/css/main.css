@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@source "watching/hugo_stats.json";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Auto-generated theme from "data/theme.json" */
+@import "./generated-theme.css";
+
+@layer base {
+  @import "./base.css";
+}
+
+@layer components {
+  @import "./components.css";
+  @import "./navigation.css";
+  @import "./buttons.css";
+}
+
+@import "./custom.css";

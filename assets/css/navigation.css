@@ -1,0 +1,26 @@
+/* ─── Header / Navigation ─────────────────────────────────────────────── */
+.navigation {
+  @apply bg-white sticky top-0 z-50;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.navbar-brand {
+  @apply inline-flex items-center flex-shrink-0;
+}
+
+.navbar-toggler {
+  @apply md:hidden cursor-pointer bg-transparent border-0 p-1;
+}
+
+.nav-link {
+  @apply text-text-dark font-semibold transition-colors duration-200 hover:text-primary cursor-pointer;
+}
+
+.dropdown-menu {
+  @apply absolute hidden top-full left-0 bg-white rounded-lg py-2 z-50 min-w-[180px];
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+  @apply block px-4 py-2 text-text-dark no-underline transition-colors duration-150 hover:text-primary hover:bg-light whitespace-nowrap;
+}

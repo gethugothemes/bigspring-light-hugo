@@ -1,0 +1,125 @@
+/* ─── Section ─────────────────────────────────────────────────────────── */
+.section {
+  @apply py-20 lg:py-24;
+}
+
+/* ─── Container ──────────────────────────────────────────────────────── */
+.container {
+  @apply mx-auto max-w-[1320px] px-4;
+}
+
+/* ─── Section title ──────────────────────────────────────────────────── */
+.section-title {
+  @apply text-h2-sm md:text-h2 font-bold leading-tight text-text-dark mb-4;
+}
+
+/* ─── Feature card ───────────────────────────────────────────────────── */
+.feature-card {
+  @apply bg-white rounded-lg p-6 transition-shadow duration-300;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+.feature-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.feature-card.is-hoverable {
+  @apply transition-transform duration-300;
+}
+.feature-card.is-hoverable:hover {
+  @apply -translate-y-1;
+}
+
+/* ─── Card ───────────────────────────────────────────────────────────── */
+.card {
+  @apply relative flex flex-col bg-white rounded-xl overflow-hidden;
+}
+.card.recommended {
+  @apply bg-primary text-white;
+}
+.card.recommended h3,
+.card.recommended .lead,
+.card.recommended li,
+.card.recommended span {
+  @apply text-white;
+}
+.card-body {
+  @apply flex-1;
+}
+
+/* ─── Social icons ───────────────────────────────────────────────────── */
+.social-icons {
+  @apply flex flex-wrap gap-2 list-none p-0 m-0;
+}
+.social-icons a {
+  @apply flex h-9 w-9 items-center justify-center rounded-sm bg-primary text-white transition-opacity duration-200;
+}
+.social-icons a:hover {
+  @apply opacity-80;
+}
+
+/* ─── Footer ─────────────────────────────────────────────────────────── */
+.footer-list {
+  @apply list-none p-0 m-0;
+}
+.footer-list li {
+  @apply mb-2;
+}
+.footer-list a {
+  @apply text-text no-underline transition-colors duration-200 hover:text-primary;
+}
+
+/* ─── Pagination ─────────────────────────────────────────────────────── */
+.pagination {
+  @apply flex flex-wrap gap-1.5 list-none p-0 m-0 justify-center;
+}
+.page-item {
+  @apply inline-flex;
+}
+.page-link {
+  @apply flex items-center justify-center min-w-[2.5rem] h-10 px-3 border border-border rounded text-text-dark no-underline transition-all duration-200 text-sm;
+}
+.page-link:hover,
+.page-link.active {
+  @apply bg-primary text-white border-primary;
+}
+
+/* ─── Content (rich text) ────────────────────────────────────────────── */
+.content {
+  @apply prose max-w-none;
+  @apply prose-headings:text-text-dark prose-headings:font-bold;
+  @apply prose-p:text-text prose-p:leading-relaxed;
+  @apply prose-a:text-primary;
+  @apply prose-img:rounded-lg;
+  @apply prose-li:text-text;
+}
+
+/* ─── Form controls ──────────────────────────────────────────────────── */
+.form-control {
+  @apply block w-full px-4 py-3 text-base border border-border rounded-md outline-none
+         bg-white text-text-dark placeholder:text-text-light
+         focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-150;
+}
+textarea.form-control {
+  @apply resize-y;
+}
+
+/* ─── Typography utilities ───────────────────────────────────────────── */
+.lead {
+  @apply text-lg leading-relaxed text-text;
+}
+.fw-light  { @apply font-light; }
+.fw-medium { @apply font-medium; }
+.fw-bold   { @apply font-bold; }
+.text-muted { @apply text-text-light; }
+.text-danger { @apply text-red-500; }
+.border-default { @apply border-border; }
+
+/* ─── Misc ───────────────────────────────────────────────────────────── */
+.fit-cover     { @apply object-cover; }
+.rounded-circle { @apply rounded-full; }
+.rounded-1     { @apply rounded; }
+.rounded-2     { @apply rounded-lg; }
+.counter       { @apply font-bold; }
+
+.container-delta {
+  @apply mx-auto max-w-[1100px] px-4;
+}

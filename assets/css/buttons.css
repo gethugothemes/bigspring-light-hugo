@@ -1,0 +1,26 @@
+/* ─── Buttons ─────────────────────────────────────────────────────────── */
+.btn {
+  @apply inline-flex items-center justify-center px-7 py-2.5 rounded-md font-semibold
+         text-base transition-all duration-300 cursor-pointer border border-transparent
+         no-underline leading-normal;
+}
+
+.btn-sm {
+  @apply px-5 py-1.5 text-sm rounded;
+}
+
+.btn-primary {
+  @apply bg-primary border-primary text-white hover:opacity-90;
+}
+
+.btn-outline-primary {
+  @apply bg-transparent border-2 border-primary text-primary
+         hover:bg-primary hover:text-white transition-all duration-300
+         inline-flex items-center justify-center px-7 py-2.5 rounded-md
+         font-semibold no-underline;
+}
+
+.btn-link {
+  @apply text-primary no-underline font-semibold transition-all duration-200
+         inline-flex items-center gap-1 hover:underline hover:opacity-80;
+}
