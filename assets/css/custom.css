@@ -1,1 +1,30 @@
-/* bigspring-light custom overrides */
+/* bigspring-light custom darkmode overrides */
+
+/* Footer */
+footer.bg-light {
+  @apply dark:bg-darkmode-light;
+}
+
+/* Border */
+.border-border {
+  border-color: var(--color-border);
+}
+.dark .border-border {
+  border-color: var(--color-darkmode-border);
+}
+
+/* Pagination (blog list) */
+.bg-light {
+  background-color: var(--color-light);
+}
+.dark .bg-light {
+  background-color: var(--color-darkmode-light);
+}
+
+/* bg-body for sections */
+.bg-body {
+  background-color: var(--color-body);
+}
+.dark .bg-body {
+  background-color: var(--color-darkmode-body);
+}

@@ -11,6 +11,18 @@
         "text": "#555",
         "text-dark": "#222"
       }
+    },
+    "darkmode": {
+      "theme_color": {
+        "primary": "#0aa8a7",
+        "body": "#1e262c",
+        "border": "#3E3E3E",
+        "light": "#222222"
+      },
+      "text_color": {
+        "text": "#cbcbcb",
+        "text-dark": "#ffffff"
+      }
     }
   },
   "fonts": {

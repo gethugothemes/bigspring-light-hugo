@@ -19,7 +19,7 @@
 }
 .form-input,
 .form-textarea {
-  @apply border-border py-3 focus:border-primary focus:ring-transparent;
+  @apply border-border dark:border-darkmode-border dark:bg-darkmode-light dark:text-darkmode-text py-3 focus:border-primary dark:focus:border-darkmode-primary focus:ring-transparent;
 }
 
 /* swiper pagination */

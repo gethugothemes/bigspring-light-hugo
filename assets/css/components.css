@@ -30,6 +30,11 @@
 /* content style */
 .content {
   @apply prose max-w-none prose-headings:font-bold prose-h1:mb-4 prose-h1:text-h1-sm prose-h2:mb-4 prose-h2:mt-4 prose-h2:text-h2-sm prose-h3:mt-4 prose-h3:text-h3-sm prose-h4:mt-4 prose-h5:mb-4 prose-h5:text-base prose-h6:mb-6 prose-h6:text-[15px] prose-a:no-underline hover:prose-a:text-primary prose-blockquote:border-primary prose-blockquote:py-1 prose-blockquote:px-4 prose-ol:pl-4 prose-ul:list-none prose-ul:pl-0 prose-hr:my-5 md:prose-h1:text-h1 md:prose-h2:text-h2 md:prose-h3:text-h3;
+  @apply prose-headings:text-text-dark dark:prose-headings:text-darkmode-text-dark;
+  @apply prose-p:text-text dark:prose-p:text-darkmode-text;
+  @apply prose-strong:text-text-dark dark:prose-strong:text-darkmode-text-dark;
+  @apply prose-li:text-text dark:prose-li:text-darkmode-text;
+  @apply prose-hr:border-border dark:prose-hr:border-darkmode-border;
 
   ul {
     @apply pl-2;
@@ -58,7 +63,7 @@
 
 /* card */
 .card {
-  @apply mt-10 rounded-[4px] border border-[rgba(0,0,0,.125)] bg-white px-5 px-5 py-12 py-12 shadow md:mt-0;
+  @apply mt-10 rounded-[4px] border border-[rgba(0,0,0,.125)] bg-white dark:bg-darkmode-light dark:border-darkmode-border px-5 py-12 shadow md:mt-0;
 }
 
 .col-recommended {
@@ -82,7 +87,7 @@
 /* contact */
 .contact-list {
   a {
-    @apply font-semibold text-text-dark;
+    @apply font-semibold text-text-dark dark:text-darkmode-text-dark;
   }
 }
 
@@ -146,15 +151,15 @@
 
 /* tab */
 .tab {
-  @apply overflow-hidden rounded-lg border border-border;
+  @apply overflow-hidden rounded-lg border border-border dark:border-darkmode-border;
 }
 
 .tab-nav {
-  @apply flex border-b border-border bg-light m-0! list-none;
+  @apply flex border-b border-border dark:border-darkmode-border bg-light dark:bg-darkmode-light m-0! list-none;
 }
 
 .tab-nav-item {
-  @apply cursor-pointer border-b-[3px] border-border py-2! text-lg text-text-dark opacity-80 my-0! px-8;
+  @apply cursor-pointer border-b-[3px] border-border dark:border-darkmode-border py-2! text-lg text-text-dark dark:text-darkmode-text-dark opacity-80 my-0! px-8;
 }
 
 .tab-nav-item::before {
@@ -162,7 +167,7 @@
 }
 
 .tab-nav-item.active {
-  @apply border-b-[3px] border-black/90 opacity-100;
+  @apply border-b-[3px] border-black/90 dark:border-white/90 opacity-100;
 }
 
 .tab-content-panel {
@@ -179,11 +184,11 @@
 
 /* accordion */
 .accordion {
-  @apply mb-6 overflow-hidden rounded-lg border border-border bg-light;
+  @apply mb-6 overflow-hidden rounded-lg border border-border dark:border-darkmode-border bg-light dark:bg-darkmode-light;
 }
 
 .accordion-header {
-  @apply flex w-full cursor-pointer items-center justify-between px-8 py-4 text-lg text-text-dark;
+  @apply flex w-full cursor-pointer items-center justify-between px-8 py-4 text-lg text-text-dark dark:text-darkmode-text-dark;
 }
 
 .accordion-icon {
@@ -202,27 +207,27 @@
   @apply max-h-screen;
 }
 
-/* content style */
+/* content style (rich text) */
 .content {
   @apply prose max-w-none;
-  @apply prose-headings:mt-[.5em] prose-headings:mb-[.9em] prose-headings:font-bold prose-headings:text-text-dark;
+  @apply prose-headings:mt-[.5em] prose-headings:mb-[.9em] prose-headings:font-bold prose-headings:text-text-dark dark:prose-headings:text-darkmode-text-dark;
   @apply prose-h1:text-h1-sm md:prose-h1:text-h1;
   @apply prose-h2:text-h2-sm md:prose-h2:text-h2;
   @apply prose-h3:text-h3-sm md:prose-h3:text-h3;
-  @apply prose-hr:border-border;
-  @apply prose-p:text-base prose-p:text-text;
+  @apply prose-hr:border-border dark:prose-hr:border-darkmode-border;
+  @apply prose-p:text-base prose-p:text-text dark:prose-p:text-darkmode-text;
   @apply prose-blockquote:rounded prose-blockquote:border-primary prose-blockquote:py-1 prose-blockquote:px-4;
   @apply prose-code:px-1 prose-code:text-primary;
-  @apply prose-pre:rounded;
-  @apply prose-strong:text-text-dark;
+  @apply prose-pre:rounded dark:prose-pre:bg-darkmode-light;
+  @apply prose-strong:text-text-dark dark:prose-strong:text-darkmode-text-dark;
   @apply prose-a:text-primary prose-a:no-underline hover:prose-a:underline;
   @apply prose-img:max-w-full prose-img:rounded-lg;
-  @apply prose-li:text-text;
-  @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:border-border prose-table:before:content-[""];
-  @apply prose-thead:border-border prose-thead:bg-light;
-  @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-text-dark;
-  @apply prose-tr:border-border;
-  @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px];
+  @apply prose-li:text-text dark:prose-li:text-darkmode-text;
+  @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:border-border dark:prose-table:before:border-darkmode-border prose-table:before:content-[""];
+  @apply prose-thead:border-border dark:prose-thead:border-darkmode-border prose-thead:bg-light dark:prose-thead:bg-darkmode-light;
+  @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-text-dark dark:prose-th:text-darkmode-text-dark;
+  @apply prose-tr:border-border dark:prose-tr:border-darkmode-border;
+  @apply prose-td:relative prose-td:z-10 prose-td:px-3 prose-td:py-[18px] dark:prose-td:text-darkmode-text;
 }
 
 /* img-fluid compat */

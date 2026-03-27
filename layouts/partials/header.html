@@ -45,10 +45,15 @@
     </ul>
     {{ if site.Params.navigation_button.enable }}
     {{ with site.Params.navigation_button }}
-    <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 md:flex">
+    <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 md:flex gap-3">
       <a class="btn btn-primary z-0 ml-auto py-[14px]" href="{{ .link | relLangURL }}" title="{{ .label }}">{{ .label }}</a>
+      {{ partial "theme-switcher.html" . }}
     </div>
     {{ end }}
+    {{ else }}
+    <div class="order-1 ml-auto hidden items-center md:order-2 md:flex gap-3">
+      {{ partial "theme-switcher.html" . }}
+    </div>
     {{ end }}
   </nav>
 </header>

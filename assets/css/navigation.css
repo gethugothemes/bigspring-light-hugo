@@ -1,5 +1,5 @@
 .header {
-  @apply bg-white py-[14px] px-4 md:px-0 md:py-[9px];
+  @apply bg-white dark:bg-darkmode-body py-[14px] px-4 md:px-0 md:py-[9px];
 }
 
 /* navbar items */
@@ -8,7 +8,7 @@
 }
 
 .navbar-brand {
-  @apply text-xl font-semibold text-text-dark;
+  @apply text-xl font-semibold text-text-dark dark:text-darkmode-text-dark;
 
   img {
     @apply max-h-full max-w-full object-contain;
@@ -28,9 +28,18 @@
 }
 
 .nav-link {
-  @apply py-3 px-2 font-primary text-base font-bold text-text-dark transition hover:text-primary md:py-4 lg:px-3;
+  @apply py-3 px-2 font-primary text-base font-bold text-text-dark dark:text-darkmode-text-dark transition hover:text-primary dark:hover:text-darkmode-primary md:py-4 lg:px-3;
 }
 
 .nav-link-active {
-  @apply text-primary;
+  @apply text-primary dark:text-darkmode-primary;
+}
+
+/* dropdown */
+.nav-dropdown-list {
+  @apply bg-white dark:bg-darkmode-body shadow-lg rounded py-2 min-w-[160px];
+}
+
+.nav-dropdown-link {
+  @apply text-text-dark dark:text-darkmode-text-dark hover:text-primary dark:hover:text-darkmode-primary px-4 py-2 transition;
 }
