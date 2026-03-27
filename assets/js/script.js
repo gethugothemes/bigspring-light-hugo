@@ -3,25 +3,27 @@
   "use strict";
 
   // Testimonial Slider //
-  new Swiper(".testimonial-slider", {
-    spaceBetween: 24,
-    loop: true,
-    pagination: {
-      el: ".testimonial-slider-pagination",
-      type: "bullets",
-      clickable: true,
-    },
+  const swiperEls = document.querySelectorAll(".testimonial-slider");
+  swiperEls.forEach(function (el) {
+    const slides = el.querySelectorAll(".swiper-slide");
+    new Swiper(el, {
+      spaceBetween: 24,
+      loop: slides.length > 1,
+      pagination: {
+        el: el.querySelector(".testimonial-slider-pagination"),
+        type: "bullets",
+        clickable: true,
+      },
+    });
   });
 
   // navbar toggle //
   const navToggler = document.querySelector(".navbar-toggler");
-  const navigation = document.querySelector(".navbar-collapse");
+  const mobileMenu = document.getElementById("mobile-menu");
 
-  navToggler.addEventListener("click", function () {
-    if (navigation.classList.contains("collapse")) {
-      navigation.classList.remove("collapse");
-    } else {
-      navigation.classList.add("collapse");
-    }
-  });
+  if (navToggler && mobileMenu) {
+    navToggler.addEventListener("click", function () {
+      mobileMenu.classList.toggle("hidden");
+    });
+  }
 })();

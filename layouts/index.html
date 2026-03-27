@@ -68,7 +68,7 @@
       </div>
       <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0 md:order-2 order-1">
         <div class="swiper testimonial-slider">
-          <div {{if gt (len .images) 1}}class="swiper-wrapper" {{end}}>
+          <div class="swiper-wrapper">
             {{ range .images }}
             <div class="swiper-slide">
               {{ partial "image.html" (dict "Src" . "Alt" "Image" ) }}
@@ -87,7 +87,7 @@
     <div class="flex flex-wrap items-center">
       <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0">
         <div class="swiper testimonial-slider">
-          <div {{if gt (len .images) 1}}class="swiper-wrapper" {{end}}>
+          <div class="swiper-wrapper">
             {{ range .images }}
             <div class="swiper-slide">
               {{ partial "image.html" (dict "Src" . "Alt" "Image" ) }}
