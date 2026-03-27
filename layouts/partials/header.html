@@ -1,67 +1,88 @@
-{{ "<!-- navigation -->" | safeHTML }}
-<header class="navigation">
+<!-- navigation -->
+<header class="navigation sticky top-0 z-50 bg-white shadow-sm">
   <div class="container">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="flex items-center justify-between py-4">
       <!-- navbar brand/logo -->
-      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+      <a class="navbar-brand flex-shrink-0" href="{{ site.BaseURL | relLangURL }}">
         {{ partial "logo.html" }}
       </a>
-      <button class="navbar-toggler border-0" type="button">
-        <i class="fas fa-bars"></i>
+
+      <!-- Mobile menu button -->
+      <button class="navbar-toggler md:hidden" type="button" id="mobile-menu-btn">
+        <i class="fas fa-bars text-2xl"></i>
       </button>
 
-      <div class="collapse navbar-collapse text-center">
-        <ul class="navbar-nav mx-auto">
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-8">
+        <ul class="flex gap-6">
           {{ range site.Menus.main }}
           {{ if .HasChildren }}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+          <li class="nav-item group relative">
+            <a class="nav-link flex items-center gap-1" href="#">
               {{ .Name }}
+              <i class="fas fa-chevron-down text-xs"></i>
             </a>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu absolute hidden group-hover:block bg-white shadow-lg rounded py-2 min-w-max">
               {{ range .Children }}
-              <a class="dropdown-item" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+              <a class="dropdown-item block px-4 py-2 hover:bg-light transition-colors" href="{{ .URL | relLangURL }}" title="{{ .Name }}">
+                {{ .Name }}
+              </a>
               {{ end }}
             </div>
           </li>
           {{ else }}
           <li class="nav-item">
-            <a class="nav-link" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+            <a class="nav-link hover:text-primary transition-colors" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
           </li>
           {{ end }}
           {{ end }}
+        </ul>
 
-          <!-- Language List -->
+        <!-- Language Selector -->
         {{ if .IsTranslated }}
-        <select class="m-2 border-0" id="select-language" onchange="location = this.value;">
+        <select class="border border-gray-300 rounded px-3 py-2" id="select-language" onchange="location = this.value;">
           {{ $siteLanguages := site.Languages}}
           {{ $pageLang := .Page.Lang}}
           {{ range .Page.AllTranslations }}
           {{ $translation := .}}
           {{ range $siteLanguages }}
           {{ if eq $translation.Lang .Lang }}
-          {{ $selected := false }}
           {{ if eq $pageLang .Lang}}
-          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
-          </option>
+          <option value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
           {{ else }}
-          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+          <option value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
           {{ end }}
           {{ end }}
           {{ end }}
           {{ end }}
         </select>
         {{ end }}
-        </ul>
 
         {{ if site.Params.navigation_button.enable }}
         {{ with site.Params.navigation_button }}
-        <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-sm btn-primary ml-3">{{ .label }}</a>
+        <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-sm btn-primary">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="hidden md:hidden pb-4" id="mobile-menu">
+      <ul class="flex flex-col gap-4">
+        {{ range site.Menus.main }}
+        <li class="nav-item">
+          <a class="nav-link block" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
   </div>
 </header>
-{{ "<!-- /navigation -->" | safeHTML }}
+
+<script>
+document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+  const menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('hidden');
+});
+</script>
