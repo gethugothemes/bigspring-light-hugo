@@ -1,35 +1,5 @@
-const purgecss = require("@fullhuman/postcss-purgecss")({
-  content: ["./hugo_stats.json"],
-  defaultExtractor: (content) => {
-    const els = JSON.parse(content).htmlElements;
-    return [...(els.tags || []), ...(els.classes || []), ...(els.ids || [])];
-  },
-  safelist: [
-    /dark/,
-    /^swiper-/,
-    /collapsing/,
-    /show/,
-    /[aria-expanded=true]/,
-    /[aria-expanded=false]/,
-    /^lb-/,
-    /^gl/,
-    /^go/,
-    /^gc/,
-    /^gs/,
-    /^gi/,
-    /^desc/,
-    /^zoom/,
-    /dragging/,
-    /fullscreen/,
-    /loaded/,
-    /visible/,
-    /current/,
-    /active/,
-  ],
-});
-
+// PostCSS config — Tailwind CSS v4 uses Hugo's native css.TailwindCSS pipe,
+// so no PostCSS plugin setup is needed here.
 module.exports = {
-  plugins: [
-    ...(process.env.HUGO_ENVIRONMENT === "production" ? [purgecss] : []),
-  ],
+  plugins: [],
 };
