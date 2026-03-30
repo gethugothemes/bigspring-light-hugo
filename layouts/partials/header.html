@@ -1,40 +1,47 @@
-{{ "<!-- navigation -->" | safeHTML }}
-<header class="navigation">
-  <div class="container">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-      <!-- navbar brand/logo -->
-      <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+<header class="header">
+  <nav class="navbar container">
+    <!-- logo -->
+    <div class="flex-1">
+      <a href="{{ site.BaseURL | relLangURL }}" class="navbar-brand">
         {{ partial "logo.html" }}
       </a>
-      <button class="navbar-toggler border-0" type="button">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <div class="collapse navbar-collapse text-center">
-        <ul class="navbar-nav mx-auto">
-          {{ range site.Menus.main }}
-          {{ if .HasChildren }}
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
-              {{ .Name }}
-            </a>
-            <div class="dropdown-menu">
-              {{ range .Children }}
-              <a class="dropdown-item" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
-              {{ end }}
-            </div>
-          </li>
-          {{ else }}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+    </div>
+    <!-- navbar toggler -->
+    <input id="nav-toggle" type="checkbox" class="hidden">
+    <label id="show-button" for="nav-toggle" class="flex cursor-pointer items-center md:hidden">
+      <i class="fas fa-bars h-6 text-xl"></i>
+    </label>
+    <label id="hide-button" for="nav-toggle" class="cursor-pointer items-center md:hidden">
+      <i class="fas fa-times h-6 text-xl"></i>
+    </label>
+    <!-- /navbar toggler -->
+    <ul id="nav-menu" class="navbar-nav hidden w-full md:flex md:w-auto md:space-x-3 md:flex-1 md:justify-center">
+      {{ range site.Menus.main }}
+      {{ if .HasChildren }}
+      <li class="nav-item nav-dropdown group relative">
+        <span class="nav-link inline-flex items-center cursor-pointer">
+          {{ .Name }}
+          <i class="fas fa-chevron-down ml-1 text-xs"></i>
+        </span>
+        <ul class="nav-dropdown-list hidden group-hover:block md:invisible md:absolute md:block md:opacity-0 md:group-hover:visible md:group-hover:opacity-100">
+          {{ range .Children }}
+          <li class="nav-dropdown-item">
+            <a href="{{ .URL | relLangURL }}" class="nav-dropdown-link block" title="{{ .Name }}">{{ .Name }}</a>
           </li>
           {{ end }}
-          {{ end }}
+        </ul>
+      </li>
+      {{ else }}
+      <li class="nav-item">
+        <a href="{{ .URL | relLangURL }}" class="nav-link block" title="{{ .Name }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+      {{ end }}
 
-          <!-- Language List -->
-        {{ if .IsTranslated }}
-        <select class="m-2 border-0" id="select-language" onchange="location = this.value;">
+      <!-- Language Switcher -->
+      {{ if .IsTranslated }}
+      <li class="nav-item">
+        <select class="py-4 font-primary text-base font-bold text-text-dark transition hover:text-primary border-0 bg-transparent cursor-pointer" onchange="location = this.value;">
           {{ $siteLanguages := site.Languages}}
           {{ $pageLang := .Page.Lang}}
           {{ range .Page.AllTranslations }}
@@ -43,8 +50,7 @@
           {{ if eq $translation.Lang .Lang }}
           {{ $selected := false }}
           {{ if eq $pageLang .Lang}}
-          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
-          </option>
+          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
           {{ else }}
           <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
           {{ end }}
@@ -52,16 +58,26 @@
           {{ end }}
           {{ end }}
         </select>
-        {{ end }}
-        </ul>
+      </li>
+      {{ end }}
 
-        {{ if site.Params.navigation_button.enable }}
-        {{ with site.Params.navigation_button }}
-        <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-sm btn-primary ml-3">{{ .label }}</a>
-        {{ end }}
-        {{ end }}
+      {{ if site.Params.navigation_button.enable }}
+      {{ with site.Params.navigation_button }}
+      <div class="block md:hidden">
+        <a class="btn btn-primary z-0 ml-auto py-[14px]" href="{{ .link | relLangURL }}" title="{{ .label }}">{{ .label }}</a>
       </div>
-    </nav>
-  </div>
+      {{ end }}
+      {{ end }}
+    </ul>
+    {{ if site.Params.navigation_button.enable }}
+    {{ with site.Params.navigation_button }}
+    <div class="flex-1 hidden items-center md:flex md:justify-end">
+      <a class="btn btn-primary z-0 py-[14px]" href="{{ .link | relLangURL }}" title="{{ .label }}">{{ .label }}</a>
+    </div>
+    {{ end }}
+    {{ else }}
+    <div class="flex-1 hidden items-center md:flex md:justify-end">
+    </div>
+    {{ end }}
+  </nav>
 </header>
-{{ "<!-- /navigation -->" | safeHTML }}

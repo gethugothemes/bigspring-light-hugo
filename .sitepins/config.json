@@ -5,7 +5,10 @@
   "arrangement": [],
   "public": "exampleSite/static",
   "configs": [
-    "exampleSite/config/_default"
+    "exampleSite/config/_default",
+    "exampleSite/hugo.toml",
+    "exampleSite/data",
+    "exampleSite/i18n"
   ],
   "custom-commit": false
 }

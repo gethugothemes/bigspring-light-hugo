@@ -10,9 +10,6 @@ logo_width = "180px"
 logo_webp = true
 # logo text will only show when logo is missing.
 logo_text = "Bigspring"
-# theme-mode
-theme_switcher = true
-theme_default = "system" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action

@@ -1,11 +1,10 @@
-<h1 align=center>Bigspring Light</h1>
+<h1 align=center>Bigspring Light Hugo</h1>
 
 <p align=center>It is an ideal theme for Digital Agency, Creative Agency, Marketing Agency, Design Studios, Digital Marketing Agencies, and other business service websites. </p>
 
 <h2 align="center"> <a target="_blank" href="https://bigspring-light-hugo.vercel.app/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-bigspring-light-hugo-vercel-app/4fq55n1hds?form_factor=desktop">Page Speed (99%)🚀</a></h2>
 
 
-<h2 align=center>We are thrilled to announce bigspring Pro today with lots of new features . For more Details please <a href="https://gethugothemes.com/products/bigspring">check here<a></h2>
 
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.64.0" alt="Contributors">
@@ -33,30 +32,6 @@
 
 ---
 
-## 🔑Discover Free & Premium Features
-
-Featurees | [Bigspring LIght](https://github.com/themefisher/bigspring-light)  | [Bigspring Premium](https://gethugothemes.com/products/bigspring/?ref=github) |
-:------------ |    :----:    |     :----:    |
-Google analytics support                   | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
-CSS and Js bundle with hugo pipe           | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
-Netlify settings predefine                 | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)               |
-Color and fonts variable in config file    | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
-Contact form Support                       | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
-GDPR consent enable                        | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
-Google page speed optimized                | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
-Open graph meta tag                        | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
-Twitter card meta tag                      | ![](https://assets.teamosis.com/icons/tick.png) | ![](https://assets.teamosis.com/icons/tick.png)                |
-Dark and Light mode available              | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png)          |
-image optimize with hugo pipe              | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png)          |
-Google font loads from webfont loader      | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png)          |
-Multiple language support (En, De, Zh-Cn, Hi, Jp, ko, Fr, Es, Id, It, Ru)      | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
-Caching enable                            | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
-Multiple author support                    | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
-17+ Premium Pages                          | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
-Site verification support (google, bing, baidu)       | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
-Priority Support                           | ![](https://assets.teamosis.com/icons/x.png) | ![](https://assets.teamosis.com/icons/tick.png) |
-Get It Now | [![download-light](https://assets.teamosis.com/icons/download.png)](https://github.com/themefisher/bigspring-light/archive/refs/heads/master.zip) | [![download](https://assets.teamosis.com/icons/grab.png)](https://gethugothemes.com/products/bigspring/?ref=github)
-
 ## 🔧Local development
 
 ```bash
@@ -75,19 +50,7 @@ $ npm run dev
 
 Or Check out [Full Documentation](https://docs.gethugothemes.com/bigspring/?ref=github).
 
-<!-- edit with sitepins -->
 
-## 📝 Edit Content with CMS
-
-This template comes pre-configured with [**Sitepins**](https://sitepins.com), a Git-based Headless CMS designed for seamless content management. You can update your website’s text, images, and configuration without touching a single line of code.
-
-**How to get started:**
-
-Click the Edit with Sitepins button below and follow the on-screen instructions to start editing your content visually.
-
-  <a target="_blank" href="https://app.sitepins.com/new/clone?name=Bigspring%20Light%20Hugo&repository=https://github.com/gethugothemes/bigspring-light-hugo/">
-    <img src="https://sitepins.com/button.svg" alt="Edit with Sitepins">
-  </a>
 
 <!-- reporting issue -->
 ## 🐞Reporting Issues
@@ -97,15 +60,7 @@ issues](https://github.com/themefisher/bigspring-hugo/issues). Someone may have 
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/bigspring-hugo/issues).
 
-## 📱Submit Your Website To Our Showcase
 
-Are you using Bigspring Hugo theme? Submit it to our [showcase](https://gethugothemes.com/showcase). 
-
-Our showcase aims to demonstrate to the world what amazing websites people like you have created utilizing our Hugo themes and to show that Hugo has tremendous capabilities as a Static Site Generator. 
-
-View all the websites powered by Bigspring Hugo from [here](https://gethugothemes.com/showcase?theme=bigspring). 
-
-[Submit](https://gethugothemes.com/showcase?submit=show) your Bigspring Hugo powered website.
 
 <!-- licence -->
 ## 📄License
@@ -128,16 +83,3 @@ share those images.
 - [Google Fonts](https://fonts.google.com/)
 - [All Contributors](https://github.com/themefisher/bigspring-hugo/graphs/contributors)
 
-##👨‍💻Hire Us
-
-Besides developing unique, blazing-fast Hugo themes, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Hugo.
-
-If you need to customize the theme or complete website development from scratch, you can hire us. **Check Our
-[Services](https://gethugothemes.com/services/?utm_source=bigspring_github&utm_medium=referral&utm_campaign=github_theme_readme)**
-
-<!-- premium themes -->
-## 💎Premium Themes By Us
-
-| [![Mega-Bundle-HUGO](https://assets.teamosis.com/thumbs/bundle.png?)](https://gethugothemes.com/bundle/?utm_source=bigspring_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Orbitor](https://assets.teamosis.com/thumbs/orbitor.png)](https://gethugothemes.com/products/orbitor/) | [![Andromeda](https://assets.teamosis.com/thumbs/andromeda.png)](https://gethugothemes.com/products/andromeda/) |
-|:---:|:---:|:---:|
-| **Get 68+ Premium Hugo Themes Bundle**| **Orbitor** | **Andromeda** |

@@ -1,63 +1,52 @@
-<footer class="bg-light section pb-0">
+<footer class="section bg-light pb-0">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-xl-11">
-        <div class="section pt-0">
-          <div class="row gy-4">
-            <div class="col-lg-3 col-sm-6">
-              {{ if site.Menus.footer_left }}
-              <div class="h5 mb-4">{{ site.Params.footer_menu_left }}</div>
-              <ul class="list-unstyled footer-list">
-                {{ range site.Menus.footer_left }}
-                <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
-                {{ end }}
-              </ul>
-              {{ end }}
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              {{ if site.Menus.footer_middle }}
-              <div class="h5 mb-4">{{ site.Params.footer_menu_middle }}</div>
-              <ul class="list-unstyled footer-list">
-                {{ range site.Menus.footer_middle }}
-                <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
-                {{ end }}
-              </ul>
-              {{ end }}
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              {{ if site.Menus.footer_right }}
-              <div class="h5 mb-4">{{ site.Params.footer_menu_right }}</div>
-              <ul class="list-unstyled footer-list">
-                {{ range site.Menus.footer_right }}
-                <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
-                {{ end }}
-              </ul>
-              {{ end }}
-            </div>
-            <div class="col-lg-3 col-sm-6">
-              <a class="d-block h5 mb-3" href="{{ site.BaseURL | absLangURL}}">
-                {{ partial "logo.html" }}
-              </a>
-              <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
-              {{ with site.Params.social }}
-              <ul class="list-inline social-icons">
-                {{ range . }}
-                <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}"><i
-                      class="{{ .icon }}"></i></a></li>
-                {{ end }}
-              </ul>
-              {{ end }}
-            </div>
-          </div>
-        </div>
-        {{ if site.Params.theme_copyright }}
-        <div class="border-top border-default text-center py-4">
-          <small class="content"> {{site.Params.copyright}} | Theme by <a target="_blank" rel="noopener noreferrer" href="https://gethugothemes.com/">GetHugoThemes</a>
-          </small>
-        </div>
+    <div class="row">
+      {{ if site.Menus.footer_left }}
+      <div class="mb-12 sm:col-6 lg:col-3">
+        <h2 class="h4">{{ site.Params.footer_menu_left }}</h2>
+        <ul class="mt-6">
+          {{ range site.Menus.footer_left }}
+          <li class="mb-1"><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ if site.Menus.footer_middle }}
+      <div class="mb-12 sm:col-6 lg:col-3">
+        <h2 class="h4">{{ site.Params.footer_menu_middle }}</h2>
+        <ul class="mt-6">
+          {{ range site.Menus.footer_middle }}
+          <li class="mb-1"><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ if site.Menus.footer_right }}
+      <div class="mb-12 sm:col-6 lg:col-3">
+        <h2 class="h4">{{ site.Params.footer_menu_right }}</h2>
+        <ul class="mt-6">
+          {{ range site.Menus.footer_right }}
+          <li class="mb-1"><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      <div class="md-12 sm:col-6 lg:col-3">
+        <a href="{{ site.BaseURL | absLangURL }}" class="block mb-3">{{ partial "logo.html" }}</a>
+        <p class="mt-3 mb-6">{{ site.Params.footer_content | markdownify }}</p>
+        {{ with site.Params.social }}
+        <ul class="social-icons mb-8">
+          {{ range . }}
+          <li><a href="{{ .link | safeURL }}" title="{{ .title }}"><i class="{{ .icon }}"></i></a></li>
+          {{ end }}
+        </ul>
         {{ end }}
-
       </div>
     </div>
+    {{ if site.Params.theme_copyright }}
+    <div class="border-t border-border py-6">
+      <p class="text-sm text-center">{{ site.Params.copyright }} | Theme by <a target="_blank" rel="noopener noreferrer" href="https://gethugothemes.com/">GetHugoThemes</a></p>
+    </div>
+    {{ end }}
   </div>
 </footer>

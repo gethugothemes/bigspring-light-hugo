@@ -1,8 +1,6 @@
 <section class="section pb-0">
   <div class="container text-center">
-    <h1 class="display-3 fw-medium">{{ .Title | markdownify }}</h1>
-    {{ with .Params.subtitle }}
-    <p>{{ . | markdownify }}</p>
-    {{ end }}
+    <h1 class="font-normal mb-4">{{ .Title | markdownify }}</h1>
+    {{ with .Params.subtitle }}<p class="mt-2">{{ . | markdownify }}</p>{{ end }}
   </div>
 </section>

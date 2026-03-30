@@ -1,8 +1,9 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
-
-<div class="col-md-6 mb-4">
-  <div class="p-5 shadow rounded-lg">
-    <h3 class="mb-4 check-mark">{{ .Get 0 | markdownify }}</h3>
-    <p>{{ .Inner | markdownify }}</p>
+<div class="col-12 mt-6 md:col-6">
+  <div class="p-12 shadow">
+    <div class="faq-head relative">
+      <h4>{{ .Get 0 | markdownify }}</h4>
+    </div>
+    <p class="faq-body mt-4">{{ .Inner | markdownify }}</p>
   </div>
 </div>

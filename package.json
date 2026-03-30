@@ -1,24 +1,26 @@
 {
   "name": "bigspring-light",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "license": "MIT",
   "author": "gethugothemes",
   "scripts": {
-    "dev": "hugo server",
-    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
-    "preview": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
-    "dev:example": "cd exampleSite; hugo server --themesDir ../..",
-    "build:example": "cd exampleSite; hugo --themesDir ../.. --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
-    "preview:example": "cd exampleSite; hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --watch --forceSyncStatic -e production --minify",
+    "dev": "concurrently \"node scripts/themeGenerator.js --watch\" \"hugo server\"",
+    "build": "node scripts/themeGenerator.js && hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
+    "preview": "node scripts/themeGenerator.js && hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
+    "dev:example": "concurrently \"node scripts/themeGenerator.js --watch\" \"hugo server -s exampleSite --themesDir ../..\"",
+    "build:example": "node scripts/themeGenerator.js && cd exampleSite && hugo --themesDir ../.. --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
+    "preview:example": "node scripts/themeGenerator.js && cd exampleSite && hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
     "update-modules": "node ./scripts/clearModules.js && hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy",
     "project-setup": "node ./scripts/projectSetup.js",
     "theme-setup": "node ./scripts/themeSetup.js"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^6.0.0",
-    "postcss": "^8.4.41",
-    "postcss-cli": "^11.0.0",
+    "@tailwindcss/cli": "^4.1.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "@tailwindcss/typography": "^0.5.19",
+    "concurrently": "^9.2.1",
     "prettier": "^3.3.3",
-    "prettier-plugin-go-template": "0.0.15"
+    "prettier-plugin-go-template": "0.0.15",
+    "tailwindcss": "^4.1.1"
   }
 }

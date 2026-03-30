@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@source "watching/hugo_stats.json";
+
+/* Auto-generated theme from "data/theme.json" */
+@import "./generated-theme.css";
+
+@import "./bs-grid.css";
+@import "./safe.css";
+@import "./utilities.css";
+
+@layer base {
+  @import "./base.css";
+}
+
+@layer components {
+  @import "./components.css";
+  @import "./navigation.css";
+  @import "./buttons.css";
+}
+
+@import "./custom.css";

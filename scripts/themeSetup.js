@@ -1,8 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 
-const createNewfolder = (rootfolder, folderName) => {
-  const newFolder = path.join(rootfolder, folderName);
+
+const createNewFolder = (rootFolder, folderName) => {
+  const newFolder = path.join(rootFolder, folderName);
   fs.mkdirSync(newFolder, { recursive: true });
   return newFolder;
 };
@@ -13,11 +14,8 @@ const deleteFolder = (folderPath) => {
   }
 };
 
-const getFolderName = (rootfolder) => {
-  const configPath = path.join(
-    rootfolder,
-    "exampleSite/hugo.toml"
-  );
+const getFolderName = (rootFolder) => {
+  const configPath = path.join(rootFolder, "exampleSite/hugo.toml");
   const getConfig = fs.readFileSync(configPath, "utf8");
   const match = getConfig.match(/theme\s*=\s*\[?"([^"\]]+)"\]?/);
   let selectedTheme = null;
@@ -32,7 +30,7 @@ const iterateFilesAndFolders = (rootFolder, { destinationRoot }) => {
   const items = fs.readdirSync(directory, { withFileTypes: true });
   items.forEach((item) => {
     if (item.isDirectory()) {
-      createNewfolder(destinationRoot, item.name);
+      createNewFolder(destinationRoot, item.name);
       iterateFilesAndFolders(path.join(directory, item.name), {
         currentFolder: item.name,
         destinationRoot: path.join(destinationRoot, item.name),
@@ -45,13 +43,34 @@ const iterateFilesAndFolders = (rootFolder, { destinationRoot }) => {
   });
 };
 
+const reverseSitepinsConfig = (rootFolder) => {
+  const configPath = path.join(rootFolder, ".sitepins/config.json");
+  if (fs.existsSync(configPath)) {
+    const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
+    config.content = "exampleSite/content";
+    config.media = "exampleSite/assets/images";
+    config.public = "exampleSite/static";
+    config.code = "layouts";
+    config.configs = [
+      "exampleSite/config/_default",
+      "exampleSite/hugo.toml",
+      "exampleSite/data",
+      "exampleSite/i18n",
+    ];
+    fs.writeFileSync(
+      configPath,
+      JSON.stringify(config, null, 2) + "\n",
+      "utf8",
+    );
+  }
+};
+
 const setupTheme = () => {
   const rootFolder = path.join(__dirname, "../");
 
   if (!fs.existsSync(path.join(rootFolder, "exampleSite"))) {
+
     const includesFiles = [
-      "tailwind.config.js",
-      "postcss.config.js",
       "go.mod",
       "hugo.toml",
       "assets",
@@ -62,7 +81,7 @@ const setupTheme = () => {
       "static",
     ];
 
-    const folder = createNewfolder(rootFolder, "exampleSite");
+    const folder = createNewFolder(rootFolder, "exampleSite");
 
     fs.readdirSync(rootFolder, { withFileTypes: true }).forEach((file) => {
       if (includesFiles.includes(file.name)) {
@@ -76,7 +95,7 @@ const setupTheme = () => {
         } else {
           fs.renameSync(
             path.join(rootFolder, file.name),
-            path.join(folder, file.name)
+            path.join(folder, file.name),
           );
         }
       }
@@ -87,6 +106,8 @@ const setupTheme = () => {
       destinationRoot: rootFolder,
     });
     deleteFolder(themes);
+
+    reverseSitepinsConfig(rootFolder);
   }
 };
 

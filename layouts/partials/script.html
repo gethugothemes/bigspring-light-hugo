@@ -1,14 +1,3 @@
-<!-- Bootstrap scripts -->
-{{ $bootstrap := resources.Get "js/bootstrap.js" }}
-{{ $params := dict }}
-{{ $sourceMap := cond hugo.IsProduction "" "inline" }}
-{{ $opts := dict "sourceMap" $sourceMap "target" "es2018" "params" $params }}
-{{ $bootstrap = $bootstrap | js.Build $opts }}
-{{ if hugo.IsProduction }}
-{{ $bootstrap = $bootstrap | fingerprint "sha512" }}
-{{ end }}
-<script crossorigin="anonymous" defer {{ if hugo.IsProduction }} integrity="{{ $bootstrap.Data.Integrity }}"{{end}} type="application/javascript">{{$bootstrap.Content | safeJS}}</script>
-
 <!-- JS Plugins + Main script -->
 {{ $scripts := slice }}
 {{ range site.Params.plugins.js}}
