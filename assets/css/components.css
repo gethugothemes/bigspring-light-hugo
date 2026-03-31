@@ -10,7 +10,7 @@
 
 /* social icon style */
 .social-icons {
-  @apply space-x-4;
+  @apply space-x-4 space-y-4;
 }
 
 .social-icons li {

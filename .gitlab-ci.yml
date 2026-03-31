@@ -3,9 +3,9 @@ stages:
 
 variables:
   HUGO_ENV: production
-  HUGO_VERSION: "0.124.1"
-  GO_VERSION: "1.20.5"
-  NODE_VERSION: "18.16.1"
+  HUGO_VERSION: "0.151.0"
+  GO_VERSION: "1.24.4"
+  NODE_VERSION: "24.11.1"
 
 cache:
   paths:
