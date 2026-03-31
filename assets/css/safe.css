@@ -28,7 +28,7 @@
 }
 
 .service-carousel .swiper-pagination .swiper-pagination-bullet {
-  @apply mx-[5px] inline-block h-[10px] w-[10px] cursor-pointer rounded-full border border-primary;
+  @apply mx-1.25 inline-block size-2.5 cursor-pointer rounded-full border border-primary;
 }
 
 .service-carousel .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {

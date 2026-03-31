@@ -2,7 +2,7 @@
 
 <!-- banner -->
 {{ with .Params.banner }}
-<section class="section pb-[50px]">
+<section class="section pb-12.5">
   <div class="container">
     <div class="row text-center">
       <div class="mx-auto lg:col-10">
@@ -72,8 +72,8 @@
         {{ end }}
         {{ end }}
       </div>
-      <div class="service-content mt-5 md:mt-0{{ if $isOdd }} md:order-1{{ end }}">
-        <h2 class="font-bold leading-[40px] mb-4">{{ .title | markdownify }}</h2>
+      <div class="mt-5 md:mt-0{{ if $isOdd }} md:order-1{{ end }}">
+        <h2 class="font-bold leading-10 mb-4">{{ .title | markdownify }}</h2>
         <p class="mb-6">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
@@ -96,7 +96,7 @@
 {{ if .enable }}
 <section class="section pb-0">
   <div class="mb-8 text-center">
-    <h2 class="mx-auto max-w-[400px] font-bold leading-[44px] mb-4">{{ .title | markdownify }}</h2>
+    <h2 class="mx-auto max-w-100 font-bold leading-11 mb-4">{{ .title | markdownify }}</h2>
   </div>
   {{ with .image }}
     {{ partial "image" (dict "Src" . "Alt" "workflow image" "Class" "w-full rounded-lg") }}

@@ -64,7 +64,7 @@
       {{ if site.Params.navigation_button.enable }}
       {{ with site.Params.navigation_button }}
       <div class="block md:hidden">
-        <a class="btn btn-primary z-0 ml-auto py-[14px]" href="{{ .link | relLangURL }}" title="{{ .label }}">{{ .label }}</a>
+        <a class="btn btn-primary z-0 ml-auto py-3.5" href="{{ .link | relLangURL }}" title="{{ .label }}">{{ .label }}</a>
       </div>
       {{ end }}
       {{ end }}
@@ -72,7 +72,7 @@
     {{ if site.Params.navigation_button.enable }}
     {{ with site.Params.navigation_button }}
     <div class="flex-1 hidden items-center md:flex md:justify-end">
-      <a class="btn btn-primary z-0 py-[14px]" href="{{ .link | relLangURL }}" title="{{ .label }}">{{ .label }}</a>
+      <a class="btn btn-primary z-0 py-3.5" href="{{ .link | relLangURL }}" title="{{ .label }}">{{ .label }}</a>
     </div>
     {{ end }}
     {{ else }}
