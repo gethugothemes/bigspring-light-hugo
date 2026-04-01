@@ -4,8 +4,6 @@
 
 <h2 align="center"> <a target="_blank" href="https://bigspring-light-hugo.vercel.app/" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/analysis/https-bigspring-light-hugo-vercel-app/4fq55n1hds?form_factor=desktop">Page Speed (99%)🚀</a></h2>
 
-
-
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.64.0" alt="Contributors">
     <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.64.0&color=f00&logo=hugo" />
@@ -50,9 +48,8 @@ $ npm run dev
 
 Or Check out [Full Documentation](https://docs.gethugothemes.com/bigspring/?ref=github).
 
-
-
 <!-- reporting issue -->
+
 ## 🐞Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the Bigspring Template. Please Search [existing
@@ -60,9 +57,8 @@ issues](https://github.com/themefisher/bigspring-hugo/issues). Someone may have 
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/bigspring-hugo/issues).
 
-
-
 <!-- licence -->
+
 ## 📄License
 
 Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed by
@@ -74,12 +70,11 @@ Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed 
 share those images.
 
 <!-- resources -->
+
 ## 🙏Special Thanks
 
-- [Bootstrap](https://getbootstrap.com)
-- [Jquery](https://jquery.com)
+- [Tailwindcss](https://tailwindcss.com)
+- [Swiperjs] (https://swiperjs.com)
 - [Font Awesome Icons](https://fontawesome.com)
-- [Slick Slider](https://kenwheeler.github.io/slick/)
 - [Google Fonts](https://fonts.google.com/)
 - [All Contributors](https://github.com/themefisher/bigspring-hugo/graphs/contributors)
-
