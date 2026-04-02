@@ -1,6 +1,6 @@
 <h1 align=center>Bigspring Light Hugo</h1>
 
-<p align=center>It is an ideal theme for Digital Agency, Creative Agency, Marketing Agency, Design Studios, Digital Marketing Agencies, and other business service websites. </p>
+<p align=center>Bigspring Light is a free Hugo theme built for SaaS marketing websites and digital agencies who need a fast, secure, and professional web presence.</p>
 
 <h2 align="center"> <a target="_blank" href="https://bigspring-light-hugo.vercel.app/" rel="nofollow">👀Demo</a></h2>
 
