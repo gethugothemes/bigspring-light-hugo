@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.151.0&color=f00&logo=hugo" />
   </a>
 
-  <a href="https://github.com/gethugothemes/bigspring-light-hugo/blob/master/LICENSE">
+  <a href="https://github.com/gethugothemes/bigspring-light-hugo/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/gethugothemes/bigspring-light-hugo" alt="license"></a>
 
   <img src="https://img.shields.io/github/languages/code-size/gethugothemes/bigspring-light-hugo" alt="code size">
@@ -55,7 +55,7 @@ issue](https://github.com/gethugothemes/bigspring-light-hugo/issues).
 
 ## 📄License
 
-**Code License:** Released under the [MIT](https://github.com/themefisher/bigspring-hugo/blob/master/LICENSE) license.
+**Code License:** Released under the [MIT](https://github.com/themefisher/bigspring-hugo/blob/main/LICENSE) license.
 
 **Image license:** The images are only for demonstration purposes. They have their licenses. We don't have permission to
 Share those images.
