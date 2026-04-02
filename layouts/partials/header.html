@@ -2,7 +2,7 @@
   <nav class="navbar container">
     <!-- logo -->
     <div class="flex-1">
-      <a href="{{ site.BaseURL | relLangURL }}" class="navbar-brand">
+      <a href="{{ .Site.Home.RelPermalink }}" class="navbar-brand">
         {{ partial "logo.html" }}
       </a>
     </div>
