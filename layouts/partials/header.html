@@ -39,23 +39,11 @@
       {{ end }}
 
       <!-- Language Switcher -->
-      {{ if .IsTranslated }}
+      {{ with .Rotate "language" }}
       <li class="nav-item">
-        <select class="py-4 font-primary text-base font-bold text-text-dark transition hover:text-primary border-0 bg-transparent cursor-pointer" onchange="location = this.value;">
-          {{ $siteLanguages := site.Languages}}
-          {{ $pageLang := .Page.Lang}}
-          {{ range .Page.AllTranslations }}
-          {{ $translation := .}}
-          {{ range $siteLanguages }}
-          {{ if eq $translation.Lang .Lang }}
-          {{ $selected := false }}
-          {{ if eq $pageLang .Lang}}
-          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}</option>
-          {{ else }}
-          <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
-          {{ end }}
-          {{ end }}
-          {{ end }}
+        <select class="py-4 font-primary text-base font-bold text-text-dark transition hover:text-primary border-0 bg-transparent cursor-pointer" aria-label="Select language" onchange="location = this.value;">
+          {{ range . }}
+          <option value="{{ .Permalink }}" {{ if eq .Site.Language $.Site.Language }}selected{{ end }}>{{ .Site.Language.LanguageName }}</option>
           {{ end }}
         </select>
       </li>
