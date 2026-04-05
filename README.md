@@ -14,7 +14,7 @@
 
   <img src="https://img.shields.io/github/languages/code-size/gethugothemes/bigspring-light-hugo" alt="code size">
 
-  <a href="https://github.com/themefisher/bigspring-hugo/graphs/contributors">
+  <a href="https://github.com/gethugothemes/bigspring-light-hugo/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/gethugothemes/bigspring-light-hugo" alt="contributors"></a>
 </p>
 
@@ -55,7 +55,7 @@ issue](https://github.com/gethugothemes/bigspring-light-hugo/issues).
 
 ## 📄License
 
-**Code License:** Released under the [MIT](https://github.com/themefisher/bigspring-hugo/blob/main/LICENSE) license.
+**Code License:** Released under the [MIT](https://github.com/gethugothemes/bigspring-light-hugo/blob/main/LICENSE) license.
 
 **Image license:** The images are only for demonstration purposes. They have their licenses. We don't have permission to
 Share those images.
@@ -68,4 +68,4 @@ Share those images.
 - [Swiperjs](https://swiperjs.com)
 - [Font Awesome Icons](https://fontawesome.com)
 - [Google Fonts](https://fonts.google.com/)
-- [All Contributors](https://github.com/themefisher/bigspring-hugo/graphs/contributors)
+- [All Contributors](https://github.com/gethugothemes/bigspring-light-hugo/graphs/contributors)
