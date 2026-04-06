@@ -4,7 +4,7 @@ licenselink = "https://github.com/gethugothemes/bigspring-light-hugo/blob/main/L
 description = "Bigspring Light is a free Hugo theme built for SaaS marketing websites and digital agencies who need a fast, secure, and professional web presence."
 homepage = "https://github.com/gethugothemes/bigspring-light-hugo/"
 demosite = "https://bigspring-light-hugo.vercel.app/"
-min_version = "0.151.0"
+min_version = "0.156.0"
 
 tags = [
   "blog",
