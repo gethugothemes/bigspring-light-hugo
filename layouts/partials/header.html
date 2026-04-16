@@ -40,13 +40,16 @@
 
       <!-- Language Switcher -->
       {{ with .Rotate "language" }}
+      {{ $langs := . }}
+       {{ if gt (len $langs) 1 }}
       <li class="nav-item">
         <select class="py-4 font-primary text-base font-bold text-text-dark transition hover:text-primary border-0 bg-transparent cursor-pointer" aria-label="Select language" onchange="location = this.value;">
-          {{ range . }}
+          {{ range $langs }}
           <option value="{{ .Permalink }}" {{ if eq .Site.Language $.Site.Language }}selected{{ end }}>{{ .Site.Language.LanguageName }}</option>
           {{ end }}
         </select>
       </li>
+      {{ end }}
       {{ end }}
 
       {{ if site.Params.navigation_button.enable }}
