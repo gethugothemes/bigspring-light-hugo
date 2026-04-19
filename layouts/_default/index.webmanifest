@@ -50,5 +50,5 @@
   {{ end }}
   {{ end }}
   "display": "standalone",
-  "start_url": "{{ site.BaseURL | relLangURL }}?utm_source=web_app_manifest"
+  "start_url": "{{ site.Home.RelPermalink }}?utm_source=web_app_manifest"
 }
