@@ -21,7 +21,7 @@
 ---
 
 <p align="center">
-  <img src="https://assets.teamosis.com/thumbs/bigspring-light.png" alt="screenshot" width="100%">
+<img width="1600" height="859" alt="bigpsring-light-hugo-saas-agency-theme" src="https://github.com/user-attachments/assets/97a23811-2d4a-4caa-ba8f-c432e76b1ca0" />
 </p>
 
 ---
