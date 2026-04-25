@@ -3,9 +3,27 @@
   @apply py-15 lg:py-17;
 }
 
-/* container */
+/* container — horizontal inset via CSS vars (see custom.css :root); opt out: .container.container--full-bleed */
 .container {
-  @apply mx-auto! max-w-[1340px]! px-4!;
+  @apply mx-auto! max-w-[1340px]!;
+  box-sizing: border-box;
+}
+
+.container:not(.container--full-bleed) {
+  padding-left: var(--layout-inset-mobile) !important;
+  padding-right: var(--layout-inset-mobile) !important;
+}
+
+@media (min-width: 640px) {
+  .container:not(.container--full-bleed) {
+    padding-left: var(--layout-inset-desktop) !important;
+    padding-right: var(--layout-inset-desktop) !important;
+  }
+}
+
+.container.container--full-bleed {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 /* social icon style */

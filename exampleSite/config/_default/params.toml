@@ -1,8 +1,8 @@
 #################### default parameters ################################
 # favicon
-favicon = "images/favicon.png"
+favicon = "images/favicon.svg"
 # logo
-logo = "images/logo.png"
+logo = "images/logo.svg"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
 logo_width = "180px"
@@ -51,7 +51,7 @@ crisp_website_id = "9aa449e1-9999-422a-938f-8567982eec6d" # replace this code wi
 keywords = ["Hugo", "Themefisher", "Gethugothemes"]
 description = "This is meta description"
 author = "Gethugothemes"
-image = "images/logo.png"                           # this image will be used as fallback if a page has no image of its own
+image = "images/logo.svg"                           # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/
 # matomo tracking module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/matomo-analytics

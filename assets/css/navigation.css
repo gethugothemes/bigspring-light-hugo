@@ -16,7 +16,7 @@
 }
 
 .navbar-nav {
-  @apply text-center md:text-left;
+  @apply text-left;
 }
 
 #nav-menu {
@@ -28,18 +28,29 @@
 }
 
 .nav-link {
-  @apply py-3 px-2 font-primary text-base font-bold text-text-dark transition hover:text-primary md:py-4 lg:px-3;
+  font-family: var(--font-nav);
+  @apply py-3 px-2 text-left text-base font-medium text-text-dark transition hover:text-primary md:py-4 lg:px-3;
 }
 
 .nav-link-active {
   @apply text-primary;
 }
 
-/* dropdown */
+.nav-dropdown > .nav-link {
+  @apply justify-start;
+}
+
+.navbar-nav select {
+  font-family: var(--font-nav);
+  @apply text-left text-base font-medium text-text-dark;
+}
+
+/* dropdown — align under parent, text left */
 .nav-dropdown-list {
-  @apply bg-white shadow-lg rounded py-2 min-w-[160px];
+  @apply bg-white rounded py-2 min-w-[160px] shadow-none text-left md:left-0 md:right-auto;
 }
 
 .nav-dropdown-link {
-  @apply text-text-dark hover:text-primary px-4 py-2 transition;
+  font-family: var(--font-nav);
+  @apply block w-full text-left text-text-dark hover:text-primary px-4 py-2 text-sm font-medium transition;
 }
