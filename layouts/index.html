@@ -10,7 +10,7 @@
         <p class="mb-6">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
-        <a class="btn btn-primary" href="{{ .link | safeURL }}">{{ .label }}</a>
+        <a class="btn btn-primary" href="{{ .link | relLangURL }}">{{ .label }}</a>
         {{ end }}
         {{ end }}
         {{ with .image }}
@@ -77,7 +77,7 @@
         <p class="mb-6">{{ .content | markdownify }}</p>
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relURL }}" class="cta-link inline-flex items-center text-primary">
+        <a href="{{ .link | relLangURL }}" class="cta-link inline-flex items-center text-primary">
           {{ .label }}
           <img class="ml-1" src="{{ "images/arrow-right.svg" | relURL }}" width="18" height="14" alt="arrow">
         </a>
@@ -119,7 +119,7 @@
         {{ with .content }}<p class="mb-6">{{ . | markdownify }}</p>{{ end }}
         {{ if .button.enable }}
         {{ with .button }}
-        <a class="btn btn-primary" href="{{ .link | relURL }}">{{ .label }}</a>
+        <a class="btn btn-primary" href="{{ .link | relLangURL }}">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>

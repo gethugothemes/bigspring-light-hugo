@@ -32,6 +32,13 @@
         </div>
         {{ end }}
         {{ end }}
+
+        <!-- comments -->
+        {{ if site.Params.open_remark.enable }}
+        <div class="mt-8">
+          {{ partial "open-remark.html" . }}
+        </div>
+        {{ end }}
       </div>
     </div>
   </div>

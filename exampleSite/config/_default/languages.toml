@@ -1,7 +1,7 @@
 ################################### English language #####################################
 [en]
-languageName = "EN"
-languageCode = "en-US"
+label = "EN"
+locale = "en-US"
 contentDir = "content/english"
 weight = 1
 [en.params]
@@ -14,8 +14,8 @@ footer_content = "Lorem ipsum dolor sit amet, consectetur elit consjat tristique
 
 ################################### Deutsch language #####################################
 [de]
-languageName = "DE"
-languageCode = "de-DE"
+label = "DE"
+locale = "de-DE"
 contentDir = "content/deutsch"
 weight = 2
 [de.params]

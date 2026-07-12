@@ -32,6 +32,13 @@ copyright = "Copyright by your company"
 enable = true
 preloader = "" # use jpg, png, svg or gif format. example - "images/preloader.gif"
 
+# open remark comment
+# open remark module: https://github.com/gethugothemes/hugo-modules/tree/master/components/open-remark
+[open_remark]
+enable = true
+site_key = "cmqnb3wd5000104kww7862ku4" # your site key from the OpenRemark dashboard
+embed_url = "https://open-remark.zeon.studio/embed.js"
+
 # Navigation buttons
 [navigation_button]
 enable = true

@@ -1,7 +1,6 @@
 [hugoVersion]
 extended = true
-min = "0.156.0"
-max = "0.160.0"
+min = "0.163.3"
 
 [[imports]]
 path = "github.com/gethugothemes/hugo-modules/components/preloader"
@@ -43,7 +42,7 @@ path = "github.com/gethugothemes/hugo-modules/tab"
 path = "github.com/gethugothemes/hugo-modules/gallery-slider"
 
 [[imports]]
-path = "github.com/gethugothemes/hugo-modules/shortcodes/table-of-contents"
+path = "github.com/gethugothemes/hugo-modules/table-of-contents"
 
 [[imports]]
 path = "github.com/gethugothemes/hugo-modules/videos"
@@ -74,3 +73,6 @@ path = "github.com/gethugothemes/hugo-modules/gzip-caching"
 
 [[imports]]
 path = "github.com/gethugothemes/hugo-modules/adsense"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/components/open-remark"

@@ -1,6 +1,6 @@
 {
   "name": "bigspring-light",
-  "version": "3.0.1",
+  "version": "3.1.1",
   "license": "MIT",
   "author": "gethugothemes",
   "scripts": {
@@ -12,7 +12,8 @@
     "preview:example": "node scripts/themeGenerator.js && cd exampleSite && hugo server --themesDir ../.. --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
     "update-modules": "node ./scripts/clearModules.js && hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy",
     "project-setup": "node ./scripts/projectSetup.js",
-    "theme-setup": "node ./scripts/themeSetup.js"
+    "theme-setup": "node ./scripts/themeSetup.js",
+    "postinstall": "node -e \"const fs=require('fs'),p='node_modules/.bin/tailwindcss';try{fs.lstatSync(p).isSymbolicLink()||((fs.unlinkSync(p)),fs.symlinkSync('../@tailwindcss/cli/dist/index.mjs',p))}catch(e){}\""
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.1",
